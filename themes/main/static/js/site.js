@@ -116,6 +116,7 @@ document.addEventListener("alpine:init", () => {
 
   Alpine.data("newsletter", () => ({
     status: "pending",
+    thanks: "",
     message: "",
     async send(event) {
       const form = event.target;
@@ -133,8 +134,13 @@ document.addEventListener("alpine:init", () => {
       try {
         const url = form.action.replace("/post?", "/post-json?") + "&" + params;
         const result = await jsonp(url);
-        this.message = result.msg;
-        this.status = result.result === "success" ? "success" : "error";
+        if (result.result === "success") {
+          this.thanks = result.msg;
+          this.status = "success";
+        } else {
+          this.message = result.msg;
+          this.status = "error";
+        }
       } catch {
         this.message = "Sorry, we could not subscribe you. Please try again.";
         this.status = "error";
