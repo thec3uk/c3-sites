@@ -1,10 +1,13 @@
-"""Compare the main site built in dist/ with live https://thec3.uk, page by page.
+"""Compare a site built in dist/ with its live site, page by page, plus every redirect.
 
-Run after `just build main`:
-    SITE=main uv run python scripts/parity_check.py [--pages /about/ ...] [--skip-pages] [--skip-redirects]
+Run after `just build <site>`:
+    SITE=myc3 uv run python scripts/parity_check.py --out docs/plans/phase-4/evidence/m4 \
+        [--live https://myc3.life] [--static ~/c3/creative/websites/myc3/public] [--live-sitemap /sitemap.xml] \
+        [--pages /team/ ...] [--skip-pages] [--skip-redirects]
+    uv run python scripts/parity_check.py --classify-only docs/plans/phase-3/evidence/m5/results.json
 
-Writes screenshots and results.json to docs/plans/phase-3/evidence/m5/. Read-only and sequential:
-plain Playwright and httpx with an honest user agent, redirects checked once each without following.
+Writes screenshots and results.json to --out. Read-only and sequential: plain Playwright and httpx
+with an honest user agent, redirects checked once each without following.
 """
 
 import argparse
@@ -14,20 +17,38 @@ import json
 import os
 import sys
 import threading
+import re
 import time
 from collections import Counter
 from contextlib import contextmanager
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-OUT = ROOT / "docs/plans/phase-3/evidence/m5"
+# Phase 3's evidence/m2/screenshots.py imports this; other runs take the site's live base.
 LIVE = "https://thec3.uk"
-USER_AGENT = "c3-sites parity-check (+https://thec3.uk)"
+USER_AGENT = "c3-sites parity-check"
 WIDTHS = ((1440, 900), (390, 844))
+GAP = 0.2  # seconds between live requests
+NOT_FOUND_PATH = "/404.html"
+
+# Classifier thresholds, chosen to reproduce Phase 3's hand labels (see tests).
+MATCH_MAX_RATIO = 0.003  # share of differing pixels, at each width
+MINOR_MAX_RATIO = 0.05
+MINOR_MAX_HEIGHT_PX = 2  # page height difference, at each width
+# Hidden form text (a listbox label) can differ by a line with nothing visible.
+MAX_LIVE_ONLY_TEXT_LINES = 1
+
+
+def live_base(site):
+    return f"https://{site.domain}"
+
+
+def site_hosts(site, local):
+    return {site.domain, f"www.{site.domain}", urlsplit(local).netloc}
 
 
 def setup_django():
@@ -55,9 +76,11 @@ def serve_dist(directory=DIST):
         server.shutdown()
 
 
-def block_analytics(context):
+def block_analytics(context, site):
     # Keep parity runs out of Umami's numbers, live and local.
-    context.route("**/analytics.thec3.uk/**", lambda route: route.abort())
+    host = urlsplit(site.umami_src).netloc
+    if host:
+        context.route(f"**/{host}/**", lambda route: route.abort())
 
 
 def load(page, url):
@@ -154,7 +177,7 @@ DIFF_JS = """async ([a, b]) => {
 }"""
 
 
-def compare_images(tool_page, live_png, local_png, stem):
+def compare_images(tool_page, live_png, local_png, stem, out):
     uri = lambda png: "data:image/png;base64," + base64.b64encode(png).decode()  # noqa: E731
     result = tool_page.evaluate(DIFF_JS, [uri(live_png), uri(local_png)])
     result["ratio"] = round(result["ratio"], 4)
@@ -163,14 +186,14 @@ def compare_images(tool_page, live_png, local_png, stem):
     for kind in ("live", "local", "diff"):
         data = base64.b64decode(result.pop(f"{kind}_jpeg"))
         if kind != "diff" or keep_diff:
-            (OUT / f"{stem}-{kind}.jpg").write_bytes(data)
+            (out / f"{stem}-{kind}.jpg").write_bytes(data)
     return result
 
 
-def check_pages(paths, local):
+def check_pages(paths, local, live, site, out):
     from playwright.sync_api import sync_playwright
 
-    hosts = {"thec3.uk", "www.thec3.uk", urlsplit(local).netloc}
+    hosts = site_hosts(site, local)
     results = {}
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -178,22 +201,22 @@ def check_pages(paths, local):
         tool.set_content("<!doctype html><title>diff</title>")
         for width, height in WIDTHS:
             context = browser.new_context(viewport={"width": width, "height": height}, user_agent=USER_AGENT)
-            block_analytics(context)
+            block_analytics(context, site)
             page = context.new_page()
             for path, live_path in paths:
                 name = path.strip("/") or "home"
                 row = results.setdefault(name, {"path": path})
                 shots = {}
-                for side, url in (("live", LIVE + live_path), ("local", local + path)):
+                for side, url in (("live", live + live_path), ("local", local + path)):
                     response = load(page, url)
                     if width == 1440:
                         facts = page.evaluate(FACTS_JS)
                         facts["links"] = [normalise_link(h, hosts) for h in facts["links"]]
-                        facts["status"] = statuses(response)
+                        facts["status"] = statuses(response) if response else [None]
                         facts["final_url"] = page.url.replace(local, "")
                         row[side] = facts
                     shots[side] = page.screenshot(full_page=True)
-                row[f"shots_{width}"] = compare_images(tool, shots["live"], shots["local"], f"{name}-{width}")
+                row[f"shots_{width}"] = compare_images(tool, shots["live"], shots["local"], f"{name}-{width}", out)
                 print(name, width, row[f"shots_{width}"]["ratio"], flush=True)
             context.close()
         browser.close()
@@ -204,83 +227,174 @@ def check_pages(paths, local):
             row[key] = {"live": live[key], "local": local_facts[key]}
         lc, kc = Counter(live["links"]), Counter(local_facts["links"])
         row["links"] = {"count": {"live": len(live["links"]), "local": len(local_facts["links"])},
-                        "only_live": sorted((lc - kc).elements()), "only_local": sorted((kc - lc).elements())}
+                        "only_live": sorted((lc - kc).elements()), "only_local": sorted((kc - lc).elements()),
+                        "missing": sorted(set(lc) - set(kc))}
         split = lambda t: [line.strip() for line in t.splitlines() if line.strip()]  # noqa: E731
         row["text_diff"] = [d for d in difflib.ndiff(split(live["text"]), split(local_facts["text"]))
                             if d[:1] in "+-"]
     return results
 
 
-def check_redirects():
+def classify(row):
+    """(status, reasons) for a page row: match, minor or differs."""
+    differs, minor = [], []
+    live_status, local_status = row["status"]["live"], row["status"]["local"]
+    if row["path"] == NOT_FOUND_PATH:
+        # The script's file server sends 404.html as 200; Netlify sends it as 404.
+        if live_status[-1:] != [404] or local_status != [200]:
+            differs.append(f"status live {live_status}, local {local_status}")
+    elif [s and s // 100 for s in live_status] != [s and s // 100 for s in local_status]:
+        differs.append(f"status live {live_status}, local {local_status}")
+    for width in (1440, 390):
+        shot = row[f"shots_{width}"]
+        height = abs(shot["live_height"] - shot["local_height"])
+        if height > MINOR_MAX_HEIGHT_PX:
+            differs.append(f"{width}: height differs by {height}px")
+        elif height:
+            minor.append(f"{width}: height differs by {height}px")
+        if shot["ratio"] > MINOR_MAX_RATIO:
+            differs.append(f"{width}: {shot['ratio']:.2%} of pixels differ")
+        elif shot["ratio"] > MATCH_MAX_RATIO:
+            minor.append(f"{width}: {shot['ratio']:.2%} of pixels differ")
+    links = row["links"]
+    own = row["path"].rstrip("/") or "/"
+    # Phase 3 rows lack "missing"; their only_live also counts fewer links to the same target.
+    missing = [link for link in links.get("missing", links["only_live"]) if link != own]
+    if missing:
+        differs.append(f"live links the build lacks: {missing}")
+    live_only_text = [line[2:] for line in row["text_diff"] if line.startswith("- ")]
+    if len(live_only_text) > MAX_LIVE_ONLY_TEXT_LINES:
+        differs.append(f"{len(live_only_text)} lines of text only on live")
+    if differs:
+        return "differs", differs + minor
+    return ("minor", minor) if minor else ("match", [])
+
+
+def same_target(target, location, live):
+    """Same URL, treating a bare domain with and without its trailing / as one."""
+    def norm(url):
+        parts = urlsplit(urljoin(live + "/", url))
+        return parts._replace(path=parts.path or "/").geturl()
+
+    return norm(target) == norm(location)
+
+
+PERMANENT, TEMPORARY = {301, 308}, {302, 303, 307}
+
+
+def redirect_class(status):
+    """'permanent', 'temporary', or the status itself for anything else."""
+    return "permanent" if status in PERMANENT else "temporary" if status in TEMPORARY else status
+
+
+def http_client():
+    import httpx
+
+    return httpx.Client(headers={"User-Agent": USER_AGENT}, timeout=20)
+
+
+def check_redirects(rules, live, client=None, gap=GAP, page_paths=()):
     """Each generated rule's source on live, once, without following."""
     import httpx
 
-    from pages.redirects import redirect_rules
-
+    built = {p.rstrip("/") or "/" for p in page_paths}
     rows = []
-    with httpx.Client(headers={"User-Agent": USER_AGENT}, timeout=20) as client:
-        for rule in redirect_rules():
+    with client or http_client() as client:
+        for rule in rules:
             try:
-                response = client.get(LIVE + rule.source, follow_redirects=False)
+                response = client.get(live + rule.source, follow_redirects=False)
                 live_status, location = response.status_code, response.headers.get("location", "")
             except httpx.HTTPError as error:
                 live_status, location = None, f"error: {error}"
             rows.append({
                 "source": rule.source, "target": rule.target, "status": rule.status,
                 "live_status": live_status, "live_location": location,
-                "same_class": live_status is not None and live_status // 100 == rule.status // 100,
-                "same_target": location == rule.target,
+                "same_class": live_status is not None and redirect_class(live_status) == redirect_class(rule.status),
+                "same_target": live_status is not None and same_target(rule.target, location, live),
+                "build_serves_page": rule.source in built,
             })
-            time.sleep(0.2)
+            time.sleep(gap)
     return rows
 
 
-def check_extras(local_paths):
-    """Live sitemap URLs and Gatsby static files the build may lack."""
-    import re
+def sitemap_urls(client, url, gap):
+    """Page URLs in a sitemap, following a sitemap index; (status, urls)."""
+    response = client.get(url)
+    if response.status_code != 200:
+        return response.status_code, []
+    urls = []
+    for loc in re.findall(r"<loc>(.*?)</loc>", response.text):
+        if "<sitemapindex" in response.text:
+            time.sleep(gap)
+            urls += sitemap_urls(client, loc, gap)[1]
+        else:
+            urls.append(loc)
+    return response.status_code, urls
 
-    import httpx
 
-    static = sorted(str(p.relative_to(Path.home() / "c3/creative/websites/new_to_church/static"))
-                    for p in (Path.home() / "c3/creative/websites/new_to_church/static").rglob("*") if p.is_file())
-    with httpx.Client(headers={"User-Agent": USER_AGENT}, timeout=20) as client:
-        index = client.get(LIVE + "/sitemap-index.xml").text
-        live_urls = []
-        for loc in re.findall(r"<loc>(.*?)</loc>", index):
-            live_urls += re.findall(r"<loc>(.*?)</loc>", client.get(loc).text)
+def check_extras(local_paths, live, client=None, gap=GAP, static_dir=None, sitemap="/sitemap.xml", dist=DIST):
+    """Live sitemap URLs, and the old site's static files, that the build may lack."""
+    extras = {}
+    with client or http_client() as client:
+        status, live_urls = sitemap_urls(client, live + sitemap, gap)
         live_paths = sorted(urlsplit(u).path.rstrip("/") or "/" for u in live_urls)
-        files = {}
-        for name in static:
-            files[name] = {"live": client.head(f"{LIVE}/{name}").status_code, "dist": (DIST / name).exists()}
-            time.sleep(0.2)
-    built = {p.rstrip("/") or "/" for p in local_paths}
-    return {"live_sitemap_not_built": [p for p in live_paths if p not in built],
-            "built_not_in_live_sitemap": sorted(built - set(live_paths)), "static_files": files}
+        built = {p.rstrip("/") or "/" for p in local_paths}
+        extras = {"live_sitemap": sitemap, "live_sitemap_status": status,
+                  "live_sitemap_not_built": [p for p in live_paths if p not in built],
+                  "built_not_in_live_sitemap": sorted(built - set(live_paths)) if live_paths else []}
+        if static_dir:
+            files = {}
+            for path in sorted(p for p in Path(static_dir).rglob("*") if p.is_file()):
+                name = path.relative_to(static_dir).as_posix()
+                files[name] = {"live": client.head(f"{live}/{name}").status_code, "dist": (Path(dist) / name).exists()}
+                time.sleep(gap)
+            extras["static_files"] = files
+    return extras
 
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--out", type=Path, help="evidence folder for screenshots and results.json")
+    parser.add_argument("--live", help="live base URL; default https://<site domain>")
+    parser.add_argument("--static", type=Path, help="the old site's static folder, checked file by file on live")
+    parser.add_argument("--live-sitemap", default="/sitemap.xml", help="path of live's sitemap or sitemap index")
     parser.add_argument("--pages", nargs="*", help="only these paths, e.g. /about/")
     parser.add_argument("--skip-pages", action="store_true")
     parser.add_argument("--skip-redirects", action="store_true")
+    parser.add_argument("--classify-only", type=Path, metavar="RESULTS", help="print labels for a results.json")
     args = parser.parse_args()
+    if args.classify_only:
+        for name, row in json.loads(args.classify_only.read_text())["pages"].items():
+            print(row["path"], *classify(row))
+        return
+    if not args.out:
+        parser.error("--out is required")
     setup_django()
-    from pages.content import site_pages
+    from django.conf import settings
 
+    from pages.content import site_pages
+    from pages.redirects import redirect_rules
+
+    site = settings.SITE
+    live = (args.live or live_base(site)).rstrip("/")
     built = [p.url for p in site_pages()]
-    # Live serves pages without the trailing slash; ask for that to skip its 301.
+    # Live serves pages without the trailing slash; ask for that to skip its redirect.
     paths = [(u, u.rstrip("/") or "/") for u in (args.pages or built)]
     if not args.pages:
-        paths.append(("/404.html", "/parity-check-missing-page"))
-    OUT.mkdir(parents=True, exist_ok=True)
-    results_file = OUT / "results.json"
+        paths.append((NOT_FOUND_PATH, "/parity-check-missing-page"))
+    out = args.out if args.out.is_absolute() else ROOT / args.out
+    out.mkdir(parents=True, exist_ok=True)
+    results_file = out / "results.json"
     results = json.loads(results_file.read_text()) if results_file.exists() else {}
+    results["site"], results["live"] = site.name, live
     if not args.skip_pages:
         with serve_dist() as local:
-            results.setdefault("pages", {}).update(check_pages(paths, local))
-        results["extras"] = check_extras(built)
+            results.setdefault("pages", {}).update(check_pages(paths, local, live, site, out))
+        results["extras"] = check_extras(built, live, static_dir=args.static, sitemap=args.live_sitemap)
+    for row in results.get("pages", {}).values():
+        row["classification"], row["reasons"] = classify(row)
     if not args.skip_redirects:
-        results["redirects"] = check_redirects()
+        results["redirects"] = check_redirects(redirect_rules(), live, page_paths=built)
     results_file.write_text(json.dumps(results, indent=1, ensure_ascii=False) + "\n")
 
 
