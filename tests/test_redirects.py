@@ -112,3 +112,14 @@ def test_view_serves_text_plain(main, client):
 
     assert response["Content-Type"].startswith("text/plain")
     assert "/give https://pay.example/give 301" in response.content.decode()
+
+
+def test_protocol_relative_targets_are_skipped_and_logged(main, caplog):
+    main.append(redirect_doc("proto", web("//evil.example/x")))
+    main.append(redirect_doc("good", web("/about/")))
+
+    with caplog.at_level(logging.WARNING):
+        rules = redirect_rules()
+
+    assert [str(r) for r in rules] == ["/good /about/ 301"]
+    assert "Redirect proto (r-proto) skipped: unsafe target" in caplog.text
