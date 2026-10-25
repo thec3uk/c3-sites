@@ -1,4 +1,5 @@
 import json
+import os
 from urllib.parse import parse_qs, urlparse
 import shutil
 import threading
@@ -185,7 +186,14 @@ def test_faq_answer_opens_on_its_question(slices_site, phone):
     expect(answer).to_be_visible()
 
 
-EVIDENCE = Path(__file__).parents[1] / "docs/plans/phase-3/evidence/m3"
+
+
+@pytest.fixture
+def evidence(tmp_path):
+    """Where screenshots go: tmp_path, or $EVIDENCE_DIR to refresh committed evidence."""
+    path = Path(os.environ.get("EVIDENCE_DIR") or tmp_path)
+    path.mkdir(parents=True, exist_ok=True)
+    return path
 
 
 @pytest.fixture
@@ -212,20 +220,19 @@ def fill_contact_form(page):
     page.get_by_label("Your Message").fill("Hello there, a longer message")
 
 
-def test_contact_form_posts_to_netlify_and_shows_thank_you(dist_url, desktop, mocked_posts):
+def test_contact_form_posts_to_netlify_and_shows_thank_you(dist_url, desktop, mocked_posts, evidence):
     desktop.goto(dist_url + "/contact/")
     send = desktop.get_by_role("button", name="Send")
     expect(send).to_be_disabled()
-    EVIDENCE.mkdir(parents=True, exist_ok=True)
 
     fill_contact_form(desktop)
     expect(send).to_be_enabled()
-    desktop.screenshot(path=str(EVIDENCE / "contact-filled.png"))
+    desktop.screenshot(path=str(evidence / "contact-filled.png"))
     send.click()
 
     expect(desktop.get_by_text("Thanks for your message!")).to_be_visible()
     expect(desktop.get_by_label("Full Name")).to_be_hidden()
-    desktop.screenshot(path=str(EVIDENCE / "contact-thanks.png"))
+    desktop.screenshot(path=str(evidence / "contact-thanks.png"))
     body = parse_qs(mocked_posts[0], keep_blank_values=True)
     assert body["form-name"] == ["Contact Us"]
     assert body["category_name"] == ["Safeguarding"]
@@ -285,18 +292,17 @@ def fill_newsletter(page):
     page.get_by_text("Online").click()
 
 
-def test_newsletter_subscribes_through_mailchimp_jsonp(dist_url, desktop):
+def test_newsletter_subscribes_through_mailchimp_jsonp(dist_url, desktop, evidence):
     requests = []
     desktop.route(MAILCHIMP, answer_jsonp(requests, {"result": "success", "msg": "Thank you for subscribing!"}))
     desktop.goto(dist_url + "/subscribe/")
     fill_newsletter(desktop)
-    EVIDENCE.mkdir(parents=True, exist_ok=True)
-    desktop.screenshot(path=str(EVIDENCE / "newsletter-filled.png"))
+    desktop.screenshot(path=str(evidence / "newsletter-filled.png"))
 
     desktop.get_by_role("button", name="Subscribe").click()
 
     expect(desktop.get_by_text("Thank you for subscribing!")).to_be_visible()
-    desktop.screenshot(path=str(EVIDENCE / "newsletter-success.png"))
+    desktop.screenshot(path=str(evidence / "newsletter-success.png"))
     query = requests[0]
     assert query["u"] == ["baac982817e7fb161022a1253"] and query["id"] == ["d62f87b12a"]
     assert query["EMAIL"] == ["josh@example.com"] and query["FNAME"] == ["Josh"]
@@ -304,7 +310,7 @@ def test_newsletter_subscribes_through_mailchimp_jsonp(dist_url, desktop):
     assert query["SOURCE"] == ["website signup"] and query["SIGNUPURL"] == ["/subscribe/"]
 
 
-def test_newsletter_shows_mailchimps_error_and_keeps_the_form(dist_url, desktop):
+def test_newsletter_shows_mailchimps_error_and_keeps_the_form(dist_url, desktop, evidence):
     error = "0 - Please enter a value"
     desktop.route(MAILCHIMP, answer_jsonp([], {"result": "error", "msg": error}))
     desktop.goto(dist_url + "/subscribe/")
@@ -314,4 +320,4 @@ def test_newsletter_shows_mailchimps_error_and_keeps_the_form(dist_url, desktop)
 
     expect(desktop.get_by_text(error)).to_be_visible()
     expect(desktop.locator("#email")).to_be_visible()
-    desktop.screenshot(path=str(EVIDENCE / "newsletter-error.png"))
+    desktop.screenshot(path=str(evidence / "newsletter-error.png"))
