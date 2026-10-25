@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
-{% block seo %}<title>Page not found{% if site_config.fields.title %} | {{ site_config.fields.title }}{% endif %}</title>
+{% load text %}
+{% block seo %}<title>Page not found{% if site_config.fields.title %} | {{ site_config.fields.title|plain }}{% endif %}</title>
   <meta name="robots" content="noindex">{% endblock %}
 {% block content %}
 {# Gatsby src/pages/404.tsx inside a ContainedHero. #}

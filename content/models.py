@@ -133,7 +133,7 @@ def render_spans(text: str, spans: list[dict]) -> str:
 
     for char in text:
         boundary(offset)
-        out.append("<br>" if char == "\n" else escape(char, quote=False))
+        out.append("<br>" if char == "\n" else escape(char))
         offset += len(char.encode("utf-16-le")) // 2
     boundary(offset)
     while stack:

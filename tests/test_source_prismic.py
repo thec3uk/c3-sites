@@ -130,6 +130,10 @@ def test_empty_image_and_empty_link_become_none_and_blank():
             [{"type": "paragraph", "text": "line\nbreak", "spans": []}],
             "<p>line<br>break</p>",
         ),
+        (
+            [{"type": "paragraph", "text": "say \"hi\" 'yo'", "spans": []}],
+            "<p>say &quot;hi&quot; &#x27;yo&#x27;</p>",
+        ),
     ],
 )
 def test_rich_text_html(blocks, html):

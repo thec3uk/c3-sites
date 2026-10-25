@@ -224,9 +224,31 @@ def test_seo_falls_back_to_site_config(main, client):
     assert meta(html, "name", "description") == "The C3 Church is a church."
     assert meta(html, "property", "og:title") == "The C3 Church"
     assert meta(html, "property", "og:description") == "The C3 Church is a church."
-    assert meta(html, "property", "og:image").startswith("https://images.prismic.io/thec3/banner.jpg")
-    assert meta(html, "name", "twitter:image").startswith("https://images.prismic.io/thec3/banner.jpg")
+    # Gatsby SEO.tsx falls back to the site's social_share.jpeg, not site_config's banner.
+    assert meta(html, "name", "image") == "https://thec3.uk/social_share.jpeg"
+    assert meta(html, "property", "og:image") == "https://thec3.uk/social_share.jpeg"
+    assert meta(html, "name", "twitter:image") == "https://thec3.uk/social_share.jpeg"
+    assert (ROOT / "themes/main/public/social_share.jpeg").is_file()
     assert '<link rel="canonical" href="https://thec3.uk/about/">' in html
+
+
+def rich(text):
+    return [{"type": "paragraph", "text": text, "spans": []}]
+
+
+def test_rich_text_in_attributes_renders_as_escaped_plain_text(main, client):
+    banner = banner_doc("yes")
+    banner["data"]["content"] = rich('Say "hi"')
+    main.append(banner)
+    main[0]["data"].update(seo_title=rich('Welcome "Home"'), seo_description=rich('A "quoted" church'))
+
+    html = get(client, "/")
+
+    assert 'data-message="Say &quot;hi&quot;"' in html
+    assert "<title>Welcome &quot;Home&quot; | The C3 Church</title>" in html
+    assert meta(html, "name", "description") == "A &quot;quoted&quot; church"
+    assert meta(html, "property", "og:title") == "Welcome &quot;Home&quot; | The C3 Church"
+    assert meta(html, "name", "twitter:description") == "A &quot;quoted&quot; church"
 
 
 def test_404_uses_the_main_layout(main, client):
