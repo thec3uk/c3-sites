@@ -1,0 +1,101 @@
+{
+  "id": "channel",
+  "label": "Channel",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Unique URL",
+          "placeholder": "This will be used for the channel URL"
+        }
+      },
+      "name": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Name",
+          "placeholder": "name of channel"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Description",
+          "placeholder": "short description for the channel"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 512,
+            "height": 512
+          },
+          "thumbnails": [],
+          "label": "Thumbnail"
+        }
+      },
+      "hero": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 500
+          },
+          "thumbnails": [],
+          "label": "Hero"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "social_media_links": {
+              "type": "Slice",
+              "fieldset": "Social Media Links",
+              "description": "Social Media links",
+              "icon": "web_asset",
+              "display": "list",
+              "non-repeat": {
+                "facebook": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "Facebook",
+                    "placeholder": "Link to facebook page",
+                    "select": null
+                  }
+                },
+                "instagram": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "Instagram",
+                    "placeholder": "Link to Instagram",
+                    "select": null
+                  }
+                },
+                "youtube": {
+                  "type": "Link",
+                  "config": {
+                    "label": "YouTube",
+                    "placeholder": "Link to YouTube",
+                    "select": null
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

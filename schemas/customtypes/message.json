@@ -1,0 +1,140 @@
+{
+  "id": "message",
+  "label": "Message",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Unique Indentifier"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading2,heading3,heading4,heading5,heading6",
+          "label": "Title",
+          "placeholder": "Title for the message"
+        }
+      },
+      "tags": {
+        "type": "Text",
+        "config": {
+          "label": "Tags",
+          "placeholder": "key words"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink,list-item",
+          "label": "Description"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 512,
+            "height": 512
+          },
+          "thumbnails": [],
+          "label": "Thumbnail"
+        }
+      },
+      "series": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["series"],
+          "label": "Series",
+          "placeholder": "Link to series"
+        }
+      },
+      "video": {
+        "type": "Embed",
+        "config": {
+          "label": "Video",
+          "placeholder": "URL for YouTube video"
+        }
+      },
+      "trailer": {
+        "type": "Embed",
+        "config": {
+          "label": "Trailer",
+          "placeholder": "Trailer video"
+        }
+      },
+      "short_form_video": {
+        "type": "Embed",
+        "config": {
+          "label": "Short form video"
+        }
+      },
+      "date": {
+        "type": "Date",
+        "config": {
+          "label": "Date",
+          "placeholder": "Date of message"
+        }
+      },
+      "podcast": {
+        "type": "Text",
+        "config": {
+          "label": "Podcast",
+          "placeholder": "iframe code to embed podcast"
+        }
+      },
+      "speakers": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "speaker": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["speaker"],
+                "label": "Speaker",
+                "placeholder": "Add speaker or speakers"
+              }
+            }
+          },
+          "label": "Speakers"
+        }
+      },
+      "linked_resources": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "resources": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["resource"],
+                "tags": ["domain:teaching.thec3.uk"],
+                "label": "Resources"
+              }
+            }
+          },
+          "label": "Linked Resources"
+        }
+      },
+      "channel": {
+        "type": "Link",
+        "config": {
+          "select": "document",
+          "customtypes": ["channel"],
+          "tags": ["domain:teaching.thec3.uk"],
+          "label": "Channel"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}

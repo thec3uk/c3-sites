@@ -1,0 +1,68 @@
+{
+  "id": "speaker",
+  "label": "Speaker",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Unique URL"
+        }
+      },
+      "name": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Name",
+          "placeholder": "Name of speaker"
+        }
+      },
+      "role": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading2",
+          "label": "Role",
+          "placeholder": "e.g Pastor"
+        }
+      },
+      "bio": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Bio",
+          "placeholder": "A short description to appear on profile page"
+        }
+      },
+      "hero": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 500
+          },
+          "thumbnails": [],
+          "label": "Hero"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 512,
+            "height": 512
+          },
+          "thumbnails": [],
+          "label": "thumbnail"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}

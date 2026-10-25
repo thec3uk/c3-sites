@@ -1,0 +1,62 @@
+{
+  "id": "button",
+  "type": "SharedSlice",
+  "name": "Button",
+  "description": "Button",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Button",
+      "primary": {
+        "linkTitle": {
+          "config": {
+            "label": "linkTitle",
+            "placeholder": "Click me...!"
+          },
+          "type": "Text"
+        },
+        "linkUrl": {
+          "config": {
+            "label": "linkUrl",
+            "placeholder": "A url to somewhere else!",
+            "select": null,
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "size": {
+          "config": {
+            "label": "Size",
+            "placeholder": "",
+            "options": [
+              "xs",
+              "sm",
+              "md",
+              "lg",
+              "xl"
+            ],
+            "default_value": "xs"
+          },
+          "type": "Select"
+        },
+        "alignment": {
+          "config": {
+            "label": "Alignment",
+            "placeholder": "",
+            "options": [
+              "full",
+              "left",
+              "center",
+              "right"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {}
+    }
+  ]
+}

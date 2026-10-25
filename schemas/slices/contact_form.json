@@ -1,0 +1,98 @@
+{
+  "id": "contact_form",
+  "type": "SharedSlice",
+  "name": "ContactForm",
+  "description": "A configurable contact form that submits to Netlify Forms",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Contact Form",
+      "primary": {
+        "form_name": {
+          "type": "Text",
+          "config": {
+            "label": "Form Name",
+            "placeholder": "contact"
+          }
+        },
+        "name_label": {
+          "type": "Text",
+          "config": {
+            "label": "Name Label",
+            "placeholder": "Your Name"
+          }
+        },
+        "email_label": {
+          "type": "Text",
+          "config": {
+            "label": "Email Label",
+            "placeholder": "Your Email"
+          }
+        },
+        "category_label": {
+          "type": "Text",
+          "config": {
+            "label": "Category Label",
+            "placeholder": "Category"
+          }
+        },
+        "subject_label": {
+          "type": "Text",
+          "config": {
+            "label": "Subject Label",
+            "placeholder": "Subject"
+          }
+        },
+        "message_label": {
+          "type": "Text",
+          "config": {
+            "label": "Message Label",
+            "placeholder": "Your Message"
+          }
+        },
+        "submit_button_label": {
+          "type": "Text",
+          "config": {
+            "label": "Submit Button Label",
+            "placeholder": "Send"
+          }
+        },
+        "consent_label": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,strong,em,hyperlink",
+            "allowTargetBlank": true,
+            "label": "Consent Label",
+            "placeholder": "I agree to the privacy policy"
+          }
+        },
+        "thank_you_message": {
+          "type": "StructuredText",
+          "config": {
+            "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,list-item,o-list-item",
+            "label": "Thank You Message"
+          }
+        }
+      },
+      "items": {
+        "category_name": {
+          "type": "Text",
+          "config": {
+            "label": "Category Name",
+            "placeholder": "General Enquiry"
+          }
+        },
+        "email_recipient": {
+          "type": "Text",
+          "config": {
+            "label": "Email Recipient",
+            "placeholder": "hello@example.com"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "notification_banner",
+  "label": "Notification Banner",
+  "repeatable": false,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "content": {
+        "type": "Text",
+        "config": {
+          "label": "content",
+          "useAsTitle": true
+        }
+      },
+      "url": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "url",
+          "select": null
+        }
+      },
+      "active": {
+        "type": "Select",
+        "config": {
+          "options": ["no", "yes"],
+          "default_value": "no",
+          "label": "active"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}

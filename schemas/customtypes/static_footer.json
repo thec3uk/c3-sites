@@ -1,0 +1,49 @@
+{
+  "id": "static_footer",
+  "label": "Static Footer",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "link_list": {
+              "type": "Slice",
+              "fieldset": "Link list",
+              "description": "List of links with a title",
+              "icon": "format_list_bulleted",
+              "non-repeat": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title"
+                  }
+                }
+              },
+              "repeat": {
+                "link_title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Link Title"
+                  }
+                },
+                "link_url": {
+                  "type": "Link",
+                  "config": {
+                    "allowTargetBlank": true,
+                    "label": "Link URL",
+                    "select": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

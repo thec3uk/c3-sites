@@ -1,0 +1,84 @@
+{
+  "id": "contact_form",
+  "label": "Contact Form Configuration",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "form_name": {
+        "type": "Text",
+        "config": {
+          "label": "Form Name"
+        }
+      },
+      "name_label": {
+        "type": "Text",
+        "config": {
+          "label": "Name Label"
+        }
+      },
+      "email_label": {
+        "type": "Text",
+        "config": {
+          "label": "Email Label"
+        }
+      },
+      "category_label": {
+        "type": "Text",
+        "config": {
+          "label": "Category Label"
+        }
+      },
+      "subject_label": {
+        "type": "Text",
+        "config": {
+          "label": "Subject Label"
+        }
+      },
+      "message_label": {
+        "type": "Text",
+        "config": {
+          "label": "Message Label"
+        }
+      },
+      "submit_button_label": {
+        "type": "Text",
+        "config": {
+          "label": "Submit Button Label"
+        }
+      },
+      "category": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "category_name": {
+              "type": "Text",
+              "config": {
+                "label": "Category Name"
+              }
+            },
+            "email_recipient": {
+              "type": "Text",
+              "config": {
+                "label": "Email Recipient"
+              }
+            }
+          },
+          "label": "category"
+        }
+      },
+      "thank_you_message": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+          "label": "Thank you message"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}

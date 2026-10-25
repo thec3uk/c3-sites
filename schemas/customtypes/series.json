@@ -1,0 +1,77 @@
+{
+  "id": "series",
+  "label": "Series",
+  "repeatable": true,
+  "status": true,
+  "format": "custom",
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Unique URL",
+          "placeholder": "This will be used for the series URL"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "single": "heading1",
+          "label": "Title",
+          "placeholder": "The title for the series"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "single": "paragraph,strong,em,hyperlink",
+          "allowTargetBlank": true,
+          "label": "Description",
+          "placeholder": "A short description of the series"
+        }
+      },
+      "hero": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 1280,
+            "height": 500
+          },
+          "thumbnails": [],
+          "label": "Hero"
+        }
+      },
+      "thumbnail": {
+        "type": "Image",
+        "config": {
+          "constraint": {
+            "width": 512,
+            "height": 512
+          },
+          "thumbnails": [],
+          "label": "Thumbnail"
+        }
+      },
+      "linked_resources": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "resources": {
+              "type": "Link",
+              "config": {
+                "select": "document",
+                "customtypes": ["resource"],
+                "label": "Resources"
+              }
+            }
+          },
+          "label": "Linked Resources"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}
