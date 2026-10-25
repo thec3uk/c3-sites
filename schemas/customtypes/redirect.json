@@ -36,14 +36,20 @@
       },
       "slices": {
         "type": "Slices",
-        "fieldset": "Slice Zone"
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
       }
     },
     "Metadata": {
       "contact_form": {
         "type": "Select",
         "config": {
-          "options": ["no", "yes"],
+          "options": [
+            "no",
+            "yes"
+          ],
           "default_value": "no",
           "label": "Contact form",
           "placeholder": "Does it have a contact form?"
@@ -107,8 +113,13 @@
               "type": "Link",
               "config": {
                 "select": "document",
-                "customtypes": ["content_page", "landing_page"],
-                "tags": ["Gallery"],
+                "customtypes": [
+                  "content_page",
+                  "landing_page"
+                ],
+                "tags": [
+                  "Gallery"
+                ],
                 "label": "Gallery Node"
               }
             }

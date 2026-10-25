@@ -49,7 +49,9 @@
         "type": "Link",
         "config": {
           "select": "document",
-          "customtypes": ["series"],
+          "customtypes": [
+            "series"
+          ],
           "label": "Series",
           "placeholder": "Link to series"
         }
@@ -96,7 +98,9 @@
               "type": "Link",
               "config": {
                 "select": "document",
-                "customtypes": ["speaker"],
+                "customtypes": [
+                  "speaker"
+                ],
                 "label": "Speaker",
                 "placeholder": "Add speaker or speakers"
               }
@@ -113,8 +117,12 @@
               "type": "Link",
               "config": {
                 "select": "document",
-                "customtypes": ["resource"],
-                "tags": ["domain:teaching.thec3.uk"],
+                "customtypes": [
+                  "resource"
+                ],
+                "tags": [
+                  "domain:teaching.thec3.uk"
+                ],
                 "label": "Resources"
               }
             }
@@ -126,14 +134,21 @@
         "type": "Link",
         "config": {
           "select": "document",
-          "customtypes": ["channel"],
-          "tags": ["domain:teaching.thec3.uk"],
+          "customtypes": [
+            "channel"
+          ],
+          "tags": [
+            "domain:teaching.thec3.uk"
+          ],
           "label": "Channel"
         }
       },
       "slices": {
         "type": "Slices",
-        "fieldset": "Slice Zone"
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
       }
     }
   }

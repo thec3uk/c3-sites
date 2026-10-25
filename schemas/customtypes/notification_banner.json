@@ -24,14 +24,20 @@
       "active": {
         "type": "Select",
         "config": {
-          "options": ["no", "yes"],
+          "options": [
+            "no",
+            "yes"
+          ],
           "default_value": "no",
           "label": "active"
         }
       },
       "slices": {
         "type": "Slices",
-        "fieldset": "Slice Zone"
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
       }
     }
   }

@@ -1,0 +1,12 @@
+Repo-only side of each difference found by the first `prismic_schemas diff` (25 Oct 2026).
+
+No entries. Every difference was a field Prismic has that the myc3 repo's file lacks
+(repo value: absent). Nothing in the repo was missing from, or differed in value with, Prismic.
+So no unpushed schema work is lost by taking live's version.
+
+customtypes/{contact_form,message,notification_banner,redirect,resource,series,site_config,social-links,speaker}
+  json.Main.slices.config   repo: absent   live: {"choices": {}}
+slices/{button,contact_form,footer,link,text}
+  variations[0].imageUrl    repo: absent   live: Slice Machine screenshot URL
+slices/link
+  variations[0].primary.url.config.select   repo: absent   live: null

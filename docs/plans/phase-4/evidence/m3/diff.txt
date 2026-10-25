@@ -1,0 +1,22 @@
+same  customtypes/academy_page
+same  customtypes/channel
+changed  customtypes/contact_form  json.Main.slices.config
+changed  customtypes/message  json.Main.slices.config
+changed  customtypes/notification_banner  json.Main.slices.config
+same  customtypes/page
+same  customtypes/quick-links
+changed  customtypes/redirect  json.Main.slices.config
+changed  customtypes/resource  json.Main.slices.config
+changed  customtypes/series  json.Main.slices.config
+changed  customtypes/site_config  json.Main.slices.config
+changed  customtypes/social-links  json.Main.slices.config
+changed  customtypes/speaker  json.Main.slices.config
+same  customtypes/static_footer
+changed  slices/button  variations[0].imageUrl
+same  slices/card
+changed  slices/contact_form  variations[0].imageUrl
+changed  slices/footer  variations[0].imageUrl
+same  slices/header
+changed  slices/link  variations[0].imageUrl, variations[0].primary.url.config.select
+same  slices/media
+changed  slices/text  variations[0].imageUrl

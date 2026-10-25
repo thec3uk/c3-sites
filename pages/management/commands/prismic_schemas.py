@@ -1,6 +1,7 @@
 """Compare schemas/ with Prismic's custom types and slices. Read-only: GET requests only."""
 
 import json
+import re
 from pathlib import Path
 
 import httpx
@@ -47,7 +48,18 @@ def changed_paths(local, live, prefix="") -> list[str]:
     return [] if local == live else [prefix]
 
 
-def diff_lines(kind: str, local: dict[str, dict], live: dict[str, dict]) -> list[tuple[str, str]]:
+def value_at(doc, path: str):
+    for key in re.findall(r"[^.\[\]]+", path):
+        if isinstance(doc, list):
+            doc = doc[int(key)]
+        elif isinstance(doc, dict) and key in doc:
+            doc = doc[key]
+        else:
+            return "<absent>"
+    return doc
+
+
+def diff_lines(kind: str, local: dict[str, dict], live: dict[str, dict], values: bool = False) -> list[tuple[str, str]]:
     """(status, line) per id; status is one of same, changed, local, live."""
     lines = []
     for id in sorted(local.keys() | live.keys()):
@@ -59,7 +71,13 @@ def diff_lines(kind: str, local: dict[str, dict], live: dict[str, dict]) -> list
         elif local[id] == live[id]:
             lines.append(("same", f"same  {name}"))
         else:
-            lines.append(("changed", f"changed  {name}  {', '.join(changed_paths(local[id], live[id]))}"))
+            paths = changed_paths(local[id], live[id])
+            line = f"changed  {name}  {', '.join(paths)}"
+            if values:
+                for path in paths:
+                    line += f"\n  {path}\n    schemas/: {json.dumps(value_at(local[id], path))}"
+                    line += f"\n    Prismic:  {json.dumps(value_at(live[id], path))}"
+            lines.append(("changed", line))
     return lines
 
 
@@ -68,6 +86,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument("action", choices=("diff",))
+        parser.add_argument("--values", action="store_true", help="Show both values for each changed path")
 
     def handle(self, *args, **options):
         token = settings.PRISMIC_CUSTOM_TYPES_API_TOKEN
@@ -78,7 +97,7 @@ class Command(BaseCommand):
         try:
             with make_client(token, settings.PRISMIC_REPOSITORY) as client:
                 for folder, path in KINDS:
-                    results += diff_lines(folder, load_local(folder), fetch_live(client, path))
+                    results += diff_lines(folder, load_local(folder), fetch_live(client, path), options["values"])
         except httpx.HTTPError as exc:
             raise CommandError(f"Custom Types API request failed: {type(exc).__name__}") from exc
 

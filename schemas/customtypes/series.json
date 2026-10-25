@@ -60,7 +60,9 @@
               "type": "Link",
               "config": {
                 "select": "document",
-                "customtypes": ["resource"],
+                "customtypes": [
+                  "resource"
+                ],
                 "label": "Resources"
               }
             }
@@ -70,7 +72,10 @@
       },
       "slices": {
         "type": "Slices",
-        "fieldset": "Slice Zone"
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
       }
     }
   }

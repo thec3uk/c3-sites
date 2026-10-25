@@ -119,3 +119,11 @@ def test_no_write_methods():
     source = Path(prismic_schemas.__file__).read_text()
     for verb in (".post(", ".put(", ".delete(", ".patch("):
         assert verb not in source
+
+
+def test_values_flag_shows_both_sides(schemas, live):
+    live["types"] = [{**TYPE, "label": "Other"}]
+
+    out = run("diff", "--values")[1]
+
+    assert 'schemas/: "Page"' in out and 'Prismic:  "Other"' in out
