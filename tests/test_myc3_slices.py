@@ -166,6 +166,10 @@ def test_media_without_an_image_renders_nothing(variation):
     assert render(raw("media", variation, {"image": {}})) == ""
 
 
+def test_media_video_renders_nothing():
+    assert render(raw("media", "video", {"image": image(PHOTO)})) == ""
+
+
 def test_footer_has_social_icons_and_unspaced_links():
     items = [
         {"linkTitle": "Privacy", "linkUrl": {"link_type": "Web", "url": "https://thec3.uk/privacy"}},
