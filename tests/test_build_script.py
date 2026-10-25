@@ -32,3 +32,31 @@ def test_academy_css_has_no_classes_from_docs(tmp_path):
     # min-h-90 only appears in docs/plans/phase-3/evidence/m2/NOTES.md and main's theme.
     assert ".min-h-90" not in css
     assert ".text-purple-trans" in css  # used by Academy's own template
+
+
+def test_theme_redirects_come_before_generated_ones(tmp_path):
+    # Extracts build.sh's merge step and runs it in a scratch tree.
+    script = (ROOT / "scripts/build.sh").read_text()
+    start = script.index('generated_redirects="$(mktemp)"')
+    (tmp_path / "dist").mkdir()
+    (tmp_path / "dist/_redirects").write_text("/give https://pay.example 301\n")
+    public = tmp_path / "themes/x/public"
+    public.mkdir(parents=True)
+    (public / "_redirects").write_text("/moodle/* https://moodle.example/:splat 200!\n")
+
+    subprocess.run(["bash", "-c", "SITE=x\n" + script[start:]], cwd=tmp_path, check=True)
+
+    assert (tmp_path / "dist/_redirects").read_text() == (
+        "/moodle/* https://moodle.example/:splat 200!\n/give https://pay.example 301\n"
+    )
+
+
+def test_generated_redirects_stand_alone_without_theme_rules(tmp_path):
+    script = (ROOT / "scripts/build.sh").read_text()
+    start = script.index('generated_redirects="$(mktemp)"')
+    (tmp_path / "dist").mkdir()
+    (tmp_path / "dist/_redirects").write_text("/give https://pay.example 301\n")
+
+    subprocess.run(["bash", "-c", "SITE=x\n" + script[start:]], cwd=tmp_path, check=True)
+
+    assert (tmp_path / "dist/_redirects").read_text() == "/give https://pay.example 301\n"

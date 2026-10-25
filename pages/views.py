@@ -1,7 +1,12 @@
-from django.http import Http404
+import logging
+
+from django.http import Http404, HttpResponse
 from django.shortcuts import render
 
 from pages.content import page_by_url, site_pages
+from pages.redirects import redirects_text, shadowed_sources
+
+log = logging.getLogger(__name__)
 
 
 def page_view(request, path=""):
@@ -20,3 +25,9 @@ def page_paths():
 
 def not_found_view(request):
     return render(request, "404.html", status=404)
+
+
+def redirects_view(request):
+    for source in shadowed_sources():
+        log.warning("Redirect %s is also a built page; not forced, so the page wins", source)
+    return HttpResponse(redirects_text(), content_type="text/plain")

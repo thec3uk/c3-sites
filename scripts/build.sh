@@ -22,5 +22,14 @@ fi
 rm -rf staticfiles
 # UV lets Netlify run a pip-installed uv as "python3 -m uv".
 ${UV:-uv} run --frozen --no-dev python manage.py distill generate --output-directory dist --collectstatic --force
-# Files served from the site root: favicon, Netlify _redirects.
+# Files served from the site root: favicon, robots.txt, Netlify _redirects.
+# Netlify applies the first matching rule, so the theme's own rules go before the generated ones.
+generated_redirects="$(mktemp)"
+cp dist/_redirects "$generated_redirects"
 if [ -d "themes/$SITE/public" ]; then cp -R "themes/$SITE/public/." dist/; fi
+if [ -f "themes/$SITE/public/_redirects" ]; then
+  cat "themes/$SITE/public/_redirects" "$generated_redirects" > dist/_redirects
+else
+  cp "$generated_redirects" dist/_redirects
+fi
+rm "$generated_redirects"
