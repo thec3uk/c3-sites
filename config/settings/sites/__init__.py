@@ -12,6 +12,8 @@ class SiteConfig:
     # A site selects Prismic documents by tag, by custom type, or both.
     prismic_tags: tuple[str, ...] = ()
     prismic_types: tuple[str, ...] = ()
+    # Document types that get their own URL; the rest are data (config, banners).
+    page_types: tuple[str, ...] = ("page",)
     umami_website_id: str = ""
     umami_src: str = ""
 
