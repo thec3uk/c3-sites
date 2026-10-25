@@ -1,0 +1,6213 @@
+{
+ "pages": {
+  "home": {
+   "path": "/",
+   "shots_1440": {
+    "live_height": 2224,
+    "local_height": 2224,
+    "ratio": 0.0006,
+    "bands": [
+     [
+      1027,
+      1027
+     ],
+     [
+      1521,
+      1521
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 3023,
+    "local_height": 3023,
+    "ratio": 0.0003,
+    "bands": [
+     [
+      1106,
+      1106
+     ],
+     [
+      1491,
+      1491
+     ],
+     [
+      1514,
+      1520
+     ],
+     [
+      2098,
+      2098
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "Welcome Home | The C3 Church",
+    "local": "Welcome Home | The C3 Church"
+   },
+   "description": {
+    "live": [
+     "A church with locations in Cambridge, Cambridge West, Bury, Colchester & Online"
+    ],
+    "local": [
+     "A church with locations in Cambridge, Cambridge West, Bury, Colchester & Online"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/"
+    ],
+    "local": [
+     "https://thec3.uk/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/",
+    "local": "/"
+   },
+   "links": {
+    "count": {
+     "live": 30,
+     "local": 36
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "about": {
+   "path": "/about/",
+   "shots_1440": {
+    "live_height": 1588,
+    "local_height": 1588,
+    "ratio": 0.0001,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 2280,
+    "local_height": 2279,
+    "ratio": 0.011,
+    "bands": [
+     [
+      716,
+      716
+     ],
+     [
+      1565,
+      1609
+     ],
+     [
+      1681,
+      1682
+     ],
+     [
+      1705,
+      1812
+     ],
+     [
+      1857,
+      1964
+     ],
+     [
+      2008,
+      2140
+     ],
+     [
+      2242,
+      2268
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/about"
+    ],
+    "local": [
+     "https://thec3.uk/about/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/about",
+    "local": "/about/"
+   },
+   "links": {
+    "count": {
+     "live": 28,
+     "local": 34
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "acceptable-use": {
+   "path": "/acceptable-use/",
+   "shots_1440": {
+    "live_height": 3454,
+    "local_height": 3454,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 4238,
+    "local_height": 4238,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/acceptable-use"
+    ],
+    "local": [
+     "https://thec3.uk/acceptable-use/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/acceptable-use",
+    "local": "/acceptable-use/"
+   },
+   "links": {
+    "count": {
+     "live": 34,
+     "local": 40
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "belief": {
+   "path": "/belief/",
+   "shots_1440": {
+    "live_height": 3668,
+    "local_height": 3668,
+    "ratio": 0.0001,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 3217,
+    "local_height": 3217,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      2208,
+      2208
+     ],
+     [
+      2336,
+      2368
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/belief"
+    ],
+    "local": [
+     "https://thec3.uk/belief/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/belief",
+    "local": "/belief/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "bury": {
+   "path": "/bury/",
+   "shots_1440": {
+    "live_height": 4430,
+    "local_height": 4430,
+    "ratio": 0.0018,
+    "bands": [
+     [
+      390,
+      390
+     ],
+     [
+      2536,
+      2537
+     ],
+     [
+      2582,
+      2702
+     ],
+     [
+      2774,
+      2809
+     ],
+     [
+      2835,
+      2891
+     ],
+     [
+      3319,
+      3334
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 6035,
+    "local_height": 6034,
+    "ratio": 0.0153,
+    "bands": [
+     [
+      944,
+      947
+     ],
+     [
+      2842,
+      2842
+     ],
+     [
+      2873,
+      3037
+     ],
+     [
+      3489,
+      3489
+     ],
+     [
+      3841,
+      3885
+     ],
+     [
+      3925,
+      4121
+     ],
+     [
+      4531,
+      4697
+     ],
+     [
+      4720,
+      4753
+     ],
+     [
+      4774,
+      4854
+     ],
+     [
+      4908,
+      4952
+     ],
+     [
+      5048,
+      5308
+     ],
+     [
+      5436,
+      5437
+     ],
+     [
+      5460,
+      5567
+     ],
+     [
+      5612,
+      5719
+     ],
+     [
+      5763,
+      5895
+     ],
+     [
+      5997,
+      6023
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/bury"
+    ],
+    "local": [
+     "https://thec3.uk/bury/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/bury",
+    "local": "/bury/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "c3-groups": {
+   "path": "/c3-groups/",
+   "shots_1440": {
+    "live_height": 2732,
+    "local_height": 2732,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      1167,
+      1184
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 4249,
+    "local_height": 4249,
+    "ratio": 0.0056,
+    "bands": [
+     [
+      1009,
+      1080
+     ],
+     [
+      1104,
+      1107
+     ],
+     [
+      1153,
+      1154
+     ],
+     [
+      1401,
+      1445
+     ],
+     [
+      1485,
+      1593
+     ],
+     [
+      2111,
+      2257
+     ],
+     [
+      2280,
+      2315
+     ],
+     [
+      2790,
+      2790
+     ],
+     [
+      3001,
+      3045
+     ],
+     [
+      3085,
+      3224
+     ],
+     [
+      3300,
+      3324
+     ],
+     [
+      3347,
+      3422
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/c3-groups"
+    ],
+    "local": [
+     "https://thec3.uk/c3-groups/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/c3-groups",
+    "local": "/c3-groups/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "cambridge-west": {
+   "path": "/cambridge-west/",
+   "shots_1440": {
+    "live_height": 4267,
+    "local_height": 4268,
+    "ratio": 0.006,
+    "bands": [
+     [
+      331,
+      337
+     ],
+     [
+      387,
+      399
+     ],
+     [
+      427,
+      465
+     ],
+     [
+      567,
+      567
+     ],
+     [
+      2953,
+      2978
+     ],
+     [
+      3160,
+      3302
+     ],
+     [
+      3366,
+      3368
+     ],
+     [
+      3389,
+      3877
+     ],
+     [
+      4017,
+      4018
+     ],
+     [
+      4041,
+      4176
+     ],
+     [
+      4222,
+      4246
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 5998,
+    "local_height": 5998,
+    "ratio": 0.0006,
+    "bands": [
+     [
+      884,
+      899
+     ],
+     [
+      922,
+      960
+     ],
+     [
+      996,
+      1038
+     ],
+     [
+      1063,
+      1072
+     ],
+     [
+      1113,
+      1113
+     ],
+     [
+      1620,
+      1632
+     ],
+     [
+      1685,
+      1685
+     ],
+     [
+      1861,
+      1897
+     ],
+     [
+      2813,
+      2854
+     ],
+     [
+      5015,
+      5021
+     ],
+     [
+      5099,
+      5112
+     ],
+     [
+      5149,
+      5149
+     ],
+     [
+      5216,
+      5216
+     ],
+     [
+      5239,
+      5239
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/cambridge-west"
+    ],
+    "local": [
+     "https://thec3.uk/cambridge-west/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/cambridge-west",
+    "local": "/cambridge-west/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "cambridge": {
+   "path": "/cambridge/",
+   "shots_1440": {
+    "live_height": 4710,
+    "local_height": 4710,
+    "ratio": 0.0015,
+    "bands": [
+     [
+      2887,
+      2887
+     ],
+     [
+      2923,
+      3004
+     ],
+     [
+      3076,
+      3111
+     ],
+     [
+      3137,
+      3211
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 7002,
+    "local_height": 7001,
+    "ratio": 0.0072,
+    "bands": [
+     [
+      939,
+      939
+     ],
+     [
+      3680,
+      3680
+     ],
+     [
+      4721,
+      4765
+     ],
+     [
+      4805,
+      4975
+     ],
+     [
+      5424,
+      5435
+     ],
+     [
+      5469,
+      5577
+     ],
+     [
+      5600,
+      5633
+     ],
+     [
+      5654,
+      5734
+     ],
+     [
+      5788,
+      5832
+     ],
+     [
+      5992,
+      5992
+     ],
+     [
+      6069,
+      6070
+     ],
+     [
+      6146,
+      6160
+     ],
+     [
+      6187,
+      6187
+     ],
+     [
+      6211,
+      6211
+     ],
+     [
+      6403,
+      6404
+     ],
+     [
+      6427,
+      6534
+     ],
+     [
+      6579,
+      6686
+     ],
+     [
+      6730,
+      6862
+     ],
+     [
+      6964,
+      6990
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/cambridge"
+    ],
+    "local": [
+     "https://thec3.uk/cambridge/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/cambridge",
+    "local": "/cambridge/"
+   },
+   "links": {
+    "count": {
+     "live": 38,
+     "local": 44
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "colchester": {
+   "path": "/colchester/",
+   "shots_1440": {
+    "live_height": 4402,
+    "local_height": 4402,
+    "ratio": 0.0002,
+    "bands": [
+     [
+      498,
+      503
+     ],
+     [
+      587,
+      637
+     ],
+     [
+      760,
+      760
+     ],
+     [
+      3502,
+      3502
+     ],
+     [
+      3643,
+      3643
+     ],
+     [
+      3688,
+      3688
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 5993,
+    "local_height": 5993,
+    "ratio": 0.0186,
+    "bands": [
+     [
+      2557,
+      2815
+     ],
+     [
+      2838,
+      2906
+     ],
+     [
+      2932,
+      3089
+     ],
+     [
+      3129,
+      3273
+     ],
+     [
+      3312,
+      3403
+     ],
+     [
+      3437,
+      3445
+     ],
+     [
+      3470,
+      3477
+     ],
+     [
+      3500,
+      3528
+     ],
+     [
+      3554,
+      3632
+     ],
+     [
+      3662,
+      3841
+     ],
+     [
+      3881,
+      4121
+     ],
+     [
+      4144,
+      4377
+     ],
+     [
+      4417,
+      4571
+     ],
+     [
+      4627,
+      4627
+     ],
+     [
+      5102,
+      5102
+     ],
+     [
+      5128,
+      5128
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/colchester"
+    ],
+    "local": [
+     "https://thec3.uk/colchester/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/colchester",
+    "local": "/colchester/"
+   },
+   "links": {
+    "count": {
+     "live": 37,
+     "local": 43
+    },
+    "only_live": [
+     "/www.church-online.uk"
+    ],
+    "only_local": [
+     "/about",
+     "/colchester/www.church-online.uk",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "complaints": {
+   "path": "/complaints/",
+   "shots_1440": {
+    "live_height": 6790,
+    "local_height": 6790,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 8978,
+    "local_height": 8978,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/complaints"
+    ],
+    "local": [
+     "https://thec3.uk/complaints/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/complaints",
+    "local": "/complaints/"
+   },
+   "links": {
+    "count": {
+     "live": 41,
+     "local": 47
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "contact": {
+   "path": "/contact/",
+   "shots_1440": {
+    "live_height": 1298,
+    "local_height": 1298,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1922,
+    "local_height": 1922,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/contact"
+    ],
+    "local": [
+     "https://thec3.uk/contact/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/contact",
+    "local": "/contact/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": [
+    "- Category",
+    "+ General Enquiry",
+    "+ Cambridge West",
+    "+ Breathe",
+    "+ Kids Church",
+    "+ Champions Club",
+    "+ Connect with us",
+    "+ Alpha",
+    "+ Baptism",
+    "+ Impact",
+    "+ Team C3",
+    "+ Safeguarding",
+    "+ Youth",
+    "+ Room Hire",
+    "+ Kids Life Group Sign up",
+    "+ WTC Hub Director",
+    "+ Ascend Men"
+   ]
+  },
+  "cookies": {
+   "path": "/cookies/",
+   "shots_1440": {
+    "live_height": 3490,
+    "local_height": 3490,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 4374,
+    "local_height": 4374,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/cookies"
+    ],
+    "local": [
+     "https://thec3.uk/cookies/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/cookies",
+    "local": "/cookies/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "copyright": {
+   "path": "/copyright/",
+   "shots_1440": {
+    "live_height": 6182,
+    "local_height": 6182,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 7998,
+    "local_height": 7998,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/copyright"
+    ],
+    "local": [
+     "https://thec3.uk/copyright/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/copyright",
+    "local": "/copyright/"
+   },
+   "links": {
+    "count": {
+     "live": 34,
+     "local": 40
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "feedback": {
+   "path": "/feedback/",
+   "shots_1440": {
+    "live_height": 1694,
+    "local_height": 1694,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 2102,
+    "local_height": 2102,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/feedback"
+    ],
+    "local": [
+     "https://thec3.uk/feedback/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/feedback",
+    "local": "/feedback/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "giving": {
+   "path": "/giving/",
+   "shots_1440": {
+    "live_height": 3565,
+    "local_height": 3564,
+    "ratio": 0.008,
+    "bands": [
+     [
+      1253,
+      1253
+     ],
+     [
+      1948,
+      2008
+     ],
+     [
+      2080,
+      2121
+     ],
+     [
+      2141,
+      2153
+     ],
+     [
+      2183,
+      2318
+     ],
+     [
+      2338,
+      2378
+     ],
+     [
+      2597,
+      2781
+     ],
+     [
+      2818,
+      2834
+     ],
+     [
+      3314,
+      3315
+     ],
+     [
+      3338,
+      3473
+     ],
+     [
+      3519,
+      3543
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 5125,
+    "local_height": 5125,
+    "ratio": 0.0158,
+    "bands": [
+     [
+      1197,
+      1241
+     ],
+     [
+      1281,
+      1285
+     ],
+     [
+      1321,
+      1593
+     ],
+     [
+      1618,
+      1627
+     ],
+     [
+      1650,
+      1718
+     ],
+     [
+      1744,
+      1822
+     ],
+     [
+      1852,
+      1976
+     ],
+     [
+      2029,
+      2031
+     ],
+     [
+      2109,
+      2313
+     ],
+     [
+      2335,
+      2364
+     ],
+     [
+      2390,
+      2613
+     ],
+     [
+      2653,
+      2772
+     ],
+     [
+      2805,
+      2820
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/giving"
+    ],
+    "local": [
+     "https://thec3.uk/giving/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/giving",
+    "local": "/giving/"
+   },
+   "links": {
+    "count": {
+     "live": 35,
+     "local": 41
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "impact": {
+   "path": "/impact/",
+   "shots_1440": {
+    "live_height": 4046,
+    "local_height": 4046,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      3191,
+      3225
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 4046,
+    "local_height": 4046,
+    "ratio": 0.0002,
+    "bands": [
+     [
+      2294,
+      2357
+     ],
+     [
+      2746,
+      2746
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/impact"
+    ],
+    "local": [
+     "https://thec3.uk/impact/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/impact",
+    "local": "/impact/"
+   },
+   "links": {
+    "count": {
+     "live": 40,
+     "local": 46
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "join-us": {
+   "path": "/join-us/",
+   "shots_1440": {
+    "live_height": 4320,
+    "local_height": 4320,
+    "ratio": 0.0005,
+    "bands": [
+     [
+      470,
+      482
+     ],
+     [
+      587,
+      587
+     ],
+     [
+      1016,
+      1016
+     ],
+     [
+      1512,
+      1512
+     ],
+     [
+      3235,
+      3235
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 7406,
+    "local_height": 7406,
+    "ratio": 0.0006,
+    "bands": [
+     [
+      624,
+      717
+     ],
+     [
+      858,
+      858
+     ],
+     [
+      881,
+      951
+     ],
+     [
+      996,
+      1048
+     ],
+     [
+      1899,
+      1925
+     ],
+     [
+      2028,
+      2058
+     ],
+     [
+      2155,
+      2155
+     ],
+     [
+      2181,
+      2200
+     ],
+     [
+      3098,
+      3098
+     ],
+     [
+      3945,
+      3945
+     ],
+     [
+      3966,
+      3977
+     ],
+     [
+      3998,
+      4022
+     ],
+     [
+      4061,
+      4061
+     ],
+     [
+      4115,
+      4115
+     ],
+     [
+      4135,
+      4145
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/join-us"
+    ],
+    "local": [
+     "https://thec3.uk/join-us/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/join-us",
+    "local": "/join-us/"
+   },
+   "links": {
+    "count": {
+     "live": 42,
+     "local": 48
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "kids": {
+   "path": "/kids/",
+   "shots_1440": {
+    "live_height": 2795,
+    "local_height": 2795,
+    "ratio": 0.0005,
+    "bands": [
+     [
+      300,
+      302
+     ],
+     [
+      467,
+      467
+     ],
+     [
+      518,
+      552
+     ],
+     [
+      598,
+      598
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 4355,
+    "local_height": 4355,
+    "ratio": 0.0019,
+    "bands": [
+     [
+      1893,
+      2070
+     ],
+     [
+      2766,
+      2766
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/kids"
+    ],
+    "local": [
+     "https://thec3.uk/kids/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/kids",
+    "local": "/kids/"
+   },
+   "links": {
+    "count": {
+     "live": 24,
+     "local": 32
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/contact",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/",
+     "mailto:kids@thec3.uk"
+    ]
+   },
+   "text_diff": []
+  },
+  "leafs": {
+   "path": "/leafs/",
+   "shots_1440": {
+    "live_height": 1138,
+    "local_height": 1138,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 974,
+    "local_height": 974,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/leafs"
+    ],
+    "local": [
+     "https://thec3.uk/leafs/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/leafs",
+    "local": "/leafs/"
+   },
+   "links": {
+    "count": {
+     "live": 24,
+     "local": 30
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "locations": {
+   "path": "/locations/",
+   "shots_1440": {
+    "live_height": 1454,
+    "local_height": 1454,
+    "ratio": 0.0001,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1574,
+    "local_height": 1574,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/locations"
+    ],
+    "local": [
+     "https://thec3.uk/locations/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/locations",
+    "local": "/locations/"
+   },
+   "links": {
+    "count": {
+     "live": 29,
+     "local": 35
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "online": {
+   "path": "/online/",
+   "shots_1440": {
+    "live_height": 3601,
+    "local_height": 3600,
+    "ratio": 0.0097,
+    "bands": [
+     [
+      596,
+      596
+     ],
+     [
+      1345,
+      1345
+     ],
+     [
+      2100,
+      2100
+     ],
+     [
+      2120,
+      2160
+     ],
+     [
+      2336,
+      3146
+     ],
+     [
+      3350,
+      3351
+     ],
+     [
+      3374,
+      3509
+     ],
+     [
+      3555,
+      3579
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 4834,
+    "local_height": 4833,
+    "ratio": 0.0271,
+    "bands": [
+     [
+      771,
+      771
+     ],
+     [
+      1053,
+      1097
+     ],
+     [
+      1137,
+      1191
+     ],
+     [
+      1247,
+      1249
+     ],
+     [
+      1296,
+      1350
+     ],
+     [
+      1394,
+      1436
+     ],
+     [
+      1458,
+      1505
+     ],
+     [
+      1589,
+      1591
+     ],
+     [
+      1614,
+      1852
+     ],
+     [
+      1882,
+      2061
+     ],
+     [
+      2101,
+      2313
+     ],
+     [
+      2336,
+      2341
+     ],
+     [
+      2364,
+      2392
+     ],
+     [
+      2418,
+      2597
+     ],
+     [
+      2637,
+      2809
+     ],
+     [
+      3240,
+      3269
+     ],
+     [
+      3302,
+      3350
+     ],
+     [
+      3385,
+      3409
+     ],
+     [
+      3433,
+      3545
+     ],
+     [
+      3620,
+      3664
+     ],
+     [
+      3824,
+      3824
+     ],
+     [
+      3951,
+      3952
+     ],
+     [
+      3979,
+      3979
+     ],
+     [
+      4043,
+      4043
+     ],
+     [
+      4235,
+      4236
+     ],
+     [
+      4259,
+      4366
+     ],
+     [
+      4411,
+      4518
+     ],
+     [
+      4562,
+      4694
+     ],
+     [
+      4796,
+      4822
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/online"
+    ],
+    "local": [
+     "https://thec3.uk/online/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/online",
+    "local": "/online/"
+   },
+   "links": {
+    "count": {
+     "live": 34,
+     "local": 40
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "ourleaders": {
+   "path": "/ourleaders/",
+   "shots_1440": {
+    "live_height": 3259,
+    "local_height": 3258,
+    "ratio": 0.0043,
+    "bands": [
+     [
+      2409,
+      2409
+     ],
+     [
+      2496,
+      2496
+     ],
+     [
+      2617,
+      2632
+     ],
+     [
+      2663,
+      2681
+     ],
+     [
+      2724,
+      2741
+     ],
+     [
+      2783,
+      2798
+     ],
+     [
+      2843,
+      2858
+     ],
+     [
+      3008,
+      3009
+     ],
+     [
+      3032,
+      3167
+     ],
+     [
+      3213,
+      3237
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 5514,
+    "local_height": 5514,
+    "ratio": 0.0016,
+    "bands": [
+     [
+      1192,
+      1220
+     ],
+     [
+      1284,
+      1284
+     ],
+     [
+      1352,
+      1366
+     ],
+     [
+      1408,
+      1414
+     ],
+     [
+      1925,
+      1934
+     ],
+     [
+      1999,
+      2058
+     ],
+     [
+      2130,
+      2278
+     ],
+     [
+      2858,
+      2858
+     ],
+     [
+      3477,
+      3547
+     ],
+     [
+      4075,
+      4159
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/ourleaders"
+    ],
+    "local": [
+     "https://thec3.uk/ourleaders/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/ourleaders",
+    "local": "/ourleaders/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "privacy": {
+   "path": "/privacy/",
+   "shots_1440": {
+    "live_height": 10698,
+    "local_height": 10698,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 14106,
+    "local_height": 14106,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/privacy"
+    ],
+    "local": [
+     "https://thec3.uk/privacy/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/privacy",
+    "local": "/privacy/"
+   },
+   "links": {
+    "count": {
+     "live": 38,
+     "local": 44
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "problem-solving": {
+   "path": "/problem-solving/",
+   "shots_1440": {
+    "live_height": 10602,
+    "local_height": 10602,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 12482,
+    "local_height": 12482,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/problem-solving"
+    ],
+    "local": [
+     "https://thec3.uk/problem-solving/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/problem-solving",
+    "local": "/problem-solving/"
+   },
+   "links": {
+    "count": {
+     "live": 41,
+     "local": 47
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "racial-unity": {
+   "path": "/racial-unity/",
+   "shots_1440": {
+    "live_height": 3775,
+    "local_height": 3775,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 4666,
+    "local_height": 4666,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/racial-unity"
+    ],
+    "local": [
+     "https://thec3.uk/racial-unity/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/racial-unity",
+    "local": "/racial-unity/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 41
+    },
+    "only_live": [
+     "/racial-unity"
+    ],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "raise-a-concern": {
+   "path": "/raise-a-concern/",
+   "shots_1440": {
+    "live_height": 1454,
+    "local_height": 1454,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1570,
+    "local_height": 1570,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/raise-a-concern"
+    ],
+    "local": [
+     "https://thec3.uk/raise-a-concern/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/raise-a-concern",
+    "local": "/raise-a-concern/"
+   },
+   "links": {
+    "count": {
+     "live": 29,
+     "local": 35
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "reaching": {
+   "path": "/reaching/",
+   "shots_1440": {
+    "live_height": 1194,
+    "local_height": 1194,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1430,
+    "local_height": 1430,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/reaching"
+    ],
+    "local": [
+     "https://thec3.uk/reaching/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/reaching",
+    "local": "/reaching/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "room-hire": {
+   "path": "/room-hire/",
+   "shots_1440": {
+    "live_height": 8503,
+    "local_height": 8503,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 5151,
+    "local_height": 5151,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/room-hire"
+    ],
+    "local": [
+     "https://thec3.uk/room-hire/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/room-hire",
+    "local": "/room-hire/"
+   },
+   "links": {
+    "count": {
+     "live": 41,
+     "local": 47
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "safeguarding": {
+   "path": "/safeguarding/",
+   "shots_1440": {
+    "live_height": 4210,
+    "local_height": 4210,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 4878,
+    "local_height": 4878,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/safeguarding"
+    ],
+    "local": [
+     "https://thec3.uk/safeguarding/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/safeguarding",
+    "local": "/safeguarding/"
+   },
+   "links": {
+    "count": {
+     "live": 42,
+     "local": 48
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "shaping": {
+   "path": "/shaping/",
+   "shots_1440": {
+    "live_height": 4903,
+    "local_height": 4903,
+    "ratio": 0.0005,
+    "bands": [
+     [
+      547,
+      616
+     ],
+     [
+      636,
+      636
+     ],
+     [
+      2121,
+      2124
+     ],
+     [
+      2179,
+      2179
+     ],
+     [
+      4437,
+      4437
+     ],
+     [
+      4552,
+      4552
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 8806,
+    "local_height": 8806,
+    "ratio": 0.0161,
+    "bands": [
+     [
+      880,
+      910
+     ],
+     [
+      952,
+      952
+     ],
+     [
+      999,
+      1029
+     ],
+     [
+      2273,
+      2274
+     ],
+     [
+      2296,
+      2301
+     ],
+     [
+      2339,
+      2339
+     ],
+     [
+      2411,
+      2411
+     ],
+     [
+      2807,
+      3069
+     ],
+     [
+      3897,
+      3941
+     ],
+     [
+      3981,
+      4239
+     ],
+     [
+      4263,
+      4513
+     ],
+     [
+      4553,
+      4555
+     ],
+     [
+      4583,
+      4612
+     ],
+     [
+      4635,
+      4873
+     ],
+     [
+      4897,
+      4970
+     ],
+     [
+      4990,
+      5002
+     ],
+     [
+      5032,
+      5088
+     ],
+     [
+      5118,
+      5209
+     ],
+     [
+      5249,
+      5489
+     ],
+     [
+      5512,
+      5540
+     ],
+     [
+      5566,
+      5745
+     ],
+     [
+      5785,
+      5929
+     ],
+     [
+      6372,
+      6376
+     ],
+     [
+      6402,
+      6557
+     ],
+     [
+      6580,
+      6671
+     ],
+     [
+      6901,
+      6901
+     ],
+     [
+      6934,
+      7055
+     ],
+     [
+      7560,
+      7839
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/shaping"
+    ],
+    "local": [
+     "https://thec3.uk/shaping/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/shaping",
+    "local": "/shaping/"
+   },
+   "links": {
+    "count": {
+     "live": 50,
+     "local": 56
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "subscribe": {
+   "path": "/subscribe/",
+   "shots_1440": {
+    "live_height": 1128,
+    "local_height": 1128,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1345,
+    "local_height": 1345,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/subscribe"
+    ],
+    "local": [
+     "https://thec3.uk/subscribe/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/subscribe",
+    "local": "/subscribe/"
+   },
+   "links": {
+    "count": {
+     "live": 24,
+     "local": 30
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "teaching-series": {
+   "path": "/teaching-series/",
+   "shots_1440": {
+    "live_height": 1454,
+    "local_height": 1454,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1430,
+    "local_height": 1430,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/teaching-series"
+    ],
+    "local": [
+     "https://thec3.uk/teaching-series/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/teaching-series",
+    "local": "/teaching-series/"
+   },
+   "links": {
+    "count": {
+     "live": 26,
+     "local": 32
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "team": {
+   "path": "/team/",
+   "shots_1440": {
+    "live_height": 3466,
+    "local_height": 3466,
+    "ratio": 0.0039,
+    "bands": [
+     [
+      335,
+      335
+     ],
+     [
+      1154,
+      1157
+     ],
+     [
+      1222,
+      1222
+     ],
+     [
+      1294,
+      1331
+     ],
+     [
+      1355,
+      1436
+     ],
+     [
+      2196,
+      2228
+     ],
+     [
+      2249,
+      2283
+     ],
+     [
+      2355,
+      2548
+     ],
+     [
+      2620,
+      2658
+     ],
+     [
+      2680,
+      2693
+     ],
+     [
+      2715,
+      2715
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 6036,
+    "local_height": 6034,
+    "ratio": 0.0286,
+    "bands": [
+     [
+      660,
+      660
+     ],
+     [
+      1137,
+      1299
+     ],
+     [
+      1717,
+      1717
+     ],
+     [
+      1751,
+      1881
+     ],
+     [
+      1904,
+      1909
+     ],
+     [
+      1932,
+      1960
+     ],
+     [
+      1986,
+      2086
+     ],
+     [
+      2204,
+      2368
+     ],
+     [
+      2737,
+      2976
+     ],
+     [
+      2998,
+      3109
+     ],
+     [
+      3271,
+      3509
+     ],
+     [
+      3533,
+      3686
+     ],
+     [
+      3716,
+      3728
+     ],
+     [
+      3804,
+      4043
+     ],
+     [
+      4066,
+      4094
+     ],
+     [
+      4120,
+      4154
+     ],
+     [
+      4337,
+      4576
+     ],
+     [
+      4599,
+      4687
+     ],
+     [
+      4871,
+      5110
+     ],
+     [
+      5132,
+      5201
+     ],
+     [
+      5226,
+      5365
+     ],
+     [
+      5436,
+      5438
+     ],
+     [
+      5460,
+      5568
+     ],
+     [
+      5612,
+      5720
+     ],
+     [
+      5763,
+      5896
+     ],
+     [
+      5997,
+      6024
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/team"
+    ],
+    "local": [
+     "https://thec3.uk/team/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/team",
+    "local": "/team/"
+   },
+   "links": {
+    "count": {
+     "live": 26,
+     "local": 32
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "terms": {
+   "path": "/terms/",
+   "shots_1440": {
+    "live_height": 4774,
+    "local_height": 4774,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 5958,
+    "local_height": 5958,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/terms"
+    ],
+    "local": [
+     "https://thec3.uk/terms/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/terms",
+    "local": "/terms/"
+   },
+   "links": {
+    "count": {
+     "live": 36,
+     "local": 42
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "trustees": {
+   "path": "/trustees/",
+   "shots_1440": {
+    "live_height": 10180,
+    "local_height": 10180,
+    "ratio": 0.0001,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 23166,
+    "local_height": 23166,
+    "ratio": 0.0002,
+    "bands": [
+     [
+      936,
+      936
+     ],
+     [
+      1109,
+      1109
+     ],
+     [
+      1174,
+      1174
+     ],
+     [
+      1469,
+      1469
+     ],
+     [
+      1707,
+      1707
+     ],
+     [
+      2003,
+      2031
+     ],
+     [
+      2057,
+      2067
+     ],
+     [
+      2091,
+      2177
+     ],
+     [
+      2240,
+      2240
+     ],
+     [
+      2536,
+      2536
+     ],
+     [
+      2622,
+      2658
+     ],
+     [
+      2694,
+      2694
+     ],
+     [
+      2727,
+      2729
+     ],
+     [
+      2750,
+      2806
+     ],
+     [
+      2834,
+      2928
+     ],
+     [
+      2964,
+      2989
+     ],
+     [
+      3085,
+      3085
+     ],
+     [
+      3117,
+      3117
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/trustees"
+    ],
+    "local": [
+     "https://thec3.uk/trustees/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/trustees",
+    "local": "/trustees/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 32
+    },
+    "only_live": [
+     "/visionandvalues"
+    ],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "values": {
+   "path": "/values/",
+   "shots_1440": {
+    "live_height": 2166,
+    "local_height": 2166,
+    "ratio": 0.0004,
+    "bands": [
+     [
+      775,
+      775
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 2154,
+    "local_height": 2154,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/values"
+    ],
+    "local": [
+     "https://thec3.uk/values/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/values",
+    "local": "/values/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "vision": {
+   "path": "/vision/",
+   "shots_1440": {
+    "live_height": 3214,
+    "local_height": 3214,
+    "ratio": 0.0005,
+    "bands": [
+     [
+      443,
+      520
+     ],
+     [
+      663,
+      663
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 3666,
+    "local_height": 3666,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/vision"
+    ],
+    "local": [
+     "https://thec3.uk/vision/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/vision",
+    "local": "/vision/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "visionandvalues": {
+   "path": "/visionandvalues/",
+   "shots_1440": {
+    "live_height": 8372,
+    "local_height": 8372,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 9626,
+    "local_height": 9626,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/visionandvalues"
+    ],
+    "local": [
+     "https://thec3.uk/visionandvalues/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/visionandvalues",
+    "local": "/visionandvalues/"
+   },
+   "links": {
+    "count": {
+     "live": 27,
+     "local": 33
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "whistleblowing": {
+   "path": "/whistleblowing/",
+   "shots_1440": {
+    "live_height": 8478,
+    "local_height": 8478,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 10322,
+    "local_height": 10322,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/whistleblowing"
+    ],
+    "local": [
+     "https://thec3.uk/whistleblowing/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/whistleblowing",
+    "local": "/whistleblowing/"
+   },
+   "links": {
+    "count": {
+     "live": 40,
+     "local": 46
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "youth": {
+   "path": "/youth/",
+   "shots_1440": {
+    "live_height": 2458,
+    "local_height": 2458,
+    "ratio": 0.0003,
+    "bands": [
+     [
+      1027,
+      1027
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 3262,
+    "local_height": 3262,
+    "ratio": 0.0001,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "The C3 Church",
+    "local": "The C3 Church"
+   },
+   "description": {
+    "live": [
+     "The C3 Church is an evangelical, charismatic Christian church based in Cambridge, Bury St Edmunds, Colchester, England and online."
+    ],
+    "local": [
+     "The C3 Church is an evangelical, charismatic Christian church based in the UK. With locations in Bury St Edmunds, Cambridge, Colchester and online!"
+    ]
+   },
+   "canonical": {
+    "live": [
+     "https://thec3.uk/youth"
+    ],
+    "local": [
+     "https://thec3.uk/youth/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.uk/youth",
+    "local": "/youth/"
+   },
+   "links": {
+    "count": {
+     "live": 30,
+     "local": 36
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  },
+  "404.html": {
+   "path": "/404.html",
+   "shots_1440": {
+    "live_height": 1214,
+    "local_height": 1214,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 1494,
+    "local_height": 1494,
+    "ratio": 0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     404
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": "Page not found | The C3 Church"
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": []
+   },
+   "final_url": {
+    "live": "https://thec3.uk/parity-check-missing-page",
+    "local": "/404.html"
+   },
+   "links": {
+    "count": {
+     "live": 28,
+     "local": 34
+    },
+    "only_live": [],
+    "only_local": [
+     "/about",
+     "/giving",
+     "/locations",
+     "/reaching",
+     "/shaping",
+     "https://prayer.thec3.uk/"
+    ]
+   },
+   "text_diff": []
+  }
+ },
+ "extras": {
+  "live_sitemap_not_built": [
+   "/page",
+   "/preview"
+  ],
+  "built_not_in_live_sitemap": [],
+  "static_files": {
+   ".DS_Store": {
+    "live": 404,
+    "dist": false
+   },
+   "card.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "favicon.ico": {
+    "live": 200,
+    "dist": true
+   },
+   "fonts/Gotcha-Regular.otf": {
+    "live": 200,
+    "dist": false
+   },
+   "fonts/Montserrat-Regular.otf": {
+    "live": 200,
+    "dist": false
+   },
+   "fonts/Novecentosanswide-Bold.otf": {
+    "live": 200,
+    "dist": false
+   },
+   "fonts/Playlist Script.otf": {
+    "live": 200,
+    "dist": false
+   },
+   "fonts/ZefaniStencil(uppercase)-Regular.otf": {
+    "live": 200,
+    "dist": false
+   },
+   "home/1-rect.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/1.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/2-rect.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/2.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/3-rect.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/3.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/4-rect.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/4.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/5.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/6.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "home/7.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "live.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "live2.jpg": {
+    "live": 200,
+    "dist": false
+   },
+   "manifest-logo.png": {
+    "live": 200,
+    "dist": false
+   },
+   "social_share.jpeg": {
+    "live": 200,
+    "dist": true
+   }
+  }
+ },
+ "redirects": [
+  {
+   "source": "/debrief",
+   "target": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=3W6n-46yPkqAhAf3hHjUYP8vYQJxLIxGiXPE2vNQI79UMTRLVEVHU1YxR0tHMFVRMDUzRkE2SzlOVS4u",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=3W6n-46yPkqAhAf3hHjUYP8vYQJxLIxGiXPE2vNQI79UMTRLVEVHU1YxR0tHMFVRMDUzRkE2SzlOVS4u",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bible",
+   "target": "https://bible.com/events/49682212",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://bible.com/events/49682212",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/headcount",
+   "target": "https://forms.cloud.microsoft/e/8Hu7xckJ6s",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://forms.cloud.microsoft/e/8Hu7xckJ6s",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/giftaid",
+   "target": "https://thec3.churchsuite.com/-/forms/h8po0xdj",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/h8po0xdj",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prophetic-teaching-day",
+   "target": "https://thec3.churchsuite.com/events/oeigcfbm",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/oeigcfbm",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/gls",
+   "target": "https://thec3.churchsuite.com/events/7jkscdle",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/7jkscdle",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/4thservice",
+   "target": "https://thec3.churchsuite.com/-/forms/vcmr5v4n",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/vcmr5v4n",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lightnight",
+   "target": "https://thec3.churchsuite.com/-/calendar/ce91e008-808b-4683-a898-cda981e810b6",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/ce91e008-808b-4683-a898-cda981e810b6",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/academyopenevening",
+   "target": "https://thec3.churchsuite.com/events/tvxvflie",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/tvxvflie",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/propheticmorning",
+   "target": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/alpha",
+   "target": "https://thec3.churchsuite.com/events/wswkhomf",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/wswkhomf",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/messyplay",
+   "target": "https://thec3.churchsuite.com/events/yzrfqwmd",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/yzrfqwmd",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/calendar-bury",
+   "target": "https://thec3.churchsuite.com/-/calendar/410a57b3-3344-4660-968e-54a27594701f?preview=1",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/410a57b3-3344-4660-968e-54a27594701f?preview=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmasinabox",
+   "target": "https://thec3.churchsuite.com/-/calendar/e0e42240-7be0-4ed8-bad0-edbbb044fc1c",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/e0e42240-7be0-4ed8-bad0-edbbb044fc1c",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/wtc",
+   "target": "https://www.eventbrite.co.uk/e/kingdom-theology-event-in-cambridge-with-alister-wallace-tickets-1984457635207?aff=oddtdtcreator",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.eventbrite.co.uk/e/kingdom-theology-event-in-cambridge-with-alister-wallace-tickets-1984457635207?aff=oddtdtcreator",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/baptismclasses",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_bgcolor=ffffff&event_border_color=228ae6&heading_color=228ae6&text_color=000000&icon_color=000000",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_bgcolor=ffffff&event_border_color=228ae6&heading_color=228ae6&text_color=000000&icon_color=000000",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/gls-c3family",
+   "target": "https://thec3.churchsuite.com/events/7jkscdle?tickets=xV8K",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/7jkscdle?tickets=xV8K",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kintsugi",
+   "target": "https://thec3.churchsuite.com/events/gpcmzx8m",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/gpcmzx8m",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teardrop",
+   "target": "https://www.teardropgrief.co.uk/shop/p/griefandloss-webinar",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.teardropgrief.co.uk/shop/p/griefandloss-webinar",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/gameplan",
+   "target": "https://thec3.churchsuite.com/-/calendar/43ce142b-6e7f-4991-9fb7-2a228ff1502a?preview=1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/43ce142b-6e7f-4991-9fb7-2a228ff1502a?preview=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/btg",
+   "target": "https://btgfootballbookings.com/bookings/Cambridge?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnJSA_IFRLeSMrwqbJLxgEceCI_y0SIXZ4BZfnyD6eEHkpx2dtjr07AXLvDwM_aem_f_T8DYWGMPxJlyl4iBudMg",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://btgfootballbookings.com/bookings/Cambridge?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnJSA_IFRLeSMrwqbJLxgEceCI_y0SIXZ4BZfnyD6eEHkpx2dtjr07AXLvDwM_aem_f_T8DYWGMPxJlyl4iBudMg",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prayersubscribe",
+   "target": "https://thec3.churchsuite.com/-/forms/ytxl0non",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ytxl0non",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/athome",
+   "target": "https://youtube.com/live/SAkB48Oyrdg?feature=share",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtube.com/live/SAkB48Oyrdg?feature=share",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/revelation",
+   "target": "https://thec3.churchsuite.com/events/edpl6ody",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/edpl6ody",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/worldchangers",
+   "target": "https://thec3.churchsuite.com/events/ynjs8lm1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/ynjs8lm1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascend-reflection",
+   "target": "https://thec3.churchsuite.com/events/9cm6cdri",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/9cm6cdri",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prayerfasting",
+   "target": "https://www.youtube.com/watch?v=jHSrczIYDTA&t=11s",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.youtube.com/watch?v=jHSrczIYDTA&t=11s",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/test-page-here",
+   "target": "https://www.google.com",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://www.google.com/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/coach",
+   "target": "https://thec3.churchsuite.com/events/mbqq46rc",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/mbqq46rc",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/visionoffering2026",
+   "target": "https://thec3.churchsuite.com/donate/fund/ukevxdcx",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/donate/fund/ukevxdcx",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/watoto",
+   "target": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/overwhelmtour",
+   "target": "https://thec3.churchsuite.com/events/uy2uahd4",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/uy2uahd4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/stw",
+   "target": "https://www.stewardship.org.uk/pages/stw2025",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.stewardship.org.uk/pages/stw2025",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yasouls",
+   "target": "https://brushfire.com/thec3uk/yasouls/615662",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/yasouls/615662",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/help",
+   "target": "https://www.samaritans.org/how-we-can-help/contact-samaritan/?utm_source=google&utm_medium=organic&utm_campaign=onebox",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.samaritans.org/how-we-can-help/contact-samaritan/?utm_source=google&utm_medium=organic&utm_campaign=onebox",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/watototrip",
+   "target": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/reflection",
+   "target": "https://www.teardropgrief.co.uk/shop/p/teardrop-online-christmas-reflection",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.teardropgrief.co.uk/shop/p/teardrop-online-christmas-reflection",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/restoration",
+   "target": "https://thec3.churchsuite.com/events/bjh1cia4",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/bjh1cia4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yachristmasparty",
+   "target": "https://thec3.churchsuite.com/events/d8ezbeuv",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/d8ezbeuv",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/team-26",
+   "target": "https://thec3.churchsuite.com/forms/wxu56079",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/forms/wxu56079",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/divorcerecovery",
+   "target": "https://thec3.churchsuite.com/events/j46sqy7f",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/j46sqy7f",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prophetic-morning",
+   "target": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/openevening",
+   "target": "https://thec3.churchsuite.com/events/tvxvflie",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/tvxvflie",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cared",
+   "target": "https://thec3.churchsuite.com/events/mfnk3fij",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/mfnk3fij",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/academy-open",
+   "target": "https://thec3.churchsuite.com/events/l1cbespe",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/l1cbespe",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/wellbeing-workshop",
+   "target": "https://thec3.churchsuite.com/events/zqvcwdbo",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/zqvcwdbo",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/youversion",
+   "target": "https://www.youversion.com/the-bible-app/",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.youversion.com/the-bible-app/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/dylan",
+   "target": "https://youtu.be/ilVRZYI5dMk",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/ilVRZYI5dMk",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prophetic",
+   "target": "https://thec3.churchsuite.com/events/emgrows6",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/emgrows6",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/greatiam",
+   "target": "https://wingsmusic.lnk.to/GreatIAMYahwehLive",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://wingsmusic.lnk.to/GreatIAMYahwehLive",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/nationalprayer",
+   "target": "https://www.youtube.com/watch?v=tPUpTvvLoRY",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://www.youtube.com/watch?v=tPUpTvvLoRY",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/55",
+   "target": "https://thec3.churchsuite.com/events/lquf4igc",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/lquf4igc",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/stayingsafeonline",
+   "target": "https://thec3.churchsuite.com/events/7ncpz09i",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/7ncpz09i",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/table",
+   "target": "https://thec3.churchsuite.com/events/61zzb8mw",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/61zzb8mw",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascendmen",
+   "target": "https://www.facebook.com/groups/527708931330993",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.facebook.com/groups/527708931330993",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/backtoschool",
+   "target": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/guestspeaker",
+   "target": "https://thec3church.typeform.com/to/DHC1Uv4G",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3church.typeform.com/to/DHC1Uv4G",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/churchsuite",
+   "target": "https://churchsuite.com/apps/",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://churchsuite.com/apps/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/laura",
+   "target": "https://youtu.be/T0ST70FiR8w",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/T0ST70FiR8w",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/autumn",
+   "target": "https://youtu.be/BqOk7IyolKc",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/BqOk7IyolKc",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ubuntu",
+   "target": "https://open.substack.com/pub/thec3church/p/ubuntu?r=5dfdqj&utm_campaign=post&utm_medium=web",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://open.substack.com/pub/thec3church/p/ubuntu?r=5dfdqj&utm_campaign=post&utm_medium=web",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bigchurch",
+   "target": "https://bigchurchtickets.com/events/tim-the-glory-boys-philippa-hanna?fbclid=PAZXh0bgNhZW0CMTEAAafyumyud8jcfvvNy-C1NbjSX1mR_ycG3tnpNE7G67N4JREjOBv1j3M0N9vbfQ_aem_-jnikfOSUB2-1KdZ_9y82Q",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://bigchurchtickets.com/events/tim-the-glory-boys-philippa-hanna?fbclid=PAZXh0bgNhZW0CMTEAAafyumyud8jcfvvNy-C1NbjSX1mR_ycG3tnpNE7G67N4JREjOBv1j3M0N9vbfQ_aem_-jnikfOSUB2-1KdZ_9y82Q",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamcol",
+   "target": "https://thec3.churchsuite.com/forms/tzissv55",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/forms/tzissv55",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/pilates",
+   "target": "https://thec3.churchsuite.com/events/uujt8mvp",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/uujt8mvp",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kidsmail",
+   "target": "https://mailchi.mp/dabde5024bdb/kids-mailout-sign-up",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://mailchi.mp/dabde5024bdb/kids-mailout-sign-up",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prophetictraining",
+   "target": "https://thec3.churchsuite.com/events/y8int78b",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/y8int78b",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kidsgroup",
+   "target": "https://thec3.churchsuite.com/events/jrvqmijr",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/jrvqmijr",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yourkingdomcome",
+   "target": "https://wingsmusic.lnk.to/YourKingdomCome",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://wingsmusic.lnk.to/YourKingdomCome",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/baptisms",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_b[…]0000&icon_color=000000&mc_cid=b9f72f2951&mc_eid=2db005e1de",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_b[…]0000&icon_color=000000&mc_cid=b9f72f2951&mc_eid=2db005e1de",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/wellbeingcol",
+   "target": "https://thec3.churchsuite.com/events/rlpysgrs",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/rlpysgrs",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/open",
+   "target": "https://www.eventbrite.co.uk/e/monday-hub-open-eve-for-bris-camb-emid-manc-scot-sotn-wmid-tickets-816680221527",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://www.eventbrite.co.uk/e/monday-hub-open-eve-for-bris-camb-emid-manc-scot-sotn-wmid-tickets-816680221527",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/atwork",
+   "target": "https://brushfire.com/thec3uk/c3atwork/577791",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/c3atwork/577791",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/burykidsfest",
+   "target": "https://thec3.churchsuite.com/events/0ahemc4v",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/0ahemc4v",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/step1",
+   "target": "https://thec3.churchsuite.com/-/calendar/7071888a-8b5e-4655-8b10-4c511479efb8",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/7071888a-8b5e-4655-8b10-4c511479efb8",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/dti",
+   "target": "https://brushfire.com/thec3uk/dreamingtheimpossible/582890",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/dreamingtheimpossible/582890",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cambkidsfest",
+   "target": "https://thec3.churchsuite.com/events/kt7xjuvw",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/kt7xjuvw",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/followthatverse",
+   "target": "https://us02web.zoom.us/j/83856907739?pwd=iObDaXB1J804jtr3gBX6oqD6Wsffwa.1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://us02web.zoom.us/j/83856907739?pwd=iObDaXB1J804jtr3gBX6oqD6Wsffwa.1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/party",
+   "target": "https://thec3.churchsuite.com/events/h2zlwnhr",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/h2zlwnhr",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/sound",
+   "target": "https://youtu.be/HDA0Hk93CsQ",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/HDA0Hk93CsQ",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/pctraining",
+   "target": "https://thec3.churchsuite.com/events/kwmf9w1z",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/kwmf9w1z",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/propheticpod",
+   "target": "https://youtu.be/0N_Y7Bs7xiE",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/0N_Y7Bs7xiE",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/wellbeing",
+   "target": "https://thec3.churchsuite.com/-/calendar/843a3727-0e54-4538-9baf-b74006ef1a80",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/843a3727-0e54-4538-9baf-b74006ef1a80",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/colkidsfest",
+   "target": "https://thec3.churchsuite.com/events/v4ddyfhi",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/v4ddyfhi",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/hello",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/burybbq",
+   "target": "https://thec3.churchsuite.com/events/93p5ehhj",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/93p5ehhj",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/marriage",
+   "target": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-england-tickets-872798061497",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-england-tickets-872798061497",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/colgroups",
+   "target": "https://thec3.churchsuite.com/embed/v2/smallgroups/35b73a5a-f3b2-4584-90bb-6bb437e14466",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/v2/smallgroups/35b73a5a-f3b2-4584-90bb-6bb437e14466",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/onlinebible",
+   "target": "https://bible.com/events/49299352",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://bible.com/events/49299352",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lightnightcam",
+   "target": "https://thec3.churchsuite.com/events/tdmifgli",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/tdmifgli",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/recording",
+   "target": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascendcamp",
+   "target": "https://brushfire.com/thec3uk/ascend/585411",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/ascend/585411",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lightnightbury",
+   "target": "https://thec3.churchsuite.com/events/6gzhj93y",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/6gzhj93y",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/dedications",
+   "target": "https://thec3.churchsuite.com/-/calendar/21cdc4b7-883b-48ce-9332-d803d63fc33a",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/21cdc4b7-883b-48ce-9332-d803d63fc33a",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/baptism",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/training",
+   "target": "https://thec3.churchsuite.com/events/amhhr4f5",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/amhhr4f5",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cause",
+   "target": "https://thec3.churchsuite.com/events/zp7oe7d2",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/zp7oe7d2",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/worshiprecording",
+   "target": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/fordhamfb",
+   "target": "https://www.facebook.com/groups/thec3fordham",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.facebook.com/groups/thec3fordham",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lightnightcol",
+   "target": "https://thec3.churchsuite.com/events/j5cpqhy7",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/j5cpqhy7",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/step2",
+   "target": "https://thec3.churchsuite.com/-/calendar/88c4f896-0205-4502-b90d-fc3e406757a9?preview=1",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/88c4f896-0205-4502-b90d-fc3e406757a9?preview=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/homelessness",
+   "target": "https://thec3.churchsuite.com/events/rbkimwmh",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/rbkimwmh",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cookingonabudget",
+   "target": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/marathon",
+   "target": "https://www.stewardship.org.uk/pages/CHM2025?fbclid=IwY2xjawIwUpxleHRuA2FlbQIxMAABHcOHkJ[…]ptu3X2fRIdavYcEEWLTw0-eBLNI3JQ_aem_-URsxqPPK4bBy48HoJ_dgw",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.stewardship.org.uk/pages/CHM2025?fbclid=IwY2xjawIwUpxleHRuA2FlbQIxMAABHcOHkJ[…]ptu3X2fRIdavYcEEWLTw0-eBLNI3JQ_aem_-URsxqPPK4bBy48HoJ_dgw",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamfordham",
+   "target": "https://thec3.churchsuite.com/-/forms/xnh7hyde",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/xnh7hyde",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teambury",
+   "target": "https://thec3.churchsuite.com/-/forms/jbi3orhk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/jbi3orhk",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamwest",
+   "target": "https://thec3.churchsuite.com/-/forms/3x0e0y2t",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/3x0e0y2t",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cooking",
+   "target": "https://thec3.churchsuite.com/events/pzgehiog",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/pzgehiog",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/tour",
+   "target": "https://youtu.be/Y4XU08z6JN0",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/Y4XU08z6JN0",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamcam",
+   "target": "https://thec3.churchsuite.com/-/forms/6bz8hlfi",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/6bz8hlfi",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/socialmedia",
+   "target": "https://thec3.churchsuite.com/events/igzucy2p",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/igzucy2p",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/activityday",
+   "target": "https://thec3.churchsuite.com/events/zs5uglxp",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/zs5uglxp",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/fordhamreview",
+   "target": "https://g.page/r/CdXUoF0ARd-6EB0/review",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://g.page/r/CdXUoF0ARd-6EB0/review",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/photography",
+   "target": "https://us02web.zoom.us/j/9909172921?pwd=U0N4aFF2T3NQSlpHS2hBQXd6M3BUdz09",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://us02web.zoom.us/j/9909172921?pwd=U0N4aFF2T3NQSlpHS2hBQXd6M3BUdz09",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/gifts",
+   "target": "https://assessments.lifethrive.com/SpiritualGifts.php",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://assessments.lifethrive.com/SpiritualGifts.php",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/burygroup",
+   "target": "https://thec3.churchsuite.com/embed/v2/smallgroups/bdc24f05-ebda-402f-aabe-26bf0649437c",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/v2/smallgroups/bdc24f05-ebda-402f-aabe-26bf0649437c",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/marketlaunch",
+   "target": "https://thec3.churchsuite.com/events/lk8vkaji",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/lk8vkaji",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/vote",
+   "target": "https://thec3church.typeform.com/to/RWsj7vNq?mc_cid=f0d85b4082&mc_eid=6923d6d819&typeform-source=breathe.thec3.uk&mc_cid=173028fd91&mc_eid=6923d6d819",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3church.typeform.com/to/RWsj7vNq?mc_cid=f0d85b4082&mc_eid=6923d6d819&typeform-source=breathe.thec3.uk&mc_cid=173028fd91&mc_eid=6923d6d819",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/sundaysetlist",
+   "target": "https://open.spotify.com/playlist/4PHcojwPvGZhnAgz110fv2?si=ecd60aa506cd473a",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://open.spotify.com/playlist/4PHcojwPvGZhnAgz110fv2?si=ecd60aa506cd473a",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/westsignup",
+   "target": "https://thec3.churchsuite.com/-/forms/ugaclyfc",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ugaclyfc",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/funday",
+   "target": "http://tinyurl.com/c3funday",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "http://tinyurl.com/c3funday",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/eggs",
+   "target": "https://thec3.churchsuite.com/donate/fund/baysvabt",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/donate/fund/baysvabt",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/sciencefaith",
+   "target": "https://thec3.churchsuite.com/events/zqagqdbq",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/zqagqdbq",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/adura",
+   "target": "https://youtu.be/y7E_WQq4v1Q",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/y7E_WQq4v1Q",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bbqteam",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=66&e[…]ries=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=66&e[…]ries=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/tastelife",
+   "target": "https://airtable.com/shr79kzXbas0pvHIl?prefill_Course%20Allocated%2FAttended%3A=Onl[…]%20January%202024&prefill_LL+sign+up=true&hide_LL+sign+up=true",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://airtable.com/shr79kzXbas0pvHIl?prefill_Course%20Allocated%2FAttended%3A=Onl[…]%20January%202024&prefill_LL+sign+up=true&hide_LL+sign+up=true",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/colchestergroup",
+   "target": "https://www.facebook.com/groups/thec3colchester",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.facebook.com/groups/thec3colchester",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/quiz",
+   "target": "https://brushfire.com/thec3uk/quiznight/554145/details",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/quiznight/554145/details",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/healthyliving",
+   "target": "https://thec3.churchsuite.com/events/snsgii7d",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/snsgii7d",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/communitysupper",
+   "target": "https://thec3.churchsuite.com/events/b26mc16y",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/b26mc16y",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/burybuilding",
+   "target": "https://thec3.churchsuite.com/events/7lbh1irh",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/7lbh1irh",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bbq",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=65&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&months=&show_categories=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=65&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&months=&show_categories=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/c3atwork",
+   "target": "https://thec3.churchsuite.com/events/xirfkth3?fbclid=IwAR2_bWGCRs3INUPjOzF8wCzRTaAkXwNdMsn2_pZ2RNYU2-aasp2Zc6CLRF8",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/xirfkth3?fbclid=IwAR2_bWGCRs3INUPjOzF8wCzRTaAkXwNdMsn2_pZ2RNYU2-aasp2Zc6CLRF8",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/markritchie",
+   "target": "https://brushfire.com/thec3uk/markritchie/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/markritchie/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kidscraft",
+   "target": "https://thec3.churchsuite.com/events/mnvlk4ox",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/mnvlk4ox",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamrally",
+   "target": "https://us02web.zoom.us/j/83120323814?pwd=YXI2REcvYzA4VjR1L0k0Szhia1dSQT09",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://us02web.zoom.us/j/83120323814?pwd=YXI2REcvYzA4VjR1L0k0Szhia1dSQT09",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/print-progress",
+   "target": "https://www.notion.so/thec3/DESIGN-TO-PRINT-PROGRESS-b6fcccad23c345668e83f130f3716aae",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.notion.so/thec3/DESIGN-TO-PRINT-PROGRESS-b6fcccad23c345668e83f130f3716aae",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamchristmas",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=signup_to_sequence&num_results=&months=6&show_categories=0&show_search=1&show_sites=0&sites=1,4,7&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=signup_to_sequence&num_results=&months=6&show_categories=0&show_search=1&show_sites=0&sites=1,4,7&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/robparsons",
+   "target": "https://www.eventbrite.co.uk/e/an-evening-with-rob-parsons-cambridge-tickets-633251350837",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.eventbrite.co.uk/e/an-evening-with-rob-parsons-cambridge-tickets-633251350837",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/glspodcast",
+   "target": "https://www.youtube.com/watch?v=q-wWbNV9OnM",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://www.youtube.com/watch?v=q-wWbNV9OnM",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmasbox",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=62&event_bgcolor=FFFFFF&event_border=&featured=1&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=3&months=&show_categories=0&show_search=0&show_sites=0&sites=1,4,7&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=62&event_bgcolor=FFFFFF&event_border=&featured=1&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=3&months=&show_categories=0&show_search=0&show_sites=0&sites=1,4,7&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/survey",
+   "target": "https://youtu.be/6eqvtt-kiFg",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://youtu.be/6eqvtt-kiFg",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yapodcast",
+   "target": "https://feeds.transistor.fm/ya-pod",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://feeds.transistor.fm/ya-pod",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/propheticday",
+   "target": "https://thec3.churchsuite.com/events/jwditxpg",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/jwditxpg",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmas",
+   "target": "https://christmas.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://christmas.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/breatheontheroad",
+   "target": "https://brushfire.com/thec3uk/breathe?fbclid=iwar1wycp-g-eado-vrh_bay-t4ov6ym7q07f8nfgwxmunxqty-iv3k14q7_c",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/breathe?fbclid=iwar1wycp-g-eado-vrh_bay-t4ov6ym7q07f8nfgwxmunxqty-iv3k14q7_c",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kids-church",
+   "target": "https://thec3.notion.site/Kids-Church-This-Sunday-226d5cedcf0f45a483cb8d276abce64b",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.notion.site/Kids-Church-This-Sunday-226d5cedcf0f45a483cb8d276abce64b",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/divorce-recovery23",
+   "target": "https://thec3.churchsuite.com/events/pvfsctiu",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/pvfsctiu",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kidschurch",
+   "target": "/kids-church/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "/kids-church/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/creativebbq",
+   "target": "https://thec3.churchsuite.com/events/sueg3px9",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/sueg3px9",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lifeguitar",
+   "target": "https://thec3.churchsuite.com/events/iclkzswa",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/iclkzswa",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/honoursbbq",
+   "target": "https://thec3.churchsuite.com/events/u9sbiab6",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/u9sbiab6",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/music",
+   "target": "https://open.spotify.com/playlist/4S6fEWlrNtbjWu6Bx6qHgh?si=577cc523446f4bb1&pt=e9b902d05b169549e3955fbfb8b454b5",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://open.spotify.com/playlist/4S6fEWlrNtbjWu6Bx6qHgh?si=577cc523446f4bb1&pt=e9b902d05b169549e3955fbfb8b454b5",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/downloads",
+   "target": "https://we.tl/t-1Y5hKqECwK",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://we.tl/t-1Y5hKqECwK",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/funnyhowmarriage",
+   "target": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-uk-tickets-872798061497",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-uk-tickets-872798061497",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/marathonworld",
+   "target": "https://portal.trustbridgeglobal.com/public/donate?id=a65bb8fa7c0cffcf68651252dc4fcdc0fe0d59b3",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://portal.trustbridgeglobal.com/public/donate?id=a65bb8fa7c0cffcf68651252dc4fcdc0fe0d59b3",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teameaster",
+   "target": "https://thec3.churchsuite.com/-/calendar/200e53c7-ea91-4631-ade9-4c90db6527ec",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/200e53c7-ea91-4631-ade9-4c90db6527ec",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/workshop",
+   "target": "https://thec3.churchsuite.com/events/vjvfwj9r",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/vjvfwj9r",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/groupleaders",
+   "target": "https://thec3.churchsuite.com/forms/gc7qfw97",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/forms/gc7qfw97",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/store",
+   "target": "https://store.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://store.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/ascendpod",
+   "target": "https://feeds.transistor.fm/ascend",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://feeds.transistor.fm/ascend",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kintsugihope",
+   "target": "https://https:/https://thec3.churchsuite.com/events/ihiqkzpx",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://https:/https://thec3.churchsuite.com/events/ihiqkzpx",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmasmeal",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=f5f6f7&categories=61&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=ffffff&heading_color=202945&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=f5f6f7&categories=61&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=ffffff&heading_color=202945&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/discord",
+   "target": "https://discord.gg/z6GTSTWsXn",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://discord.gg/z6GTSTWsXn",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cambridge-connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/online-connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/newyear",
+   "target": "https://brushfire.com/thec3uk/christmas/544521",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://brushfire.com/thec3uk/christmas/544521",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/hire",
+   "target": "/room-hire/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "/room-hire/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/hamper",
+   "target": "/shop/",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "/shop/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/griefshare",
+   "target": "https://thec3.churchsuite.com/groups/vibunzhp",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/groups/vibunzhp",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/courses",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=0",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=0",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/howrich",
+   "target": "https://howrichami.givingwhatwecan.org/how-rich-am-i?income=30000&countryCode=GBR&household%5Badults%5D=2&household%5Bchildren%5D=1",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://howrichami.givingwhatwecan.org/how-rich-am-i?income=30000&countryCode=GBR&household%5Badults%5D=2&household%5Bchildren%5D=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/breathebanquet",
+   "target": "https://thec3uk.brushfire.com/breathe/548748",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/breathe/548748",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/compassion",
+   "target": "https://forms.office.com/e/EetLD3YLJ4",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://forms.office.com/e/EetLD3YLJ4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/c3-marriage-courses",
+   "target": "https://thec3.churchsuite.com/groups/xjkqfivh",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/groups/xjkqfivh",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/wellbeingworkshop",
+   "target": "https://thec3.churchsuite.com/events/vjvfwj9r",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/vjvfwj9r",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamsignup",
+   "target": "https://thec3.churchsuite.com/forms/wxu56079",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/forms/wxu56079",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/easter",
+   "target": "https://love.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://love.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/bury-connect",
+   "target": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=4",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/lifeatc3",
+   "target": "http://eepurl.com/hpqSKX",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "http://eepurl.com/hpqSKX",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/myc3",
+   "target": "https://myc3.life",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://myc3.life/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/colchester-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=35&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=35&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/shop",
+   "target": "https://store.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://store.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/buryc3groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=33&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=33&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/howtounhurry",
+   "target": "https://static1.squarespace.com/static/58431a7603596e3099e87531/t/5dcd82a34474a007a68a3b47/1573749412344/How+to+Un-Hurry+Workbook.pdf",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://static1.squarespace.com/static/58431a7603596e3099e87531/t/5dcd82a34474a007a68a3b47/1573749412344/How+to+Un-Hurry+Workbook.pdf",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/c3kidslifegoals",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=12&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&num_results=3&show_categories=0&site=&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=12&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&num_results=3&show_categories=0&site=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/onlinefb",
+   "target": "https://facebook.com/groups/thec3online",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://facebook.com/groups/thec3online",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ohwhatwonder",
+   "target": "https://thec3uk.brushfire.com/christmas/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/christmas/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/fbonline",
+   "target": "https://facebook.com/groups/thec3online",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://facebook.com/groups/thec3online",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/summerparties",
+   "target": "https://thec3uk.brushfire.com/parties/534815",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/parties/534815",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascendcamp22",
+   "target": "/ascendcamp/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "/ascendcamp/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/teamnight",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=18&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=4&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=18&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=4&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yth",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=13&event_bgcolor=FFFFFF&event_border=&featured=1&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=sequence_name&num_results=6&show_categories=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=13&event_bgcolor=FFFFFF&event_border=&featured=1&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=sequence_name&num_results=6&show_categories=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/allnations",
+   "target": "https://thec3.churchsuite.com/events/jourkgga",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.com/events/jourkgga",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/alphaonline",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=15&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&num_results=&show_categories=0&site=",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=15&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&num_results=&show_categories=0&site=",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascendevents",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=21&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&num_results=&show_categories=0&site=",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=21&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&num_results=&show_categories=0&site=",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/tithetrial",
+   "target": "https://thec3.churchsuite.co.uk/donate/fund/e2pp8en9",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/fund/e2pp8en9",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/kidsevents",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=12&num_results=20&body_bgcolor=ffffff",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=12&num_results=20&body_bgcolor=ffffff",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/myrotas",
+   "target": "https://thec3.churchsuite.co.uk/my",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/my",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/give",
+   "target": "https://thec3.churchsuite.co.uk/donate/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/online-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=32&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=32&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/prayer",
+   "target": "https://prayer.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://prayer.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/christmasmeal-cambridge",
+   "target": "https://thec3.churchsuite.co.uk/events/qgok6byn",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/qgok6byn",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/donate",
+   "target": "https://thec3.churchsuite.co.uk/donate/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yaquestions",
+   "target": "https://docs.google.com/forms/d/e/1FAIpQLSfVNzKcZLStFmdO8OcK6mRr4ZcoBiT5Jfca1xfabx0P1qq3BQ/viewform",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://docs.google.com/forms/d/e/1FAIpQLSfVNzKcZLStFmdO8OcK6mRr4ZcoBiT5Jfca1xfabx0P1qq3BQ/viewform",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/calendar",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/mychurchsuite",
+   "target": "https://thec3.churchsuite.co.uk/my",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/my",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cambridge-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=31&text_color=666666",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=31&text_color=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/connectform",
+   "target": "https://thec3.churchsuite.co.uk/connect/mydetails/submit",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/connect/mydetails/submit",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/brushfire",
+   "target": "https://thec3uk.brushfire.com/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/colchester-connect",
+   "target": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=7",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=7",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/chapel",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=50&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading=444444&icon=BBBBBB&num_results=6&show_categories=0&site=&text=666666",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=50&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading=444444&icon=BBBBBB&num_results=6&show_categories=0&site=&text=666666",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/slack",
+   "target": "https://join.slack.com/t/thec3uk/shared_invite/zt-8i989kv6-QVF_M7WoZo877ikJNfiPRA",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://join.slack.com/t/thec3uk/shared_invite/zt-8i989kv6-QVF_M7WoZo877ikJNfiPRA",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ascendsummit",
+   "target": "https://thec3uk.brushfire.com/ascend/",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/ascend/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmasmeal-colchester",
+   "target": "https://thec3.churchsuite.co.uk/events/hzknwb0y",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/hzknwb0y",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/buryevents",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bury-events",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/christmasmeal-bury",
+   "target": "https://thec3uk.brushfire.com/christmas/520273",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/christmas/520273",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/academy",
+   "target": "https://thec3.academy",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.academy/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/ccr",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=49",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=49",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/c3kidsathome",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=48&num_results=1",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=48&num_results=1",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/donate-nhs",
+   "target": "https://thec3.churchsuite.co.uk/donate/fund/clfqaoft",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/fund/clfqaoft",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/nhs-template-letter",
+   "target": "https://thec3.cdn.prismic.io/thec3/0d1ac88a-b2a6-435d-8830-06334f06d3a3_NHS+Template+Letter.pdf",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.cdn.prismic.io/thec3/0d1ac88a-b2a6-435d-8830-06334f06d3a3_NHS+Template+Letter.pdf",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/racism-and-injustice-paper",
+   "target": "https://thec3.cdn.prismic.io/thec3/c2d015a1-487a-4d2e-b9c9-9d7c113fc67b_Racism+and+Injustice+Paper.pdf",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.cdn.prismic.io/thec3/c2d015a1-487a-4d2e-b9c9-9d7c113fc67b_Racism+and+Injustice+Paper.pdf",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/bury-sunday-services",
+   "target": "https://thec3uk.brushfire.com/bury",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/bury",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/sunday-services-colchester",
+   "target": "https://thec3uk.brushfire.com/colchester/",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/colchester/",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ythonline",
+   "target": "https://thec3.churchsuite.co.uk/events/ur8lqpbg",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/ur8lqpbg",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cambridge-sunday-services",
+   "target": "https://thec3uk.brushfire.com/cambridge",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3uk.brushfire.com/cambridge",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/give-help",
+   "target": "https://thec3.churchsuite.co.uk/events/g2vedgl5",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/g2vedgl5",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yalive",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=11&body_bgcolor=ffffff",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=11&body_bgcolor=ffffff",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/get-help",
+   "target": "https://thec3.churchsuite.co.uk/events/1nb0ciwz",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/1nb0ciwz",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/c3-youth",
+   "target": "https://thec3.uk/c3youth",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.uk/c3youth",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/yawelcome",
+   "target": "https://zoom.us/j/99248772819?pwd=bWoyeFVvdjNaSEQ4cXc0UnlEd1Fmdz09",
+   "status": 302,
+   "live_status": 301,
+   "live_location": "https://zoom.us/j/99248772819?pwd=bWoyeFVvdjNaSEQ4cXc0UnlEd1Fmdz09",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/cv19support",
+   "target": "https://thec3.churchsuite.co.uk/events/yzj0aaqd",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/events/yzj0aaqd",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/love-your-neighbour",
+   "target": "https://thec3.churchsuite.co.uk/donate/fund/qsmtu2lw",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/fund/qsmtu2lw",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/ya-signup",
+   "target": "https://thec3.churchsuite.co.uk/groups/rbos2oqs",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.churchsuite.co.uk/groups/rbos2oqs",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/youtube",
+   "target": "https://www.youtube.com/user/cthreemedia",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://www.youtube.com/user/cthreemedia",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/pineapple",
+   "target": "https://forms.gle/pjmtFvLLvH4jpDzZ9",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://forms.gle/pjmtFvLLvH4jpDzZ9",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/broken-link",
+   "target": "https://google.com",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://google.com/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/breathe",
+   "target": "https://breathe.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://breathe.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  },
+  {
+   "source": "/openletter",
+   "target": "https://thec3.cdn.prismic.io/thec3/65763cd7-4260-46a2-9875-32dede16905d_Open+letter.pdf",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://thec3.cdn.prismic.io/thec3/65763cd7-4260-46a2-9875-32dede16905d_Open+letter.pdf",
+   "same_class": true,
+   "same_target": true
+  },
+  {
+   "source": "/breatheconference",
+   "target": "https://breathe.thec3.uk",
+   "status": 301,
+   "live_status": 301,
+   "live_location": "https://breathe.thec3.uk/",
+   "same_class": true,
+   "same_target": false
+  }
+ ]
+}

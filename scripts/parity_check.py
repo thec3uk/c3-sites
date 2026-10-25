@@ -70,8 +70,10 @@ def load(page, url):
         }
         window.scrollTo(0, 0);
         // Lazy images near the bottom can still be loading; a capture then shows a hole.
-        await Promise.all([...document.images].map(i => i.complete ? null
-            : new Promise(r => { i.addEventListener('load', r); i.addEventListener('error', r); })));
+        // Hidden lazy images never load, so wait only for visible ones, at most 10s.
+        const pending = [...document.images].filter(i => !i.complete && i.offsetParent !== null)
+            .map(i => new Promise(r => { i.addEventListener('load', r); i.addEventListener('error', r); }));
+        await Promise.race([Promise.all(pending), new Promise(r => setTimeout(r, 10000))]);
     }""")
     page.wait_for_load_state("networkidle")
     return response
@@ -139,12 +141,14 @@ DIFF_JS = """async ([a, b]) => {
         const last = bands[bands.length - 1];
         if (last && y - last[1] < 20) last[1] = y; else bands.push([y, y]);
     });
-    const jpeg = async c => { const blob = await c.convertToBlob({type: 'image/jpeg', quality: 0.55});
+    const jpeg = async c => { const blob = await c.convertToBlob({type: 'image/jpeg', quality: 0.5});
         const buf = new Uint8Array(await blob.arrayBuffer()); let s = '';
         for (let i = 0; i < buf.length; i += 0x8000) s += String.fromCharCode(...buf.subarray(i, i + 0x8000));
         return btoa(s); };
-    const whole = async i => { const c = new OffscreenCanvas(i.width, i.height);
-        c.getContext('2d').drawImage(i, 0, 0); return jpeg(c); };
+    // Desktop shots saved at half size to keep the evidence small; the diff is done at full size.
+    const whole = async i => { const s = i.width > 1000 ? 0.5 : 1;
+        const c = new OffscreenCanvas(Math.round(i.width * s), Math.round(i.height * s));
+        c.getContext('2d').drawImage(i, 0, 0, c.width, c.height); return jpeg(c); };
     return {live_height: ia.height, local_height: ib.height, ratio: total / (w * h),
             bands, live_jpeg: await whole(ia), local_jpeg: await whole(ib), diff_jpeg: await jpeg(diff)};
 }"""
