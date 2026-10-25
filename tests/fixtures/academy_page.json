@@ -1,0 +1,79 @@
+{
+  "id": "XqfyaBAAACMA9P5V",
+  "uid": "academy",
+  "url": null,
+  "type": "academy_page",
+  "href": "https://thec3.cdn.prismic.io/api/v2/documents/search?ref=atsqRREAAC0AicnM&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22XqfyaBAAACMA9P5V%22%29+%5D%5D",
+  "tags": [
+    "domain:thec3.academy"
+  ],
+  "first_publication_date": "2020-04-28T09:49:02+0000",
+  "last_publication_date": "2026-07-13T09:23:19+0000",
+  "slugs": [
+    "academy-page"
+  ],
+  "linked_documents": [],
+  "lang": "en-gb",
+  "alternate_languages": [],
+  "data": {
+    "hero_image": {
+      "dimensions": {
+        "width": 5760,
+        "height": 3840
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.prismic.io/thec3/XQgK4uOpKcS4eFH9_001a.png?auto=format,compress",
+      "id": "XQgK4uOpKcS4eFH9",
+      "edit": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1,
+        "background": "transparent"
+      }
+    },
+    "page_title": "The C3 Academy",
+    "lead_paragraph": [
+      {
+        "type": "paragraph",
+        "text": "Equipping and developing you to be a resilient leader who makes positive change in your sphere of influence.",
+        "spans": []
+      }
+    ],
+    "ctas": [
+      {
+        "text": "Apply",
+        "link": {
+          "link_type": "Media",
+          "key": "02fa52d4-aa7c-4820-8d88-04d0f92a16bf",
+          "kind": "file",
+          "id": "ZEjtRhEAAH-qjtdo",
+          "url": "https://thec3.cdn.prismic.io/thec3/b33223e3-1ee6-48ff-a70d-a302a9661049_Application+Form+ONLINE.docx",
+          "name": "Application Form ONLINE.docx",
+          "size": "142488"
+        }
+      },
+      {
+        "text": "Prospectus",
+        "link": {
+          "link_type": "Media",
+          "key": "c7e30e4f-d9a5-404b-a567-9204d7fd1e05",
+          "kind": "file",
+          "id": "6IfuZACfohBt3G1V",
+          "url": "https://thec3.cdn.prismic.io/thec3/6IfuZACfohBt3G1V_ACADEMY_PROSPECTUS_2026_1.1.pdf",
+          "name": "ACADEMY_PROSPECTUS_2026_1.1.pdf",
+          "size": "31982439"
+        }
+      },
+      {
+        "text": "Open Day",
+        "link": {
+          "link_type": "Web",
+          "key": "18038369-a4ce-435a-9bbf-7f6a9543fdf8",
+          "url": "https://thec3.churchsuite.com/events/tvxvflie"
+        }
+      }
+    ],
+    "body": []
+  }
+}

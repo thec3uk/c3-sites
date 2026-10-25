@@ -1,0 +1,80 @@
+"""A thin client for the Prismic v2 Content API.
+
+It returns raw document JSON; mapping to Page/Slice lives in content/sources/.
+"""
+
+import json
+
+import httpx
+
+from config.settings.sites import SiteConfig
+
+PAGE_SIZE = 100
+# Types whose single document is the site's home page.
+HOMEPAGE_TYPES = {"academy_page", "homepage"}
+
+
+class PrismicClient:
+    def __init__(self, repository: str, access_token: str = "", http: httpx.Client | None = None):
+        self.api_url = f"https://{repository}.cdn.prismic.io/api/v2"
+        self.access_token = access_token
+        self.http = http or httpx.Client(timeout=30)
+        self._ref: str | None = None
+
+    def _get(self, url: str, params: list[tuple[str, str]] | None = None) -> dict:
+        params = list(params or [])
+        if self.access_token:
+            params.append(("access_token", self.access_token))
+        response = self.http.get(url, params=params)
+        response.raise_for_status()
+        return response.json()
+
+    def master_ref(self) -> str:
+        if self._ref is None:
+            refs = self._get(self.api_url)["refs"]
+            self._ref = next(r["ref"] for r in refs if r.get("isMasterRef"))
+        return self._ref
+
+    def search(self, *predicates: str) -> list[dict]:
+        """Every document matching all predicates, across all pages."""
+        results, page = [], 1
+        while True:
+            params = [("ref", self.master_ref()), ("pageSize", str(PAGE_SIZE)), ("page", str(page))]
+            params += [("q", p) for p in predicates]
+            body = self._get(f"{self.api_url}/documents/search", params)
+            results += body["results"]
+            if page >= body["total_pages"]:
+                return results
+            page += 1
+
+
+def any_predicate(field: str, values: tuple[str, ...]) -> str:
+    return f"[[any({field}, {json.dumps(list(values))})]]"
+
+
+def fetch_site_documents(client: PrismicClient, site: SiteConfig) -> list[dict]:
+    """Documents tagged for the site, plus documents of the site's own types."""
+    if not site.prismic_tags and not site.prismic_types:
+        raise ValueError(f"Site '{site.name}' has no Prismic tags or types")
+    queries = []
+    if site.prismic_tags:
+        queries.append(any_predicate("document.tags", site.prismic_tags))
+    if site.prismic_types:
+        queries.append(any_predicate("document.type", site.prismic_types))
+
+    documents: dict[str, dict] = {}
+    for query in queries:
+        for document in client.search(query):
+            documents.setdefault(document["id"], document)
+    return list(documents.values())
+
+
+def resolve_link(link: dict) -> str:
+    """URL for a Prismic link field or a whole document; '' if it goes nowhere."""
+    if link.get("link_type") in ("Web", "Media"):
+        return link.get("url", "")
+    if link.get("type") in HOMEPAGE_TYPES:
+        return "/"
+    if link.get("uid"):
+        return f"/{link['uid']}/"
+    return ""
