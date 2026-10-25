@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static images slices %}
+{% block body %}
+<div id="academy">
+  <header class="w-screen bg-[#040e18] bg-cover bg-center bg-no-repeat" style="background-image: url('{{ page.fields.hero_image|imgix:2400 }}')">
+    <div class="grid h-screen grid-cols-8 grid-rows-4 mx-16 lg:grid-rows-12 md:mx-0">
+      {# Flat-topped hexagon, geometry copied from the react-hexagon output #}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 28 515 444" class="col-start-1 col-end-9 row-start-2 row-end-5 fill-current text-purple-trans lg:col-start-3 lg:col-end-7 lg:row-start-2 lg:row-end-5">
+        <polygon style="stroke:inherit;fill:inherit;stroke-width:10" points="125,33.5 375,33.5 500,250 375,466.5 125,466.5 0,250"/>
+        <foreignObject x="0%" y="2em" width="100%" height="100%" class="text-center grid-rows-6 px-16 pt-16">
+          <img src="{% static 'images/LogoWhite.png' %}" alt="C3 Logo in White with text" class="w-14 mx-auto mt-1 lg:mt-8">
+          <h1 class="pt-4 pb-4 text-5xl subpixel-antialiased font-accent text-yellow lg:pt-12 lg:pb-4"><span class="text-white lowercase font-title">The C3</span> Academy</h1>
+          {% if page.fields.lead_paragraph %}<p class="font-sans text-lg leading-5 text-white">{{ page.fields.lead_paragraph.text }}</p>{% endif %}
+          <div class="flex flex-col px-20 lg:items-center lg:px-8 pt-2">
+            {% for cta in page.fields.ctas %}
+            <a class="cta {% cycle 'text-black bg-yellow hover:bg-yellow-200' 'text-white bg-purple hover:bg-purple-200' %} hover:text-white px-4 pt-1 pb-2 lg:pt-0 lg:pb-1 shadow font-title lowercase text-2xl lg:text-base mt-0 mb-2" href="{{ cta.link }}">{{ cta.text }}</a>
+            {% endfor %}
+          </div>
+        </foreignObject>
+      </svg>
+    </div>
+  </header>
+  <main class="bg-grey-100">{% render_slices page %}</main>
+</div>
+{% endblock %}

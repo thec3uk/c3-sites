@@ -16,10 +16,19 @@ def fetch_documents(site: SiteConfig) -> list[dict]:
 
 
 @lru_cache
+def site_documents() -> tuple[Page, ...]:
+    """Every document selected for the site, pages and data alike."""
+    return tuple(to_page(d) for d in fetch_documents(settings.SITE))
+
+
 def site_pages() -> tuple[Page, ...]:
-    site = settings.SITE
-    pages = (to_page(d) for d in fetch_documents(site) if d["type"] in site.page_types)
-    return tuple(sorted((p for p in pages if p.url), key=lambda p: p.url))
+    pages = (p for p in site_documents() if p.type in settings.SITE.page_types and p.url)
+    return tuple(sorted(pages, key=lambda p: p.url))
+
+
+def site_document(type: str) -> Page | None:
+    """The site's single document of a data type, such as site_config."""
+    return next((p for p in site_documents() if p.type == type), None)
 
 
 def page_by_url(url: str) -> Page | None:

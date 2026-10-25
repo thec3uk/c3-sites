@@ -22,17 +22,19 @@ def site(settings, monkeypatch, tmp_path):
     docs = [
         json.loads((FIXTURES / "academy_page.json").read_text()),
         json.loads((FIXTURES / "page_with_slices.json").read_text()),
-        {"id": "cfg", "type": "site_config", "uid": None, "tags": [], "data": {}},
+        {"id": "cfg", "type": "site_config", "uid": None, "tags": [], "data": {"title": "The C3 Church"}},
     ]
     for d in docs[1]["data"]["body"]:
         d["slice_type"] = "text"  # one shared template keeps the test small
     monkeypatch.setattr(content, "fetch_documents", lambda site: docs)
-    content.site_pages.cache_clear()
+    content.site_documents.cache_clear()
 
     templates = tmp_path / "templates"
     (templates / "pages").mkdir(parents=True)
     (templates / "slices").mkdir()
-    (templates / "pages" / "academy_page.html").write_text("home:{{ page.title }}")
+    (templates / "pages" / "academy_page.html").write_text(
+        "home:{{ page.title }}|{{ site_config.fields.title }}"
+    )
     (templates / "pages" / "page.html").write_text(
         "{% load slices %}page:{{ page.uid }}|{% render_slices page %}"
     )
@@ -44,10 +46,11 @@ def site(settings, monkeypatch, tmp_path):
             "BACKEND": "django.template.backends.django.DjangoTemplates",
             "DIRS": [templates],
             "APP_DIRS": True,
+            "OPTIONS": {"context_processors": ["pages.context_processors.site"]},
         }
     ]
     yield
-    content.site_pages.cache_clear()
+    content.site_documents.cache_clear()
 
 
 def test_only_page_types_become_pages(site):
@@ -62,7 +65,7 @@ def test_home_renders_its_type_template(site, client):
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.content.decode() == "home:The C3 Academy"
+    assert response.content.decode() == "home:The C3 Academy|The C3 Church"
 
 
 def test_page_renders_with_slices(site, client):
@@ -78,7 +81,7 @@ def test_unknown_path_is_404(site, client):
 def test_documents_are_fetched_once_per_build(site, monkeypatch):
     calls = []
     monkeypatch.setattr(content, "fetch_documents", lambda site: calls.append(1) or [])
-    content.site_pages.cache_clear()
+    content.site_documents.cache_clear()
 
     content.site_pages()
     content.site_pages()

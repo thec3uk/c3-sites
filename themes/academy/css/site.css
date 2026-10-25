@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@source "../templates";
+@source "../../../templates";
+
+/* Ported from the Gatsby site's Tailwind 2 config: only what the templates use. */
+@theme {
+  --font-accent: Gotcha;
+  --font-title: "Novecento Sans Wide";
+  --font-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --color-black: #343434;
+  --color-white: #fff;
+  --color-grey-100: #efefef;
+  --color-grey-200: #d1d1d1;
+  --color-grey-300: #6c6c6c;
+  --color-grey-400: #4e4e4e;
+  --color-yellow: #fac52d;
+  --color-yellow-200: #bb8e00;
+  --color-yellow-trans: #fac52db3;
+  --color-purple: #2e293e;
+  --color-purple-200: #5e586f;
+  --color-purple-trans: #2e293eb3;
+  --color-purple-trans-30: #2e293e4d;
+  --color-blue: #00919f;
+  --color-red: #f05356;
+}
+
+@font-face {
+  font-family: Gotcha;
+  src: url("../fonts/Gotcha-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Novecento Sans Wide";
+  font-weight: bold;
+  src: url("../fonts/Novecentosanswide-Bold.otf") format("opentype");
+}

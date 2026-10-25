@@ -11,7 +11,7 @@ test:
 
 # Build one site to dist/, e.g. `just build academy`
 build site="academy":
-    SITE={{site}} uv run python manage.py distill generate --output-directory dist --collectstatic --force
+    scripts/build.sh {{site}}
 
 # Local dev server for one site
 serve site="academy":

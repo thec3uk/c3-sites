@@ -9,7 +9,7 @@ def test_load_site_returns_academy_config():
 
     assert site.name == "academy"
     assert site.theme == "academy"
-    assert site.prismic_types == ("academy_page",)
+    assert site.prismic_types == ("academy_page", "site_config")
 
 
 def test_load_site_rejects_unknown_name():
