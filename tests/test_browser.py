@@ -9,7 +9,7 @@ import pytest
 from django.conf import settings
 from playwright.sync_api import expect, sync_playwright
 
-from tests.test_main_theme import banner_doc, main  # noqa: F401 (main is a fixture)
+from tests.documents import banner_doc
 
 pytestmark = pytest.mark.browser
 DIST = Path(settings.BASE_DIR) / "dist"
