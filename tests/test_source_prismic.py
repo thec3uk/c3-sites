@@ -151,3 +151,9 @@ def test_rich_text_renders_unescaped_in_templates():
     rich = RichText(({"type": "paragraph", "text": "Hi", "spans": []},))
 
     assert Template("{{ r }}").render(Context({"r": rich})) == "<p>Hi</p>"
+
+
+def test_embed_blocks_are_not_rendered():
+    blocks = ({"type": "embed", "oembed": {"html": "<script>x</script>"}, "text": "", "spans": []},)
+
+    assert RichText(blocks).html == ""

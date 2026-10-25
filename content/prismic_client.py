@@ -4,6 +4,8 @@ It returns raw document JSON; mapping to Page/Slice lives in content/sources/.
 """
 
 import json
+import re
+from urllib.parse import urlsplit
 
 import httpx
 
@@ -12,6 +14,7 @@ from config.settings.sites import SiteConfig
 PAGE_SIZE = 100
 # Types whose single document is the site's home page.
 HOMEPAGE_TYPES = {"academy_page", "homepage"}
+SAFE_SCHEMES = {"", "http", "https", "mailto", "tel"}
 
 
 class PrismicClient:
@@ -72,9 +75,17 @@ def fetch_site_documents(client: PrismicClient, site: SiteConfig) -> list[dict]:
 def resolve_link(link: dict) -> str:
     """URL for a Prismic link field or a whole document; '' if it goes nowhere."""
     if link.get("link_type") in ("Web", "Media"):
-        return link.get("url", "")
+        return safe_url(link.get("url", ""))
     if link.get("type") in HOMEPAGE_TYPES:
         return "/"
     if link.get("uid"):
         return f"/{link['uid']}/"
     return ""
+
+
+def safe_url(url: str) -> str:
+    """The URL if its scheme is allowed in an href, else ''."""
+    url = url.strip()
+    # Browsers ignore tabs and newlines inside a scheme, e.g. "java\tscript:".
+    scheme = urlsplit(re.sub(r"[\x00-\x20]", "", url)).scheme.lower()
+    return url if scheme in SAFE_SCHEMES else ""

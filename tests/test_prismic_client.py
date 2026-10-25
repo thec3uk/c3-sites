@@ -122,3 +122,19 @@ def test_fetch_site_documents_requires_a_selector():
 )
 def test_resolve_link(link, url):
     assert resolve_link(link) == url
+
+
+@pytest.mark.parametrize(
+    "url, expected",
+    [
+        ("javascript:alert(1)", ""),
+        (" JavaScript:alert(1)", ""),
+        ("java\tscript:alert(1)", ""),
+        ("data:text/html,x", ""),
+        ("mailto:office@thec3.uk", "mailto:office@thec3.uk"),
+        ("tel:+441223", "tel:+441223"),
+        ("/relative/", "/relative/"),
+    ],
+)
+def test_resolve_link_only_allows_safe_schemes(url, expected):
+    assert resolve_link({"link_type": "Web", "url": url}) == expected

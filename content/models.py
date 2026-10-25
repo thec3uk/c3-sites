@@ -70,8 +70,6 @@ class RichText:
                     f'<p class="block-img"><img src="{escape(block["url"])}"'
                     f' alt="{escape(block.get("alt") or "")}"></p>'
                 )
-            elif block["type"] == "embed":
-                out.append(block.get("oembed", {}).get("html", ""))
             elif tag := BLOCK_TAGS.get(block["type"]):
                 out.append(f"<{tag}>{render_spans(block['text'], block['spans'])}</{tag}>")
         if open_list:
