@@ -25,9 +25,9 @@ class Image:
 class Link(str):
     """A link to a document: prints as its URL ('' if it has none) and names its target."""
 
-    def __new__(cls, url: str, id: str, type: str):
+    def __new__(cls, url: str, id: str, type: str, broken: bool = False):
         link = super().__new__(cls, url)
-        link.id, link.type = id, type
+        link.id, link.type, link.broken = id, type, broken
         return link
 
 

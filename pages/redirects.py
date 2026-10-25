@@ -1,7 +1,9 @@
 """The site's Prismic redirect documents as a Netlify _redirects file."""
 
 import logging
+import re
 from dataclasses import dataclass
+from urllib.parse import urlsplit
 
 from pages.content import site_documents, site_pages
 
@@ -18,18 +20,40 @@ class Rule:
         return f"{self.source} {self.target} {self.status}"
 
 
+# Whitespace or control characters would start a new rule or shift Netlify's columns.
+UNSAFE = re.compile(r"[\s\x00-\x1f\x7f]")
+
+
+def _skip_reason(source: str, target: str, destination) -> str:
+    """Why the redirect can't be written, or '' if it can."""
+    if getattr(destination, "broken", False):
+        return "destination document was deleted"
+    if not target:
+        return "no destination"
+    if source == "/":
+        return "redirect from the home page"
+    if UNSAFE.search(source) or UNSAFE.search(target):
+        return "unsafe source or target (whitespace or control characters)"
+    if not (target.startswith("/") or urlsplit(target).scheme in ("http", "https")):
+        return "unsafe target (not an http(s) URL or site path)"
+    return ""
+
+
 def redirect_rules() -> list[Rule]:
     """One rule per usable redirect document; skipped ones are logged."""
     rules = []
     for doc in site_documents():
         if doc.type != "redirect":
             continue
-        target = str(doc.fields.get("destination") or "")
-        if not doc.url or doc.url == "/" or not target:
-            log.warning("Redirect %s (%s) skipped: no destination or deleted target", doc.uid, doc.id)
+        destination = doc.fields.get("destination")
+        target = str(destination or "")
+        source = "/" + doc.url.strip("/")
+        reason = _skip_reason(source, target, destination)
+        if reason:
+            log.warning("Redirect %s (%s) skipped: %s", doc.uid, doc.id, reason)
             continue
         status = 301 if doc.fields.get("permanent") else 302
-        rules.append(Rule("/" + doc.url.strip("/"), target, status))
+        rules.append(Rule(source, target, status))
     return rules
 
 

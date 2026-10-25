@@ -38,8 +38,8 @@ def convert(value: Any, domain: str = "") -> Any:
     if isinstance(value, dict):
         if "link_type" in value:
             url = resolve_link(value, domain)
-            if value["link_type"] == "Document" and value.get("id"):
-                return Link(url, id=value["id"], type=value.get("type", ""))
+            if value["link_type"] == "Document" and (value.get("id") or value.get("isBroken")):
+                return Link(url, id=value.get("id", ""), type=value.get("type", ""), broken=bool(value.get("isBroken")))
             return url
         if "dimensions" in value and "url" in value:
             return Image(
