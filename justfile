@@ -9,6 +9,10 @@ setup:
 test:
     uv run pytest
 
+# Playwright tests against dist/; run `just build main` first
+test-browser:
+    uv run pytest -m browser
+
 # Build one site to dist/, e.g. `just build academy`
 build site="academy":
     scripts/build.sh {{site}}

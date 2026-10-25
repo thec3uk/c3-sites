@@ -10,6 +10,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "playwright>=1.64.1",
     "pytest>=9.1.1",
     "pytest-django>=4.14.0",
 ]
@@ -18,3 +19,5 @@ dev = [
 DJANGO_SETTINGS_MODULE = "config.settings.base"
 pythonpath = ["."]
 testpaths = ["tests"]
+addopts = "-m 'not browser'"
+markers = ["browser: Playwright tests against a built dist/ (just test-browser)"]
