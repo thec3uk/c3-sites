@@ -36,3 +36,9 @@
   font-weight: bold;
   src: url("../fonts/Novecentosanswide-Bold.otf") format("opentype");
 }
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+}
