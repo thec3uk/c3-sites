@@ -1,0 +1,4 @@
+{% load images %}{% with p=slice.primary image=slice.primary.image %}
+{# Next slices/Media in FullBleedMedia (fullbleed.jsx). #}
+{% if image %}<div class="flex justify-center w-screen mx-auto grow max-w-screen {% if p.fullheight %}py-32{% else %}py-16{% endif %}"><img src="{{ image|imgix:1920 }}" srcset="{{ image|srcset }}" sizes="100vw" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async" class="{% if p.fullheight %}object-cover object-center w-screen h-full aspect-video lg:h-screen-90{% else %}object-cover object-center w-screen h-auto aspect-auto{% endif %}"></div>{% endif %}
+{% endwith %}

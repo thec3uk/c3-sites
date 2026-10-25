@@ -1,0 +1,4 @@
+{% load images %}{% with p=slice.primary logo=slice.primary.logo %}
+{# Next slices/Header: one markup for every variation; only title and logo are shown. #}
+<section class="flex justify-center pt-8 pb-8 md:pt-20"><a href="/" class="flex flex-col justify-center items-center md:space-y-2 max-h-24 md:px-20 md:max-h-48 text-center">{% if logo %}<img src="{{ logo|imgix:384 }}" alt="{{ logo.alt }}" width="{{ logo.width }}" height="{{ logo.height }}" loading="lazy" decoding="async" class="filter object-contain md:max-w-32 max-w-20">{% endif %}<h1 class="text-4xl md:text-6xl font-title font-bold text-gray-900">{{ p.title|default:"" }}</h1></a></section>
+{% endwith %}

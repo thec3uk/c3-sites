@@ -1,0 +1,4 @@
+{% with p=slice.primary %}
+{# Next slices/Card is Slice Machine's template: title and description, else placeholders. Its scoped styles as classes. #}
+<section class="max-w-[600px] my-[4em] mx-auto text-center"><span class="title text-[#8592e0]">{% if p.title %}{{ p.title }}{% else %}<h2>Template slice, update me!</h2>{% endif %}</span>{% if p.description %}{{ p.description }}{% else %}<p>start by editing this slice from inside Slice Machine!</p>{% endif %}</section>
+{% endwith %}

@@ -1,0 +1,4 @@
+{% with p=slice.primary %}
+{# Next slices/Text read slice.title_alignment, which is never set, so the title div has no alignment. #}
+<section class="grid items-center justify-center grid-cols-1 my-6 md:grid-cols-3"><div class="mx-auto md:col-span-1 md:col-start-2 prose px-4"><div class=" text-lg">{% if p.title %}{{ p.title }}{% endif %}</div>{% if p.content %}{{ p.content }}{% endif %}</div></section>
+{% endwith %}

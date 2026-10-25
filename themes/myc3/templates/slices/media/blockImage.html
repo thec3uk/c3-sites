@@ -1,0 +1,4 @@
+{% load images %}{% with image=slice.primary.image %}
+{# Next slices/Media blockImage; shown at most 8rem wide. #}
+{% if image %}<section class="grid items-center justify-center grid-cols-2 my-6 md:grid-cols-3 px-4"><img src="{{ image|imgix:256 }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" decoding="async" class="md:col-start-2 max-h-32 max-w-32 -mb-12 mt-16"></section>{% endif %}
+{% endwith %}

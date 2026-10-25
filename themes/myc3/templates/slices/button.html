@@ -1,0 +1,4 @@
+{% with p=slice.primary %}
+{# Next slices/Button: every variation gets the default-slice classes. #}
+<section class="grid grid-cols-1 md:grid-cols-3 justify-center items-center my-6"><a{% if p.linkUrl %} href="{{ p.linkUrl }}"{% endif %} class="transition duration-200 text-lg mx-4 lg:mx-20 py-3 px-2 border shadow hover:translate-y-px hover:shadow-none col-start-1 col-span-1 md:col-span-1 md:col-start-2 text-center bg-white text-gray-900 hover:text-red-500 active:text-red-400">{{ p.linkTitle|default:"" }}</a></section>
+{% endwith %}

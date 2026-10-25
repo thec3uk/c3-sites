@@ -110,3 +110,10 @@ def test_css_declares_the_self_hosted_fonts(css):
     assert 'font-family: "DM Serif Display"' in css
     assert "montserrat-latin-400-normal.woff2" in css
     assert "Novecentosanswide-Bold.otf" in css
+
+
+def test_css_sizes_font_awesome_icons_below_tailwind_utilities(css):
+    # react-fontawesome injects these at runtime, before Next's stylesheet, so h-5 and h-8 win.
+    components = css[css.index("@layer components") :]
+    assert ".svg-inline--fa {" in components
+    assert ".fa-fw {" in components
