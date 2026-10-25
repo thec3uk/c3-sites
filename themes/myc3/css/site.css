@@ -109,6 +109,9 @@
   ::before {
     border-color: var(--color-gray-200);
   }
+  [x-cloak] {
+    display: none !important;
+  }
   /* render_slices wraps each slice; Next's slices were direct children of the page wrapper. */
   .slice {
     display: contents;

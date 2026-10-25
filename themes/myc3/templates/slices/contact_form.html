@@ -1,1 +1,51 @@
-{# Placeholder: M2 ports Next's Netlify contact form. #}
+{% load text %}{% with p=slice.primary %}{% firstof p.form_name "contact" as name %}
+{# Next slices/ContactForm. Plain POST without JS; Alpine validates with Next's messages and posts via fetch. #}
+<section class="grid grid-cols-1 md:grid-cols-3 justify-center items-center my-6" x-data="contactForm">
+  <template x-if="submitted"><div class="md:col-span-1 md:col-start-2 prose px-4">{% if p.thank_you_message %}{{ p.thank_you_message }}{% else %}<p>Thank you for your message. We will be in touch soon.</p>{% endif %}</div></template>
+  <div class="md:col-span-1 md:col-start-2 px-4" x-show="!submitted">
+    <form name="{{ name|plain }}" method="post" data-netlify="true" data-netlify-honeypot="bot-field" x-bind:novalidate="true" @submit.prevent="send" @input="clear($event)">
+      <input type="hidden" name="form-name" value="{{ name|plain }}">
+      <p hidden><label>Do not fill this out: <input name="bot-field"></label></p>
+      <div class="mb-4">
+        <label for="name-{{ name|plain }}" class="block text-sm font-medium text-gray-700 mb-1">{{ p.name_label|default:"Name" }}</label>
+        <input type="text" id="name-{{ name|plain }}" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+        <p x-show="errors.name" x-text="errors.name" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>
+      <div class="mb-4">
+        <label for="email-{{ name|plain }}" class="block text-sm font-medium text-gray-700 mb-1">{{ p.email_label|default:"Email" }}</label>
+        <input type="email" id="email-{{ name|plain }}" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+        <p x-show="errors.email" x-text="errors.email" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>
+      {% if slice.items %}<div class="mb-4">
+        <label for="category-{{ name|plain }}" class="block text-sm font-medium text-gray-700 mb-1">{{ p.category_label|default:"Category" }}</label>
+        <select id="category-{{ name|plain }}" name="category" required class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+          <option value="">-- Select --</option>
+          {% for item in slice.items %}<option value="{{ item.category_name|plain }}">{{ item.category_name }}</option>{% endfor %}
+        </select>
+        <p x-show="errors.category" x-text="errors.category" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>{% endif %}
+      <div class="mb-4">
+        <label for="subject-{{ name|plain }}" class="block text-sm font-medium text-gray-700 mb-1">{{ p.subject_label|default:"Subject" }}</label>
+        <input type="text" id="subject-{{ name|plain }}" name="subject" required class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+        <p x-show="errors.subject" x-text="errors.subject" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>
+      <div class="mb-4">
+        <label for="message-{{ name|plain }}" class="block text-sm font-medium text-gray-700 mb-1">{{ p.message_label|default:"Message" }}</label>
+        <textarea id="message-{{ name|plain }}" name="message" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"></textarea>
+        <p x-show="errors.message" x-text="errors.message" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>
+      <div class="mb-6">
+        <label class="flex items-start space-x-2 cursor-pointer">
+          <input type="checkbox" name="consent" value="yes" required class="mt-1 h-4 w-4 text-red-500 border-gray-300 rounded focus:ring-red-500">
+          <span class="text-sm text-gray-700 prose prose-sm">{% if p.consent_label %}{{ p.consent_label }}{% else %}I consent to my data being processed.{% endif %}</span>
+        </label>
+        <p x-show="errors.consent" x-text="errors.consent" x-cloak class="text-red-500 text-sm mt-1"></p>
+      </div>
+      <div x-show="failed" x-cloak role="alert" class="mb-4 p-3 bg-red-50 border border-red-200 rounded text-red-700 text-sm">Something went wrong. Please try again.</div>
+      <div class="text-center">
+        <button type="submit" :disabled="sending" class="transition duration-200 text-lg py-3 px-8 border shadow bg-white text-gray-900 hover:text-red-500 active:text-red-400 hover:translate-y-px hover:shadow-none disabled:opacity-50 disabled:cursor-not-allowed"><span data-label="{{ p.submit_button_label|default:'Send'|plain }}" x-text="sending ? 'Sending...' : $el.dataset.label">{{ p.submit_button_label|default:"Send" }}</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+{% endwith %}

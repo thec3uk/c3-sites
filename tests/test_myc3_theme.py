@@ -1,5 +1,6 @@
 """The myc3 theme's layout, 404, assets and Tailwind tokens, ported from the Next site."""
 
+import re
 import subprocess
 from pathlib import Path
 
@@ -49,6 +50,21 @@ def test_umami_script_uses_the_myc3_website(myc3, client):
 
     assert 'src="https://analytics.myc3.life/script.js"' in html
     assert 'data-website-id="231a1dee-01c4-422e-adbc-d253914fe38c"' in html
+
+
+def test_pages_load_the_form_script_before_a_pinned_alpine(myc3, client):
+    myc3.append(page_doc("myc3"))
+
+    _, html = get(client, "/")
+
+    site_js = html.index("/static/js/site.js")
+    alpine = re.search(r'src="https://cdn\.jsdelivr\.net/npm/alpinejs@\d+\.\d+\.\d+/dist/cdn\.min\.js"', html)
+    assert site_js < alpine.start()
+    assert (THEME / "static/js/site.js").exists()
+
+
+def test_css_hides_x_cloak_elements(css):
+    assert "[x-cloak]" in css
 
 
 def test_404_is_the_shared_page_inside_the_myc3_layout(myc3, client):

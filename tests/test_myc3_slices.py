@@ -190,7 +190,90 @@ def test_footer_has_social_icons_and_unspaced_links():
     ) in html
 
 
-def test_contact_form_is_a_placeholder_until_m2():
-    primary = {"form_name": "contact", "name_label": "Name", "submit_button_label": "SEND"}
+FORM_PRIMARY = {
+    "form_name": "story",
+    "name_label": "Your name",
+    "email_label": "Your email",
+    "category_label": "Topic",
+    "subject_label": "About",
+    "message_label": "Tell us more",
+    "submit_button_label": "SEND",
+    "consent_label": rich("I agree to the <privacy> policy"),
+    "thank_you_message": rich("Thanks, friend"),
+}
+CATEGORIES = [{"category_name": "Story"}, {"category_name": "Prayer"}]
 
-    assert render(raw("contact_form", primary=primary)) == ""
+
+def contact_form(primary=None, items=CATEGORIES):
+    return render(raw("contact_form", primary=FORM_PRIMARY if primary is None else primary, items=items))
+
+
+def test_contact_form_passes_netlify_detection_rules():
+    html = contact_form()
+
+    form = re.search(r"<form[^>]*>", html).group(0)
+    assert 'name="story"' in form and 'method="post"' in form
+    assert 'data-netlify="true"' in form and 'data-netlify-honeypot="bot-field"' in form
+    assert '<input type="hidden" name="form-name" value="story">' in html
+    assert 'name="bot-field"' in html
+    # Netlify only collects fields present in the static HTML.
+    for field in ("name", "email", "category", "subject", "message", "consent"):
+        assert f'name="{field}"' in html
+
+
+def test_contact_form_name_defaults_to_contact():
+    html = contact_form({"submit_button_label": "SEND"}, items=[])
+
+    assert 'name="contact"' in re.search(r"<form[^>]*>", html).group(0)
+    assert '<input type="hidden" name="form-name" value="contact">' in html
+
+
+def test_contact_form_labels_come_from_the_slice_and_default_to_next_text():
+    html = contact_form()
+
+    for label in ("Your name", "Your email", "Topic", "About", "Tell us more", "SEND"):
+        assert label in html
+    bare = contact_form({}, items=CATEGORIES)
+    for label in (">Name<", ">Email<", ">Category<", ">Subject<", ">Message<", ">Send<"):
+        assert label in bare
+
+
+def test_contact_form_category_select_lists_the_items_and_is_required():
+    html = contact_form()
+
+    assert '<option value="">-- Select --</option>' in html
+    assert '<option value="Story">Story</option>' in html
+    assert '<option value="Prayer">Prayer</option>' in html
+    assert re.search(r"<select[^>]*required", html)
+
+
+def test_contact_form_without_items_has_no_category():
+    html = contact_form(items=[])
+
+    assert "<select" not in html and 'name="category"' not in html
+
+
+def test_contact_form_fields_are_required_without_js():
+    html = contact_form()
+
+    for tag in re.findall(r"<(?:input|textarea)[^>]*name=\"(?:name|email|subject|message|consent)\"[^>]*>", html):
+        assert " required" in tag
+    assert 'type="email"' in html and 'type="checkbox"' in html
+    button = re.search(r"<button[^>]*type=\"submit\"[^>]*>", html).group(0)
+    assert not re.search(r"\sdisabled[\s>=]", button)
+
+
+def test_contact_form_consent_label_is_rich_text_with_a_default():
+    assert "I agree to the &lt;privacy&gt; policy" in contact_form()
+    assert "I consent to my data being processed." in contact_form({}, items=[])
+
+
+def test_contact_form_thank_you_is_swapped_in_with_a_default():
+    html = contact_form()
+
+    assert 'x-if="submitted"' in html and "Thanks, friend" in html
+    assert "Thank you for your message. We will be in touch soon." in contact_form({}, items=[])
+
+
+def test_contact_form_ids_are_unique_per_form_name():
+    assert 'id="name-story"' in contact_form() and 'for="name-story"' in contact_form()
