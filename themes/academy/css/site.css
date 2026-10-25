@@ -1,8 +1,6 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
 @source "../templates";
 @source "../../../templates";
-@source not "../../main";
-@source not "../../../tests";
 
 /* Ported from the Gatsby site's Tailwind 2 config: only what the templates use. */
 @theme {
