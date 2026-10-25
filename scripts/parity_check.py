@@ -4,6 +4,7 @@ Run after `just build <site>`:
     SITE=myc3 uv run python scripts/parity_check.py --out docs/plans/phase-4/evidence/m4 \
         [--live https://myc3.life] [--static ~/c3/creative/websites/myc3/public] [--live-sitemap /sitemap.xml] \
         [--pages /team/ ...] [--skip-pages] [--skip-redirects]
+    Main: --live-sitemap /sitemap-index.xml --static ~/c3/creative/websites/new_to_church/static
     uv run python scripts/parity_check.py --classify-only docs/plans/phase-3/evidence/m5/results.json
 
 Writes screenshots and results.json to --out. Read-only and sequential: plain Playwright and httpx
@@ -15,9 +16,9 @@ import base64
 import difflib
 import json
 import os
+import re
 import sys
 import threading
-import re
 import time
 from collections import Counter
 from contextlib import contextmanager
