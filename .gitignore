@@ -7,3 +7,8 @@ dist/
 staticfiles/
 .bin/
 themes/*/static/css/site.css
+
+# Parity and browser screenshots stay local
+docs/plans/phase-3/evidence/**/*.jpg
+docs/plans/phase-3/evidence/**/*.jpeg
+docs/plans/phase-3/evidence/**/*.png
