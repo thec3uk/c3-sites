@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block body %}
+{# Next pages/[uid].js page wrapper. #}
+{% with background=page.fields.background_image %}<div class="absolute w-screen min-h-screen pb-4 bg-gray-50"{% if background %} style="background-image: url('{{ background.url }}')"{% endif %}>{% block content %}{% endblock %}</div>{% endwith %}
+{% endblock %}

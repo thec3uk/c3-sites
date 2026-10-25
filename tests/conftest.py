@@ -30,3 +30,14 @@ def main(settings, documents):
     ]
     documents += main_documents()
     return documents
+
+
+@pytest.fixture
+def myc3(settings, documents):
+    """The myc3 site and theme; append raw documents to the returned list."""
+    settings.SITE = load_site("myc3")
+    settings.ALLOWED_HOSTS = ["testserver"]
+    settings.TEMPLATES = [
+        {**django_settings.TEMPLATES[0], "DIRS": [ROOT / "themes/myc3/templates", ROOT / "templates"]}
+    ]
+    return documents
