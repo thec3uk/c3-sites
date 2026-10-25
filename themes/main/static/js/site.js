@@ -78,10 +78,15 @@ document.addEventListener("alpine:init", () => {
     sending: false,
     failed: false,
     valid: false,
+    init() {
+      this.check();
+    },
     // Same rules as Gatsby's contactForm.tsx.
     check() {
       const f = this.$root.querySelector("form");
       const v = (n) => f.elements[n].value;
+      // Derive the recipient so autofilled or restored selects still count.
+      f.elements.email_recipient.value = f.elements.category_name.selectedOptions[0]?.dataset.recipient ?? "";
       this.valid =
         v("email_recipient") !== "" &&
         v("message").length > 10 &&
@@ -89,9 +94,7 @@ document.addEventListener("alpine:init", () => {
         v("email").includes("@") &&
         v("subject").length > 3;
     },
-    pick(event) {
-      const option = event.target.selectedOptions[0];
-      event.target.form.elements.email_recipient.value = option.dataset.recipient;
+    pick() {
       this.check();
     },
     async send(event) {

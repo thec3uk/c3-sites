@@ -233,6 +233,27 @@ def test_contact_form_posts_to_netlify_and_shows_thank_you(dist_url, desktop, mo
     assert body["email"] == ["jane@example.com"] and body["bot-field"] == [""]
 
 
+def test_send_enables_when_fields_are_restored_without_input_events(dist_url, desktop):
+    desktop.goto(dist_url + "/contact/")
+    # Mimics autofill or back-navigation: values set, no input/change events.
+    desktop.evaluate(
+        """() => {
+          const f = document.querySelector("form[name='Contact Us']") || document.querySelector("form");
+          f.elements.name.value = "Jane Smith";
+          f.elements.email.value = "jane@example.com";
+          f.elements.subject.value = "A question";
+          f.elements.message.value = "Hello there, a longer message";
+          f.elements.category_name.value = "Safeguarding";
+          const root = f.closest("[x-data]");
+          Alpine.destroyTree(root);
+          Alpine.initTree(root);
+        }"""
+    )
+
+    expect(desktop.get_by_role("button", name="Send")).to_be_enabled()
+    assert desktop.locator("input[name=email_recipient]").input_value() == "safeguarding@thec3.uk"
+
+
 def test_contact_form_keeps_the_form_when_the_post_fails(dist_url, desktop):
     desktop.route("**/", lambda route: route.fulfill(status=500) if route.request.method == "POST" else route.continue_())
     desktop.goto(dist_url + "/contact/")
