@@ -1,5 +1,7 @@
 import logging
+from xml.sax.saxutils import escape
 
+from django.conf import settings
 from django.http import Http404, HttpResponse
 from django.shortcuts import render
 
@@ -31,3 +33,9 @@ def redirects_view(request):
     for source in shadowed_sources():
         log.warning("Redirect %s is also a built page; not forced, so the page wins", source)
     return HttpResponse(redirects_text(), content_type="text/plain")
+
+
+def sitemap_view(request):
+    locs = "".join(f"<url><loc>{escape(f'https://{settings.SITE.domain}{p.url}')}</loc></url>" for p in site_pages())
+    xml = f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{locs}</urlset>'
+    return HttpResponse(xml, content_type="application/xml")

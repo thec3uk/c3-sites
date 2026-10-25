@@ -1,7 +1,7 @@
 # django_distill patches django.urls.path when the app loads, adding distill_* arguments.
 from django.urls import path
 
-from pages.views import not_found_view, page_paths, page_view, redirects_view
+from pages.views import not_found_view, page_paths, page_view, redirects_view, sitemap_view
 
 urlpatterns = [
     path("", page_view, name="home", distill_path=True, distill_file="index.html"),
@@ -16,5 +16,6 @@ urlpatterns = [
     ),
     # Netlify reads this from the site root, after build.sh prepends the theme's rules.
     path("_redirects", redirects_view, name="redirects", distill_path=True, distill_file="_redirects"),
+    path("sitemap.xml", sitemap_view, name="sitemap", distill_path=True, distill_file="sitemap.xml"),
     path("<path:path>/", page_view, name="page", distill_path=True, distill_func=page_paths),
 ]

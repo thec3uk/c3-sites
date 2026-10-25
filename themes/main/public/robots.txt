@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thec3.uk/sitemap.xml
