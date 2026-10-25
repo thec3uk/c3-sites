@@ -34,7 +34,7 @@ TEMPLATES = [
 
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [BASE_DIR / "themes" / SITE.theme / "static"]
-STATIC_ROOT = BASE_DIR / "dist" / "static"
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 PRISMIC_REPOSITORY = os.environ.get("PRISMIC_REPOSITORY", "thec3")
 PRISMIC_ACCESS_TOKEN = os.environ.get("PRISMIC_ACCESS_TOKEN", "")

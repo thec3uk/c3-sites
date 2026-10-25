@@ -1,0 +1,5 @@
+# Each Netlify site sets SITE (e.g. academy) in its environment variables.
+# uv is installed here so it can fetch Python 3.15 and install from uv.lock.
+[build]
+  command = "python3 -m pip install --quiet uv && python3 -m uv run --frozen python manage.py distill generate --output-directory dist --collectstatic --force"
+  publish = "dist"

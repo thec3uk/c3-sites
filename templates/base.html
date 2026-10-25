@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ page.title }}{% endblock %}</title>
+  {% block head %}{% endblock %}
+  {% if site.umami_website_id %}<script defer src="{{ site.umami_src }}" data-website-id="{{ site.umami_website_id }}" data-do-not-track="true"></script>{% endif %}
+</head>
+<body>
+  {% block body %}{% endblock %}
+</body>
+</html>
