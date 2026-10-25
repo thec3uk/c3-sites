@@ -1,6 +1,10 @@
 {% extends "slices/card/_title_card.html" %}
 {# Gatsby components/card/newsletterWithLocations.tsx; Mailchimp submission is M3's. #}
 {# Inputs carry mt-1 in place of space-y-1, which v4 puts on the inline label as a no-op margin-bottom. #}
+{# The button drops mt-2: v3's space-y-3 overrode it, v4's would add to it. #}
+{# Live wraps this card in layout.Main twice, doubling its margins on desktop. #}
+{% block before %}<div class="my-6 md:my-4 lg:my-3">{% endblock %}
+{% block after %}</div>{% endblock %}
 {% block body %}<div class="flex flex-col justify-between h-full -mt-4 prose prose-p:lg:text-xl">
   {% if slice.primary.content %}{{ slice.primary.content }}{% else %}<p>No content</p>{% endif %}
   <form class="h-full">
@@ -37,7 +41,7 @@
             </div>
           </fieldset>
         </div>
-        <button class="w-full px-6 py-3 mt-2 text-3xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50 hover:text-red-500">Subscribe</button>
+        <button class="w-full px-6 py-3 text-3xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50 hover:text-red-500">Subscribe</button>
       </div>
     </div>
   </form>

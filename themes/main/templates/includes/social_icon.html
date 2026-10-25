@@ -1,6 +1,7 @@
+{# ml-2 on the label stands in for space-x-2, which in v4 would also space the icon while the label is hidden. #}
 <div class="flex items-center space-x-2">
-  <a href="{{ url }}" class="flex items-center space-x-2 group">
+  <a href="{{ url }}" class="flex items-center group">
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-900 transition-colors duration-300 cursor-pointer fill-current lg:h-6 lg:w-6 group-hover:text-red-500"><title>{{ title }}</title><path d="{{ path }}"/></svg>
-    <span class="hidden transition-colors duration-300 lg:inline-block group-hover:text-red-500">{{ title }}</span>
+    <span class="hidden ml-2 transition-colors duration-300 lg:inline-block group-hover:text-red-500">{{ title }}</span>
   </a>
 </div>

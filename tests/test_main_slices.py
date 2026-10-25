@@ -242,3 +242,25 @@ def test_newsletter_inputs_keep_their_gap_below_inline_labels():
 
     assert "space-y-1" not in html
     assert html.count('class="w-full p-3 mt-1 text-2xl') == 2
+
+
+def test_newsletter_button_gap_is_space_y_alone_as_in_tailwind_3():
+    # v3's space-y-3 margin-top overrode the button's mt-2; v4's margin-bottom on the sibling adds to it.
+    html = render(raw("card", "newsletterLocationSlice"))
+
+    assert '<button class="w-full px-6 py-3 text-3xl' in html
+
+
+def test_newsletter_card_is_wrapped_in_main_twice_as_live():
+    # Gatsby wraps this variation in layout.Main twice; inside the lg grid the margins don't collapse.
+    html = render(raw("card", "newsletterLocationSlice"))
+
+    assert '<div class="my-6 lg:col-span-8 lg:col-start-2 md:my-4 lg:my-3"><div class="my-6 md:my-4 lg:my-3">' in html
+
+
+def test_social_icon_gap_sits_on_the_label_as_in_tailwind_3():
+    # v4's space-x-2 would put margin-right on the icon even while the label is hidden on mobile.
+    html = render(raw("social_links_block"))
+
+    assert '<a href="https://www.facebook.com/thec3uk" class="flex items-center group">' in html
+    assert '<span class="hidden ml-2 transition-colors' in html

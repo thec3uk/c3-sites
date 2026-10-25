@@ -9,10 +9,11 @@ import pytest
 from django.conf import settings
 from playwright.sync_api import expect, sync_playwright
 
-from tests.documents import banner_doc
+from tests.documents import banner_doc, page_doc
 
 pytestmark = pytest.mark.browser
 DIST = Path(settings.BASE_DIR) / "dist"
+FIXTURES = Path(__file__).parent / "fixtures"
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -128,3 +129,56 @@ def test_dismissed_banner_stays_dismissed(banner_site, phone):
     assert stored == [{"message": "Global Leadership Summit 2026", "closed": True}]
     phone.reload()
     expect(phone.get_by_role("button", name="Dismiss")).to_be_hidden()
+
+
+def sample(slice_type, variation=None):
+    samples = json.loads((FIXTURES / "slice_samples.json").read_text())
+    return next(s for s in samples if s["slice_type"] == slice_type and s.get("variation", variation) == variation)
+
+
+@pytest.fixture
+def slices_site(main, client, tmp_path, dist_url):  # noqa: F811
+    """/slices/ built from real slice samples, served with the built CSS."""
+    main += json.loads((FIXTURES / "linked_documents.json").read_text())
+    body = [sample("header", "textOnlyHero"), sample("text"), sample("quick_links_block")]
+    body += [sample("card", "imageCard"), sample("faq_section")]
+    main.append(page_doc("thec3.uk_slices", body=body))
+    (tmp_path / "index.html").write_bytes(client.get("/slices/").content)
+    shutil.copytree(DIST / "static", tmp_path / "static")
+    server = serve(tmp_path)
+    yield f"http://127.0.0.1:{server.server_port}"
+    server.shutdown()
+
+
+@pytest.fixture
+def desktop(browser):
+    context = browser.new_context(viewport={"width": 1440, "height": 900})
+    yield context.new_page()
+    context.close()
+
+
+def test_slices_sit_in_mains_grid_with_asides_beside_text(slices_site, desktop):
+    desktop.goto(slices_site + "/")
+    text = desktop.locator("[data-slice=text] > div").bounding_box()
+    aside = desktop.locator("[data-slice=quick_links_block] aside").bounding_box()
+
+    # Gatsby: text in columns 2-9, the aside in 10-11 on the same row.
+    assert 100 < text["x"] and text["width"] > 700
+    assert aside["x"] > text["x"] + text["width"]
+    assert abs(aside["y"] - text["y"]) < 1
+
+
+def test_image_card_is_at_least_25rem_tall_on_desktop(slices_site, desktop):
+    desktop.goto(slices_site + "/")
+
+    assert desktop.locator("[data-slice=card] a > div").bounding_box()["height"] >= 400
+
+
+def test_faq_answer_opens_on_its_question(slices_site, phone):
+    phone.goto(slices_site + "/")
+    answer = phone.get_by_text("we run mid-week life groups", exact=False)
+    expect(answer).to_be_hidden()
+
+    phone.get_by_text("What is a Kids Life Group?").click()
+
+    expect(answer).to_be_visible()

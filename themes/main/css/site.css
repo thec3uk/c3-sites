@@ -99,7 +99,8 @@
   }
 }
 
-/* Gatsby's backgroundSize, backgroundPosition, transitionProperty, height and minHeight extensions. */
+/* Gatsby's backgroundSize, backgroundPosition, transitionProperty and height extensions.
+   Its min-h-90 (25rem) is v4's built-in min-h-100: a custom min-h-90 loses to v4's own 22.5rem one. */
 @utility bg-underline {
   background-size: 200% 0.75rem;
 }
@@ -118,9 +119,6 @@
 }
 @utility h-screen-90 {
   height: 90vh;
-}
-@utility min-h-90 {
-  min-height: 25rem;
 }
 
 @layer base {
