@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@source "../templates";
+@source "../../../templates";
+
+/* Ported from the Gatsby site's Tailwind 3 config, which replaced the default palette. */
+@theme {
+  --color-*: initial;
+  --color-black: #343434;
+  --color-white: #fff;
+
+  --color-grayscale-50: #f7f7f7;
+  --color-grayscale-100: #efefef;
+  --color-grayscale-200: #dfdfdf;
+  --color-grayscale-300: #cacaca;
+  --color-grayscale-400: #a8a8a8;
+  --color-grayscale-500: #8a8a8a;
+  --color-grayscale-600: #6d6d6d;
+  --color-grayscale-700: #5f5f5f;
+  --color-grayscale-800: #444444;
+  --color-grayscale-900: #2a2a2a;
+
+  --color-gray-50: #f6f7f7;
+  --color-gray-100: #edefef;
+  --color-gray-200: #dce0e0;
+  --color-gray-300: #c5cbcb;
+  --color-gray-400: #a1aaaa;
+  --color-gray-500: #808d8d;
+  --color-gray-600: #646f6f;
+  --color-gray-700: #576161;
+  --color-gray-800: #3e4545;
+  --color-gray-900: #272b2b;
+
+  --color-yellow-50: #fef6e2;
+  --color-yellow-100: #fdeec8;
+  --color-yellow-200: #fbdc8e;
+  --color-yellow-300: #f8c23a;
+  --color-yellow-400: #d99e08;
+  --color-yellow-500: #b38206;
+  --color-yellow-600: #8c6605;
+  --color-yellow-700: #7b5904;
+  --color-yellow-800: #584003;
+  --color-yellow-900: #372802;
+
+  --color-teal-50: #ddfcff;
+  --color-teal-100: #b8f9ff;
+  --color-teal-200: #64f2ff;
+  --color-teal-300: #00def2;
+  --color-teal-400: #00bacb;
+  --color-teal-500: #00919f;
+  --color-teal-600: #007883;
+  --color-teal-700: #006973;
+  --color-teal-800: #004b52;
+  --color-teal-900: #003034;
+
+  --color-red-50: #fef5f5;
+  --color-red-100: #fdeaea;
+  --color-red-200: #fbd6d7;
+  --color-red-300: #f9babb;
+  --color-red-400: #f5898b;
+  --color-red-500: #f05356;
+  --color-red-600: #d81316;
+  --color-red-700: #be1113;
+  --color-red-800: #8a0c0e;
+  --color-red-900: #590809;
+
+  --color-purple-50: #f6f7fb;
+  --color-purple-100: #eceff6;
+  --color-purple-200: #dadfee;
+  --color-purple-300: #c1c9e2;
+  --color-purple-400: #9aa7d0;
+  --color-purple-500: #7688bf;
+  --color-purple-600: #536aaf;
+  --color-purple-700: #475c9a;
+  --color-purple-800: #33426e;
+  --color-purple-900: #202945;
+
+  --color-grey-100: #efefef;
+  --color-grey-200: #d1d1d1;
+  --color-grey-300: #6c6c6c;
+  --color-grey-400: #4e4e4e;
+
+  --font-accent: Gotcha;
+  --font-title: "Novecento Sans Wide";
+  --font-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --text-5\.5xl: 3.5rem;
+  --text-5\.5xl--line-height: 1;
+  --spacing-128: 42rem;
+  --shadow-top: 0 -1px 3px 0 rgba(0, 0, 0, 0.1), 0 -1px 2px 0 rgba(0, 0, 0, 0.06);
+  --animate-spinner: spinner 3s ease-in-out infinite;
+
+  @keyframes spinner {
+    90% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* Gatsby's backgroundSize, backgroundPosition, transitionProperty, height and minHeight extensions. */
+@utility bg-underline {
+  background-size: 200% 0.75rem;
+}
+@utility bg-text {
+  background-size: 200% auto;
+}
+@utility bg-p-full {
+  background-position: 100% 130%;
+}
+@utility bg-p-zero {
+  background-position: 0% 100%;
+}
+@utility transition-bg-position {
+  transition-property: background-position;
+  transition-timing-function: var(--default-transition-timing-function);
+}
+@utility h-screen-90 {
+  height: 90vh;
+}
+@utility min-h-90 {
+  min-height: 25rem;
+}
+
+@layer base {
+  /* Gatsby's gatsby-ssr.js put bg-gray-50 on <html>. */
+  html {
+    background-color: var(--color-gray-50);
+  }
+  /* Tailwind 3's preflight default border colour. */
+  *,
+  ::after,
+  ::before {
+    border-color: var(--color-gray-200);
+  }
+  [x-cloak] {
+    display: none !important;
+  }
+}
+
+@font-face {
+  font-family: "Novecento Sans Wide";
+  font-weight: bold;
+  src: url("../fonts/Novecentosanswide-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url("../fonts/Montserrat-Regular.otf") format("opentype");
+}

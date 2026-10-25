@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block seo %}<title>Page not found{% if site_config.fields.title %} | {{ site_config.fields.title }}{% endif %}</title>
+  <meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+{# Gatsby src/pages/404.tsx inside a ContainedHero. #}
+<div class="md:max-w-(--breakpoint-sm) md:col-start-2 lg:col-start-2 md:col-span-6 lg:col-span-4 mb-32 mt-28 md:mt-40 lg:mb-32 lg:mt-40">
+  <h1 class="font-title font-bold text-5.5xl lowercase">the page is not here!</h1>
+  <div class="mt-4 font-sans text-xl">
+    He is not here; he has risen, just as he said. Come and see the place where he lay.
+    <br>
+    <i>Matthew 28:6</i>
+  </div>
+  <div class="px-2 py-2 mt-8 -mx-2 text-2xl text-white bg-black">the page has gone ahead to...</div>
+  <div class="flex flex-col mt-8 space-y-4 text-2xl">
+    <a href="/locations/" class="bg-linear-to-r bg-underline font-semibold bg-p-full bg-no-repeat w-max pl-0.5 pr-4 duration-300 hover:bg-p-zero cursor-pointer transition-bg-position no-underline from-red-500 from-50% to-black to-50%">Locations</a>
+    <a href="/shaping/" class="bg-linear-to-r bg-underline font-semibold bg-p-full bg-no-repeat w-max pl-0.5 pr-4 duration-300 hover:bg-p-zero cursor-pointer transition-bg-position no-underline from-red-500 from-50% to-black to-50%">Next Steps</a>
+    <a href="/reaching/" class="bg-linear-to-r bg-underline font-semibold bg-p-full bg-no-repeat w-max pl-0.5 pr-4 duration-300 hover:bg-p-zero cursor-pointer transition-bg-position no-underline from-red-500 from-50% to-black to-50%">Sundays</a>
+    <a href="https://www.google.com/maps/place/Sea+of+Galilee/@32.7982869,35.5134838,12z" class="bg-linear-to-r bg-underline font-semibold bg-p-full bg-no-repeat w-max pl-0.5 pr-4 duration-300 hover:bg-p-zero cursor-pointer transition-bg-position no-underline from-red-500 from-50% to-black to-50%">Galilee</a>
+  </div>
+</div>
+<div class="lg:col-start-7 lg:col-span-5 justify-center items-center w-full mb-32 mt-28 md:mt-40 lg:mb-32 lg:mt-40 flex"><div class="w-full h-full"></div></div>
+{% endblock %}

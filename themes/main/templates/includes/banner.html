@@ -1,0 +1,10 @@
+{% load documents %}{% site_document "notification_banner" as banner %}{% with fields=banner.fields %}{% if fields.active == "yes" %}
+<div x-data="notificationBanner" data-message="{{ fields.content }}" x-show="open" x-cloak class="absolute w-screen px-0 -mx-2 md:px-4 md:-mx-4 lg:w-full top-4 md:top-auto md:col-start-2 md:relative md:col-span-10 lg:mx-0 lg:px-0">
+  <div class="relative flex justify-between px-2 py-4 mx-2 space-x-2 bg-yellow-300 rounded md:py-4 md:px-3 md:text-xl lg:text-lg md:mx-0 flex-nowrap{% if fields.url %} transition-colors duration-300 hover:bg-red-500{% endif %}">
+    {% if fields.url %}<a href="{{ fields.url }}" class="grow text-ellipsis after:absolute after:inset-0">{{ fields.content }}</a>{% else %}<div class="grow text-ellipsis">{{ fields.content }}</div>{% endif %}
+    <button type="button" @click="close()" aria-label="Dismiss" class="relative text-black hover:text-white hover:cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-6 h-6"><path fill-rule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clip-rule="evenodd"/></svg>
+    </button>
+  </div>
+</div>
+{% endif %}{% endwith %}

@@ -1,0 +1,33 @@
+{% load static %}<nav x-data="mobileMenu" class="fixed bottom-0 h-16 -mx-2 lg:relative shadow-top lg:shadow-none lg:h-20 lg:bottom-auto lg:pt-8 lg:grid lg:grid-cols-12 lg:gap-x-4 lg:px-4 lg:w-screen">
+  <div id="desktop-menu" class="h-full font-bold uppercase text-black text-2xl lg:text-lg my-auto lg:mt-0 lg:col-start-2 lg:col-end-12 justify-center lg:justify-between hidden lg:flex cursor-pointer z-50">
+    <div class="flex-row items-center justify-center hidden lg:flex">
+      <a href="/" class="w-16 h-16"><img src="{% static 'images/manifest-logo.png' %}" alt="The C3 Church home"></a>
+    </div>
+    <div class="flex flex-col items-center justify-center lg:flex-row">
+      {% include "includes/menu_links.html" %}
+    </div>
+  </div>
+  <div class="relative z-50 lg:hidden">
+    <div id="mobile-bar" class="fixed bottom-0 left-0 z-20 w-screen px-2 bg-gray-50/90">
+      <div class="flex justify-between w-full border-t border-t-black">
+        <div class="flex items-center justify-start w-1/3">
+          <a href="/"><img src="{% static 'images/manifest-logo.png' %}" alt="The C3 Church home" class="w-12 h-12"></a>
+        </div>
+        <div class="flex justify-center w-1/3">
+          <button type="button" x-ref="button" @click="toggle()" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false" :aria-expanded="open.toString()">
+            <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-16 h-16 cursor-pointer hover:text-gray-600"><path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd"/></svg>
+            <svg x-show="open" x-cloak xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="w-16 h-16 cursor-pointer hover:text-gray-600"><path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd"/></svg>
+          </button>
+        </div>
+        <div class="flex items-center justify-end w-1/3"></div>
+      </div>
+    </div>
+    <div id="mobile-menu" x-ref="panel" x-show="open" x-cloak x-transition.opacity @keydown.escape.window="close()" role="dialog" aria-label="Menu" class="fixed inset-0 z-10 w-screen h-screen bg-gray-50">
+      <div class="h-full font-bold uppercase text-black text-2xl my-auto justify-center flex flex-col lg:hidden cursor-pointer z-50">
+        <div class="flex flex-col items-center justify-center">
+          {% include "includes/menu_links.html" with mobile=True %}
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

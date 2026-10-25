@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static images seo %}
+{% block seo %}{% seo_meta page site_config as seo %}
+  <title>{{ seo.title }}</title>
+  <meta name="description" content="{{ seo.description }}">
+  <meta name="image" content="{{ seo.image|imgix:1200 }}">
+  <meta name="apple-mobile-web-app-title" content="{{ seo.title }}">
+  <meta name="application-name" content="{{ seo.title }}">
+  <link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
+  <meta property="og:url" content="https://{{ site.domain }}{{ page.url }}">
+  <meta property="og:title" content="{{ seo.title }}">
+  <meta property="og:description" content="{{ seo.description }}">
+  <meta property="og:image" content="{{ seo.image|imgix:1200 }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="{{ site_config.fields.twitter_username }}">
+  <meta name="twitter:title" content="{{ seo.title }}">
+  <meta name="twitter:description" content="{{ seo.description }}">
+  <meta name="twitter:image" content="{{ seo.image|imgix:1200 }}">{% endblock %}
+{% block head %}
+  <meta name="theme-color" content="#202945">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <script defer src="{% static 'js/site.js' %}"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.17.4/dist/cdn.min.js"></script>
+{% endblock %}
+{% block body %}
+<header class="absolute z-50 px-2 mt-4 md:px-0 md:top-0 md:mt-0 md:relative lg:z-0">
+  {% include "includes/nav.html" %}
+</header>
+<main class="z-0 w-screen px-2 text-black lg:grid lg:grid-cols-12 lg:gap-x-4 md:px-4 md:mt-8">
+  {% include "includes/banner.html" %}
+  {% block content %}{% endblock %}
+</main>
+{% include "includes/footer.html" %}
+{% endblock %}
