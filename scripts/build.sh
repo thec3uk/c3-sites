@@ -21,6 +21,6 @@ fi
 # collectstatic never removes old files, so start from empty.
 rm -rf staticfiles
 # UV lets Netlify run a pip-installed uv as "python3 -m uv".
-${UV:-uv} run --frozen python manage.py distill generate --output-directory dist --collectstatic --force
+${UV:-uv} run --frozen --no-dev python manage.py distill generate --output-directory dist --collectstatic --force
 # Files served from the site root: favicon, Netlify _redirects.
 if [ -d "themes/$SITE/public" ]; then cp -R "themes/$SITE/public/." dist/; fi
