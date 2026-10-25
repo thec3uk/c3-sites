@@ -1,0 +1,5 @@
+{% extends "slices/header/_contained.html" %}
+{# Only contact_form is in use; the map and carousel components are not ported (README). #}
+{% block text %}{% include "slices/header/_text.html" with links=True link_padding="pr-4" %}{% endblock %}
+{% block background_display %}{% if slice.primary.componentName == "contact_form" %}flex{% else %}hidden lg:flex{% endif %}{% endblock %}
+{% block background %}{% if slice.primary.componentName == "contact_form" %}{% include "includes/contact_form.html" %}{% endif %}{% endblock %}

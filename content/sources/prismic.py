@@ -10,8 +10,9 @@ TITLE_FIELDS = ("page_title", "title", "seo_title")
 
 
 def _is_rich_text(value: list) -> bool:
+    # Image blocks are the one block type without spans.
     return bool(value) and all(
-        isinstance(b, dict) and "type" in b and "spans" in b for b in value
+        isinstance(b, dict) and "type" in b and ("spans" in b or b["type"] == "image") for b in value
     )
 
 

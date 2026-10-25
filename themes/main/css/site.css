@@ -1,6 +1,8 @@
 @import "tailwindcss" source(none);
 @source "../templates";
 @source "../../../templates";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
 
 /* Ported from the Gatsby site's Tailwind 3 config, which replaced the default palette. */
 @theme {
@@ -134,6 +136,10 @@
   }
   [x-cloak] {
     display: none !important;
+  }
+  /* render_slices wraps each slice; Gatsby's slices were direct children of main's grid. */
+  main > .slice {
+    display: contents;
   }
 }
 

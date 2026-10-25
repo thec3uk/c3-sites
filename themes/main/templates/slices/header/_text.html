@@ -1,0 +1,6 @@
+{% with p=slice.primary %}<h1 class="font-title font-bold text-5.5xl lowercase">{{ p.title|default:"" }}</h1>
+<div class="mt-4 font-sans text-xl">{% if p.leadParagraph %}{{ p.leadParagraph }}{% endif %}</div>
+<div class="px-2 py-2 mt-8 -mx-2 text-2xl text-white bg-black"><h2>{{ p.callout|default:"" }}</h2></div>
+{% if links %}<div class="flex flex-col mt-8 space-y-4 text-2xl">{% for item in slice.items %}
+  <a{% if item.linkUrl %} href="{{ item.linkUrl }}"{% endif %} class="bg-linear-to-r bg-underline font-semibold bg-p-full bg-no-repeat w-max pl-0.5 {{ link_padding }} duration-300 hover:bg-p-zero cursor-pointer transition-bg-position no-underline from-red-500 from-50% to-black to-50%">{{ item.linkTitle }}</a>{% endfor %}
+</div>{% endif %}{% endwith %}

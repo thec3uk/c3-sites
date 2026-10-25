@@ -204,3 +204,16 @@ def test_empty_slice_items_are_dropped():
     slice = _slice({"slice_type": "text", "primary": {}, "items": [{}]}, "")
 
     assert slice.items == []
+
+
+def test_rich_text_with_image_blocks_is_rich_text():
+    # Prismic image blocks have no spans; /room-hire/ mixes them with paragraphs.
+    value = [
+        {"type": "heading3", "text": "Auditorium", "spans": []},
+        {"type": "image", "url": "https://images.prismic.io/thec3/a.jpg", "alt": "The back", "dimensions": {}},
+    ]
+
+    rich = convert(value)
+
+    assert isinstance(rich, RichText)
+    assert rich.html == '<h3>Auditorium</h3><p class="block-img"><img src="https://images.prismic.io/thec3/a.jpg" alt="The back"></p>'

@@ -1,0 +1,23 @@
+{% load text %}{% with p=slice.primary %}
+{# Gatsby components/faq/slice.tsx. Its title never shows live (the query aliases it away), so it is left out (NOTES.md). #}
+{# Explicit top borders: v4's divide-y borders the bottom of items, Gatsby's v3 the top. #}
+<div class="my-6 lg:col-span-8 lg:col-start-2 md:my-4 lg:my-3">
+  <div class="px-0 py-12 mx-auto max-w-7xl sm:py-16 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+      <div>
+        {% if p.eyebrow_headline %}<h3 class="text-xl font-bold text-left text-gray-900/70 sm:text-2xl">{{ p.eyebrow_headline|plain }}</h3>{% endif %}
+        {% if p.description %}{{ p.description }}{% endif %}
+      </div>
+      <div class="mt-6 space-y-6 border-t-2 border-gray-200">
+        {% for item in slice.items %}<details class="pt-6 group border-t border-gray-900 first:border-t-0">
+          <summary class="flex items-start justify-between w-full text-lg text-left text-black list-none transition-colors duration-150 cursor-pointer group-hover:text-red-500 [&::-webkit-details-marker]:hidden">
+            <span class="font-medium transition-colors duration-150 group-hover:text-red-500">{{ item.question }}</span>
+            <span class="flex items-center ml-6 h-7"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6 transform rotate-0 group-open:-rotate-180"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg></span>
+          </summary>
+          <div class="pr-12 mt-2"><div class="text-base font-light text-gray-900">{{ item.answer }}</div></div>
+        </details>{% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endwith %}

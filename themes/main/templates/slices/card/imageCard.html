@@ -1,0 +1,9 @@
+{% extends slice.primary.image|yesno:"slices/card/_title_card.html,slices/card/_empty.html" %}
+{% load images %}
+{# Gatsby components/card/image.tsx: the title card over the image, under a gradient of Gatsby's translucent black or white. #}
+{% block before %}{% with p=slice.primary %}{% if p.ctaLink %}<a href="{{ p.ctaLink }}" class="group">{% endif %}
+<div class="relative h-56 md:h-72 lg:h-full lg:min-h-90">
+  <img src="{{ p.image|imgix:1366 }}" srcset="{{ p.image|srcset }}" sizes="(min-width: 1024px) 66vw, 100vw" alt="{{ p.image.alt }}" loading="lazy" class="absolute inset-0 object-cover w-full h-full">
+  <div class="relative h-full bg-linear-to-b{% if p.colour == 'transparent' %} from-[#343434aa]{% elif p.colour == 'transparentBlack' %} from-[#fffc]{% endif %}">{% endwith %}{% endblock %}
+{% block after %}{% with p=slice.primary %}</div>
+</div>{% if p.ctaLink %}</a>{% endif %}{% endwith %}{% endblock %}

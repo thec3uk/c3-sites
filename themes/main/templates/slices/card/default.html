@@ -1,0 +1,20 @@
+{% load images %}{% with p=slice.primary %}
+{# Gatsby components/card/card.tsx. A card with no colour is "teal", which has no classes. #}
+<div class="my-6 lg:col-span-8 lg:col-start-2 md:my-4 lg:my-3">
+  <div class="grid grid-cols-5 grid-rows-6 p-2 rounded-sm shadow-md gap-4 md:grid-cols-12 h-full md:px-4 md:py-4 lg:py-6 {% include "includes/card_colour.html" with colour=p.colour %} min-h-min">
+    <div class="flex flex-col justify-between row-span-3 col-span-full sm:col-span-3 md:col-span-7 sm:row-span-full">
+      <div class="space-y-4">
+        <h2 class="text-4xl font-extrabold capitalize"><span class="md:hidden">{{ p.title|default:"" }}{% if p.title and p.subtitle %}:<br>{% endif %}</span>{{ p.subtitle|default:"" }}</h2>
+        {% if p.content %}<div class="font-medium leading-snug tracking-wide prose prose-h4:text-xl">{{ p.content }}</div>{% endif %}
+      </div>
+      {% if p.ctaLink %}<a href="{{ p.ctaLink }}" class="w-full px-6 py-2 mt-2 text-xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50">{{ p.ctaTitle|default:"" }}</a>{% endif %}
+    </div>
+    <div class="h-full row-span-3 row-start-1 col-span-full sm:col-span-2 md:col-span-4 lg:col-span-4 sm:row-span-full">
+      {% if p.image %}{% if p.ctaLink and p.ctaTitle %}<a href="{{ p.ctaLink }}">{% endif %}<img src="{{ p.image|imgix:1080 }}" srcset="{{ p.image|srcset }}" sizes="(min-width: 768px) 30vw, (min-width: 640px) 40vw, 100vw" alt="{{ p.image.alt }}" width="{{ p.image.width }}" height="{{ p.image.height }}" loading="lazy" class="object-cover w-full h-full rounded-lg">{% if p.ctaLink and p.ctaTitle %}</a>{% endif %}{% endif %}
+    </div>
+    <div class="hidden col-start-12 md:flex justify-start items-center [writing-mode:vertical-lr] row-span-full">
+      <h2 class="font-bold underline lowercase md:text-4xl lg:text-5xl whitespace-nowrap">{{ p.title|default:"" }}</h2>
+    </div>
+  </div>
+</div>
+{% endwith %}

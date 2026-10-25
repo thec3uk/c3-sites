@@ -1,0 +1,13 @@
+{% load documents %}{% with doc=slice.primary.link|linked_document %}{% if doc %}
+{# Gatsby layout.Aside with components/quickLinks.tsx. #}
+<aside class="my-3 md:col-start-10 md:col-span-2 space-y-3">
+  <div class="grid grid-cols-2 px-4 py-2 bg-white bg-center bg-no-repeat bg-cover rounded-sm shadow-lg lg:grid-cols-1 lg:grid-rows-1 lg:px-2 lg:py-4">
+    <div class="flex items-center justify-end col-start-2 lg:justify-start lg:col-start-1 lg:mb-6">
+      <h2 class="text-4xl font-extrabold underline [writing-mode:vertical-lr] lg:text-3xl lg:[writing-mode:horizontal-tb] xl:text-4xl text-black whitespace-nowrap lg:whitespace-normal 2xl:text-4xl">{{ doc.fields.title|default:"" }}</h2>
+    </div>
+    <div class="flex flex-col justify-between col-start-1 row-start-1 space-y-1 text-4xl font-bold lg:row-start-2 md:space-y-4 lg:text-3xl xl:text-4xl 2xl:text-3xl">
+      {% for link in doc.slices %}<a{% if link.primary.url %} href="{{ link.primary.url }}"{% endif %} class="transition duration-300 cursor-pointer text-black/70 hover:text-red-500 hover:underline">{{ link.primary.title }}</a>{% endfor %}
+    </div>
+  </div>
+</aside>
+{% endif %}{% endwith %}

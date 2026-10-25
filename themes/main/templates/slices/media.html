@@ -1,0 +1,8 @@
+{% load images %}{% with p=slice.primary image=slice.primary.image %}
+{# Gatsby layout.FullBleed with components/media/image.tsx; blockImage has no Gatsby component and renders the same. #}
+{% if image %}<div class="my-6 -mx-2 col-span-full md:-mx-4 md:my-4 lg:my-3">
+  <div class="flex justify-center w-screen mx-auto grow {% if p.fullheight %}py-32{% else %}py-16{% endif %}">
+    <img src="{{ image|imgix:1920 }}" srcset="{{ image|srcset }}" sizes="100vw" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="{% if p.fullheight %}object-cover object-center w-screen h-full aspect-video lg:h-screen-90{% else %}object-cover object-center w-screen h-auto aspect-auto{% endif %}">
+  </div>
+</div>{% endif %}
+{% endwith %}

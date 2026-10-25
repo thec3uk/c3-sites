@@ -1,0 +1,8 @@
+{# Gatsby components/text/slice.tsx. Live never shows the title field, so neither do we (NOTES.md). #}
+<div class="my-6 lg:col-span-8 lg:col-start-2 md:my-4 lg:my-3">
+  <div class="px-0 mx-auto my-12 text-justify lg:text-left max-w-7xl sm:my-16 sm:px-3 lg:px-0">
+    <div class="max-w-3xl mx-auto prose xl:max-w-(--breakpoint-2xl) xl:mx-0 lg:prose-xl prose-a:text-red-500 prose-a:hover:text-red-700">
+      {% if slice.primary.content %}{{ slice.primary.content }}{% else %}<p>No content</p>{% endif %}
+    </div>
+  </div>
+</div>

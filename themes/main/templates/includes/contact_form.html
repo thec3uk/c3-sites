@@ -1,0 +1,33 @@
+{% load documents text %}{% site_document "contact_form" as form %}{% with f=form.fields %}
+{# Gatsby slices/header/components/contactForm.tsx. Submission is M3's; the button stays in its not-yet-valid state. #}
+<div class="max-w-lg px-0 sm:px-6 lg:mx-auto lg:max-w-none">
+  <form name="{{ f.form_name }}" method="post" class="grid grid-cols-1 gap-y-6">
+    <div>
+      <label for="contact-name" class="block text-sm font-medium text-gray-700">{{ f.name_label }}</label>
+      <input type="text" name="name" id="contact-name" autocomplete="name" placeholder="{{ f.name_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500">
+    </div>
+    <div>
+      <label for="contact-email" class="block text-sm font-medium text-gray-700">{{ f.email_label }}</label>
+      <input type="email" name="email" id="contact-email" autocomplete="email" placeholder="{{ f.email_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500">
+    </div>
+    <div>
+      <label for="contact-category" class="block text-sm font-medium text-gray-700">{{ f.category_label }}</label>
+      <select name="category_name" id="contact-category" class="relative w-full py-2 pl-3 pr-10 mt-1 text-left text-gray-500 bg-white border border-gray-300 rounded-md shadow-xs cursor-default focus:outline-hidden focus:ring-1 focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
+        <option value="" selected disabled>Select a Category</option>
+        {% for category in f.category %}<option>{{ category.category_name }}</option>{% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="contact-subject" class="block text-sm font-medium text-gray-700">{{ f.subject_label }}</label>
+      <input type="text" name="subject" id="contact-subject" autocomplete="subject" placeholder="{{ f.subject_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500">
+    </div>
+    <div>
+      <label for="contact-message" class="block text-sm font-medium text-gray-700">{{ f.message_label }}</label>
+      <textarea rows="4" name="message" id="contact-message" autocomplete="message" placeholder="{{ f.message_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500"></textarea>
+    </div>
+    <div>
+      <button type="submit" disabled class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-purple-200 cursor-not-allowed border border-transparent rounded-md shadow-xs focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">{{ f.submit_button_label }}</button>
+    </div>
+  </form>
+</div>
+{% endwith %}

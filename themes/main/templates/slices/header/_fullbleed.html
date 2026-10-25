@@ -1,0 +1,7 @@
+{# Gatsby components/hero/fullbleed.tsx #}
+<div class="lg:relative grid grid-cols-12 col-span-full -ml-2 mb-32 mt-4 lg:mb-28">
+  <div class="hidden object-center w-screen h-screen col-start-1 col-end-12 -mx-2 col-span-full lg:block aspect-video">{% block background %}{% endblock %}</div>
+  <div class="px-4 py-8 my-20 lg:absolute bg-white/60 md:max-w-(--breakpoint-sm) col-span-full md:col-start-2 lg:col-start-2 md:col-span-6 lg:col-span-7 backdrop-blur-xs">
+    {% block text %}{% endblock %}
+  </div>
+</div>

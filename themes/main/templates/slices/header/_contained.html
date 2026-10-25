@@ -1,0 +1,5 @@
+{# Gatsby components/hero/container.tsx: text cell, then a background cell from lg up. #}
+{% with align=slice.primary.alignment %}<div class="md:max-w-(--breakpoint-sm) md:col-start-2 lg:col-start-2 md:col-span-6 lg:col-span-4 mb-32 mt-28 md:mt-40 lg:mb-32 lg:mt-40{% if align == 'left' %} text-left lg:col-start-2{% elif align == 'center' %} text-center lg:col-start-5{% elif align == 'right' %} text-right lg:col-start-8{% endif %}">
+  {% block text %}{% endblock %}
+</div>
+<div class="lg:col-start-7 lg:col-span-5 justify-center items-center w-full mb-32 mt-28 md:mt-40 lg:mb-32 lg:mt-40 {% block background_display %}{% if align != 'center' and align != 'right' %}hidden lg:flex{% endif %}{% endblock %}"><div class="w-full h-full">{% block background %}{% endblock %}</div></div>{% endwith %}

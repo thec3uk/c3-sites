@@ -1,0 +1,4 @@
+{% extends slice.primary.isFullBleed|yesno:"slices/header/_fullbleed.html,slices/header/_contained.html,slices/header/_contained.html" %}
+{% load images %}
+{% block text %}{% include "slices/header/_text.html" with links=True link_padding="pr-1" %}{% endblock %}
+{% block background %}{% with image=slice.primary.backgroundImage %}{% if image %}<img src="{{ image|imgix:1920 }}" srcset="{{ image|srcset }}" sizes="{% if slice.primary.isFullBleed %}100vw{% else %}42vw{% endif %}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy" class="object-cover object-center w-full h-full aspect-video">{% endif %}{% endwith %}{% endblock %}
