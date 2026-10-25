@@ -1,0 +1,3433 @@
+{
+ "site": "myc3",
+ "live": "https://myc3.life",
+ "pages": {
+  "home": {
+   "path": "/",
+   "shots_1440": {
+    "live_height": 1282,
+    "local_height": 1282,
+    "ratio": 0.0005,
+    "bands": [
+     [
+      155,
+      155
+     ],
+     [
+      1243,
+      1253
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 1103,
+    "local_height": 1103,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/",
+    "local": "/"
+   },
+   "links": {
+    "count": {
+     "live": 16,
+     "local": 16
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "alpha": {
+   "path": "/alpha/",
+   "shots_1440": {
+    "live_height": 2306,
+    "local_height": 900,
+    "ratio": 0.0599,
+    "bands": [
+     [
+      0,
+      58
+     ],
+     [
+      80,
+      228
+     ],
+     [
+      351,
+      370
+     ],
+     [
+      412,
+      697
+     ],
+     [
+      825,
+      886
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 844,
+    "ratio": 0.0352,
+    "bands": [
+     [
+      32,
+      120
+     ],
+     [
+      241,
+      266
+     ],
+     [
+      304,
+      347
+     ],
+     [
+      397,
+      414
+     ],
+     [
+      476,
+      488
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     307,
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "Alpha Banquet | Cambridge (15-Sep-2026) · ChurchSuite Events",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/alpha/"
+    ]
+   },
+   "final_url": {
+    "live": "https://thec3.churchsuite.com/events/wswkhomf",
+    "local": "/alpha/"
+   },
+   "links": {
+    "count": {
+     "live": 12,
+     "local": 3
+    },
+    "only_live": [
+     "http://leafletjs.com/",
+     "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Alpha+Banquet+%7C+Cambridge&dates=20260915T190000%2F20260915T210000&details=You%27re+Invited%21Join+us+for+the+Alpha+Banquet%2C+a+special+evening+to+launch+Alpha+with+great+food%2C+genuine+conversation+and+a+warm+welcome.Enjoy+a+complimentary+two+course+meal%2C+meet+new+people+and+hear+a+short+introduction+to+Alpha%2C+a+place+where+you+can+explore+life%27s+biggest+questions+in+an+open+and+relaxed+environment.Whether+you%27re+curious+about+Christianity%2C+returning+to+church+after+some+time+away%2C+or+simply+wondering+if+there%27s+more+to+life%2C+Alpha+is+for+you.Who+can+you+bring+to+Alpha%3FAlpha+is+designed+for+anyone+who+wants+to+explore+faith.Bring+a+friend+who%27s+full+of+questions.+Bring+a+neighbour+who%27s+searching+for+purpose.+Bring+a+colleague+who%27s+interested+in+meaningful+conversations.+Bring+a+family+member+who%27s+never+been+to+church+before.You+don%27t+need+to+know+anything+about+the+Bible+or+have+your+life+figured+out.+Everyone+is+welcome%2C+whatever+your+story%2C+background+or+beliefs.The+Alpha+Banquet+is+the+perfect+opportunity+to+come+together%2C+enjoy+a+meal+and+discover+what+Alpha+is+all+about.+We%27d+love+to+welcome+you+and+whoever+you+bring.%2A+Signing+up+to+the+Alpha+Banquet+confirms+your+space+in+the+Alpha+course+taking+place+from+22+September+until+24+November%C2%A0%0AFor+details%2C+see+here%3A+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&location=The+Lounge+on+floor+one%2C+The+C3+Church%2C+2+Brooks+Rd%2C+Cambridge+CB1+3HR%2C+The+C3+Church%2C+2+Brooks+Road%2C+CB1+3HR&sf=true&output=xml&pli=1",
+     "https://thec3.churchsuite.com/events/wswkhomf#",
+     "https://thec3.churchsuite.com/events/wswkhomf#",
+     "https://thec3.churchsuite.com/events/wswkhomf#data-protection",
+     "https://thec3.churchsuite.com/ical/event-wswkhomf",
+     "https://thec3.uk/privacy",
+     "https://twitter.com/intent/tweet?text=Alpha+Banquet+%7C+Cambridge+-+15-Sep-2026+7%3A00pm+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&source=webclient",
+     "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf",
+     "https://www.mapbox.com/",
+     "https://www.maptiler.com/license/maps/",
+     "https://www.openstreetmap.org/copyright"
+    ],
+    "only_local": [
+     "/",
+     "https://thec3.churchsuite.com/events/bliocpes",
+     "https://thec3.churchsuite.com/groups/rtisl5vr"
+    ],
+    "missing": [
+     "http://leafletjs.com/",
+     "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Alpha+Banquet+%7C+Cambridge&dates=20260915T190000%2F20260915T210000&details=You%27re+Invited%21Join+us+for+the+Alpha+Banquet%2C+a+special+evening+to+launch+Alpha+with+great+food%2C+genuine+conversation+and+a+warm+welcome.Enjoy+a+complimentary+two+course+meal%2C+meet+new+people+and+hear+a+short+introduction+to+Alpha%2C+a+place+where+you+can+explore+life%27s+biggest+questions+in+an+open+and+relaxed+environment.Whether+you%27re+curious+about+Christianity%2C+returning+to+church+after+some+time+away%2C+or+simply+wondering+if+there%27s+more+to+life%2C+Alpha+is+for+you.Who+can+you+bring+to+Alpha%3FAlpha+is+designed+for+anyone+who+wants+to+explore+faith.Bring+a+friend+who%27s+full+of+questions.+Bring+a+neighbour+who%27s+searching+for+purpose.+Bring+a+colleague+who%27s+interested+in+meaningful+conversations.+Bring+a+family+member+who%27s+never+been+to+church+before.You+don%27t+need+to+know+anything+about+the+Bible+or+have+your+life+figured+out.+Everyone+is+welcome%2C+whatever+your+story%2C+background+or+beliefs.The+Alpha+Banquet+is+the+perfect+opportunity+to+come+together%2C+enjoy+a+meal+and+discover+what+Alpha+is+all+about.+We%27d+love+to+welcome+you+and+whoever+you+bring.%2A+Signing+up+to+the+Alpha+Banquet+confirms+your+space+in+the+Alpha+course+taking+place+from+22+September+until+24+November%C2%A0%0AFor+details%2C+see+here%3A+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&location=The+Lounge+on+floor+one%2C+The+C3+Church%2C+2+Brooks+Rd%2C+Cambridge+CB1+3HR%2C+The+C3+Church%2C+2+Brooks+Road%2C+CB1+3HR&sf=true&output=xml&pli=1",
+     "https://thec3.churchsuite.com/events/wswkhomf#",
+     "https://thec3.churchsuite.com/events/wswkhomf#data-protection",
+     "https://thec3.churchsuite.com/ical/event-wswkhomf",
+     "https://thec3.uk/privacy",
+     "https://twitter.com/intent/tweet?text=Alpha+Banquet+%7C+Cambridge+-+15-Sep-2026+7%3A00pm+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&source=webclient",
+     "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf",
+     "https://www.mapbox.com/",
+     "https://www.maptiler.com/license/maps/",
+     "https://www.openstreetmap.org/copyright"
+    ]
+   },
+   "text_diff": [
+    "+ Alpha at C3",
+    "+ Alpha at C3",
+    "+ Select the location that best applies to you and sign up for our next Alpha Course",
+    "+ Cambridge",
+    "+ Colchester",
+    "- Alpha Banquet | Cambridge",
+    "- TUE",
+    "- 15",
+    "- SEP",
+    "- Tuesday, 15-Sep-2026",
+    "- 7:00pm - 9:00pm",
+    "- The Lounge on floor one, The C3 Church, 2 Brooks Rd, Cambridge CB1 3HR",
+    "- About",
+    "- You're Invited!",
+    "- Join us for the Alpha Banquet, a special evening to launch Alpha with great food, genuine conversation and a warm welcome.",
+    "- Enjoy a complimentary two course meal, meet new people and hear a short introduction to Alpha, a place where you can explore life's biggest questions in an open and relaxed environment.",
+    "- Whether you're curious about Christianity, returning to church after some time away, or simply wondering if there's more to life, Alpha is for you.",
+    "- Who can you bring to Alpha?",
+    "- Alpha is designed for anyone who wants to explore faith.",
+    "- Bring a friend who's full of questions. Bring a neighbour who's searching for purpose. Bring a colleague who's interested in meaningful conversations. Bring a family member who's never been to church before.",
+    "- You don't need to know anything about the Bible or have your life figured out. Everyone is welcome, whatever your story, background or beliefs.",
+    "- The Alpha Banquet is the perfect opportunity to come together, enjoy a meal and discover what Alpha is all about. We'd love to welcome you and whoever you bring.",
+    "- * Signing up to the Alpha Banquet confirms your space in the Alpha course taking place from 22 September until 24 November",
+    "- Location",
+    "- +",
+    "- -",
+    "- Leaflet | © MapTiler © OpenStreetMap contributors",
+    "- The Lounge on floor one, The C3 Church, 2 Brooks Rd, Cambridge CB1 3HR The C3 Church, 2 Brooks Road, CB1 3HR",
+    "- This event has now passed.",
+    "- Privacy policy",
+    "- Copyright ©  ChurchSuite Ltd"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [307, 200], local [200]",
+    "1440: height differs by 1406px",
+    "1440: 5.99% of pixels differ",
+    "live links the build lacks: ['http://leafletjs.com/', 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=Alpha+Banquet+%7C+Cambridge&dates=20260915T190000%2F20260915T210000&details=You%27re+Invited%21Join+us+for+the+Alpha+Banquet%2C+a+special+evening+to+launch+Alpha+with+great+food%2C+genuine+conversation+and+a+warm+welcome.Enjoy+a+complimentary+two+course+meal%2C+meet+new+people+and+hear+a+short+introduction+to+Alpha%2C+a+place+where+you+can+explore+life%27s+biggest+questions+in+an+open+and+relaxed+environment.Whether+you%27re+curious+about+Christianity%2C+returning+to+church+after+some+time+away%2C+or+simply+wondering+if+there%27s+more+to+life%2C+Alpha+is+for+you.Who+can+you+bring+to+Alpha%3FAlpha+is+designed+for+anyone+who+wants+to+explore+faith.Bring+a+friend+who%27s+full+of+questions.+Bring+a+neighbour+who%27s+searching+for+purpose.+Bring+a+colleague+who%27s+interested+in+meaningful+conversations.+Bring+a+family+member+who%27s+never+been+to+church+before.You+don%27t+need+to+know+anything+about+the+Bible+or+have+your+life+figured+out.+Everyone+is+welcome%2C+whatever+your+story%2C+background+or+beliefs.The+Alpha+Banquet+is+the+perfect+opportunity+to+come+together%2C+enjoy+a+meal+and+discover+what+Alpha+is+all+about.+We%27d+love+to+welcome+you+and+whoever+you+bring.%2A+Signing+up+to+the+Alpha+Banquet+confirms+your+space+in+the+Alpha+course+taking+place+from+22+September+until+24+November%C2%A0%0AFor+details%2C+see+here%3A+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&location=The+Lounge+on+floor+one%2C+The+C3+Church%2C+2+Brooks+Rd%2C+Cambridge+CB1+3HR%2C+The+C3+Church%2C+2+Brooks+Road%2C+CB1+3HR&sf=true&output=xml&pli=1', 'https://thec3.churchsuite.com/events/wswkhomf#', 'https://thec3.churchsuite.com/events/wswkhomf#data-protection', 'https://thec3.churchsuite.com/ical/event-wswkhomf', 'https://thec3.uk/privacy', 'https://twitter.com/intent/tweet?text=Alpha+Banquet+%7C+Cambridge+-+15-Sep-2026+7%3A00pm+http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf&source=webclient', 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fthec3.churchsuite.com%2Fevents%2Fwswkhomf', 'https://www.mapbox.com/', 'https://www.maptiler.com/license/maps/', 'https://www.openstreetmap.org/copyright']",
+    "26 lines of text only on live",
+    "390: 3.52% of pixels differ"
+   ]
+  },
+  "cambridge": {
+   "path": "/cambridge/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 2214,
+    "ratio": 0.0263,
+    "bands": [
+     [
+      91,
+      135
+     ],
+     [
+      241,
+      276
+     ],
+     [
+      353,
+      388
+     ],
+     [
+      442,
+      500
+     ],
+     [
+      577,
+      612
+     ],
+     [
+      689,
+      724
+     ],
+     [
+      801,
+      836
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 1787,
+    "ratio": 0.0633,
+    "bands": [
+     [
+      41,
+      107
+     ],
+     [
+      212,
+      272
+     ],
+     [
+      348,
+      430
+     ],
+     [
+      484,
+      544
+     ],
+     [
+      620,
+      680
+     ],
+     [
+      756,
+      816
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     500
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "500: Internal Server Error",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/cambridge/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/cambridge",
+    "local": "/cambridge/"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 1
+    },
+    "only_live": [],
+    "only_local": [
+     "/"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 500",
+    "- Internal Server Error.",
+    "+ The C3 Church, Cambridge",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [500], local [200]",
+    "1440: height differs by 1314px",
+    "390: height differs by 943px",
+    "390: 6.33% of pixels differ",
+    "2 lines of text only on live",
+    "1440: 2.63% of pixels differ"
+   ]
+  },
+  "groups": {
+   "path": "/groups/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 900,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 844,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/groups/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/groups",
+    "local": "/groups/"
+   },
+   "links": {
+    "count": {
+     "live": 6,
+     "local": 6
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "growth-path": {
+   "path": "/growth-path/",
+   "shots_1440": {
+    "live_height": 2177,
+    "local_height": 2177,
+    "ratio": 0.0,
+    "bands": [
+     [
+      1870,
+      1870
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 2229,
+    "local_height": 2229,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      1294,
+      1294
+     ],
+     [
+      1863,
+      1864
+     ],
+     [
+      1894,
+      1894
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/growth-path/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/growth-path",
+    "local": "/growth-path/"
+   },
+   "links": {
+    "count": {
+     "live": 3,
+     "local": 3
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "next-steps": {
+   "path": "/next-steps/",
+   "shots_1440": {
+    "live_height": 2612,
+    "local_height": 2612,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      2554,
+      2562
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 2804,
+    "local_height": 2804,
+    "ratio": 0.0003,
+    "bands": [
+     [
+      17,
+      36
+     ],
+     [
+      2742,
+      2754
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/next-steps/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/next-steps",
+    "local": "/next-steps/"
+   },
+   "links": {
+    "count": {
+     "live": 8,
+     "local": 8
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "online": {
+   "path": "/online/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 1878,
+    "ratio": 0.0225,
+    "bands": [
+     [
+      91,
+      135
+     ],
+     [
+      241,
+      276
+     ],
+     [
+      353,
+      388
+     ],
+     [
+      442,
+      500
+     ],
+     [
+      577,
+      612
+     ],
+     [
+      689,
+      724
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 1339,
+    "ratio": 0.0607,
+    "bands": [
+     [
+      41,
+      67
+     ],
+     [
+      172,
+      232
+     ],
+     [
+      308,
+      368
+     ],
+     [
+      413,
+      504
+     ],
+     [
+      580,
+      640
+     ],
+     [
+      716,
+      776
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     500
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "500: Internal Server Error",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/online/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/online",
+    "local": "/online/"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 1
+    },
+    "only_live": [],
+    "only_local": [
+     "/"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 500",
+    "- Internal Server Error.",
+    "+ CHURCH ONLINE UK",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [500], local [200]",
+    "1440: height differs by 978px",
+    "390: height differs by 495px",
+    "390: 6.07% of pixels differ",
+    "2 lines of text only on live",
+    "1440: 2.25% of pixels differ"
+   ]
+  },
+  "share-your-story": {
+   "path": "/share-your-story/",
+   "shots_1440": {
+    "live_height": 1012,
+    "local_height": 1012,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 844,
+    "ratio": 0.0002,
+    "bands": [
+     [
+      37,
+      56
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": "SHARE YOUR STORY"
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/share-your-story/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/share-your-story",
+    "local": "/share-your-story/"
+   },
+   "links": {
+    "count": {
+     "live": 6,
+     "local": 6
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "step-2-complete": {
+   "path": "/step-2-complete/",
+   "shots_1440": {
+    "live_height": 2711,
+    "local_height": 2711,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 2715,
+    "local_height": 2715,
+    "ratio": 0.0001,
+    "bands": [
+     [
+      17,
+      36
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/step-2-complete/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/step-2-complete",
+    "local": "/step-2-complete/"
+   },
+   "links": {
+    "count": {
+     "live": 11,
+     "local": 11
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "team-next-steps": {
+   "path": "/team-next-steps/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 900,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 844,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/team-next-steps/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/team-next-steps",
+    "local": "/team-next-steps/"
+   },
+   "links": {
+    "count": {
+     "live": 2,
+     "local": 2
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "team": {
+   "path": "/team/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 1260,
+    "ratio": 0.0173,
+    "bands": [
+     [
+      92,
+      135
+     ],
+     [
+      241,
+      276
+     ],
+     [
+      353,
+      388
+     ],
+     [
+      442,
+      500
+     ],
+     [
+      577,
+      612
+     ],
+     [
+      689,
+      724
+     ],
+     [
+      801,
+      836
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 1408,
+    "ratio": 0.05,
+    "bands": [
+     [
+      41,
+      67
+     ],
+     [
+      172,
+      232
+     ],
+     [
+      308,
+      368
+     ],
+     [
+      413,
+      504
+     ],
+     [
+      580,
+      640
+     ],
+     [
+      716,
+      776
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     500
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "500: Internal Server Error",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/team/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/team",
+    "local": "/team/"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 1
+    },
+    "only_live": [],
+    "only_local": [
+     "/"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 500",
+    "- Internal Server Error.",
+    "+ Team C3",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [500], local [200]",
+    "1440: height differs by 360px",
+    "390: height differs by 564px",
+    "2 lines of text only on live",
+    "1440: 1.73% of pixels differ",
+    "390: 5.00% of pixels differ"
+   ]
+  },
+  "teamc3": {
+   "path": "/teamc3/",
+   "shots_1440": {
+    "live_height": 2700,
+    "local_height": 2700,
+    "ratio": 0,
+    "bands": []
+   },
+   "shots_390": {
+    "live_height": 2820,
+    "local_height": 2820,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/teamc3/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/teamc3",
+    "local": "/teamc3/"
+   },
+   "links": {
+    "count": {
+     "live": 5,
+     "local": 5
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "trustees": {
+   "path": "/trustees/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 2168,
+    "ratio": 0.0469,
+    "bands": [
+     [
+      69,
+      104
+     ],
+     [
+      268,
+      371
+     ],
+     [
+      442,
+      512
+     ],
+     [
+      589,
+      624
+     ],
+     [
+      701,
+      736
+     ],
+     [
+      813,
+      848
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 2480,
+    "ratio": 0.0905,
+    "bands": [
+     [
+      68,
+      128
+     ],
+     [
+      209,
+      355
+     ],
+     [
+      413,
+      488
+     ],
+     [
+      564,
+      624
+     ],
+     [
+      700,
+      760
+     ],
+     [
+      836,
+      843
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     500
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "500: Internal Server Error",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/trustees/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/trustees",
+    "local": "/trustees/"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 1
+    },
+    "only_live": [],
+    "only_local": [
+     "/"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 500",
+    "- Internal Server Error.",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Reaching and shaping a generation with the message and cause of Christ",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [500], local [200]",
+    "1440: height differs by 1268px",
+    "390: height differs by 1636px",
+    "390: 9.05% of pixels differ",
+    "2 lines of text only on live",
+    "1440: 4.69% of pixels differ"
+   ]
+  },
+  "visionandvalues": {
+   "path": "/visionandvalues/",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 7628,
+    "ratio": 0.0317,
+    "bands": [
+     [
+      92,
+      135
+     ],
+     [
+      257,
+      277
+     ],
+     [
+      319,
+      386
+     ],
+     [
+      442,
+      465
+     ],
+     [
+      503,
+      515
+     ],
+     [
+      551,
+      563
+     ],
+     [
+      600,
+      614
+     ],
+     [
+      676,
+      693
+     ],
+     [
+      732,
+      743
+     ],
+     [
+      780,
+      791
+     ],
+     [
+      811,
+      819
+     ],
+     [
+      856,
+      870
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 8808,
+    "ratio": 0.0759,
+    "bands": [
+     [
+      41,
+      107
+     ],
+     [
+      228,
+      285
+     ],
+     [
+      327,
+      430
+     ],
+     [
+      455,
+      473
+     ],
+     [
+      511,
+      523
+     ],
+     [
+      559,
+      574
+     ],
+     [
+      608,
+      647
+     ],
+     [
+      712,
+      729
+     ],
+     [
+      767,
+      807
+     ],
+     [
+      843,
+      843
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     500
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "500: Internal Server Error",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/visionandvalues/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/visionandvalues",
+    "local": "/visionandvalues/"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 2
+    },
+    "only_live": [],
+    "only_local": [
+     "/",
+     "https://thec3.cdn.prismic.io/thec3/dbef4fc5-b9f6-4c02-ba29-6fa78cdf8162_Racism+and+Injustice+Paper.pdf"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 500",
+    "- Internal Server Error.",
+    "+ Vision, Values and Core Beliefs",
+    "+ Why are we called C3 Church?",
+    "+ Why are we called C3 Church?",
+    "+ Christ Centred",
+    "+ We seek to be Spirit led and Bible based",
+    "+ Our goal is to make disciples of Jesus Christ",
+    "+ Jesus was extravagantly generous. He’s our example.",
+    "+ Cause Driven",
+    "+ Lost people matter to God and therefore to us.",
+    "+ To honour God and value people we aim for excellence in all we do.",
+    "+ We seek to exemplify passionate spirituality.",
+    "+ Community Focused",
+    "+ We seek to honour all people",
+    "+ We aim to show grace to everyone.",
+    "+ Community is important and having fun is contagious",
+    "+ Our Beliefs",
+    "+ Our Beliefs",
+    "+ We believe in one eternal God who is the creator of all things. He exists in three persons: God the Father, God the Son, and God the Holy Spirit. He is totally loving and completely holy.",
+    "+ We believe that sin has separated each of us from God, and His purpose for our lives.",
+    "+ We believe that the Lord Jesus Christ as both God and man is the only one who can reconcile us to God. He lived a sinless and exemplary life, died on the cross in our place and rose again to prove His victory and empower us for life.",
+    "+ We believe that to receive forgiveness and the ‘new birth’ we must repent of our sins, believe in the Lord Jesus Christ and submit to His will for our lives.",
+    "+ We believe that to live the holy and fruitful lives God intends for us, we need to be baptised in water and be filled with the power of the Holy Spirit. The Holy Spirit enables us to use spiritual gifts, including speaking in tongues.",
+    "+ We believe in the power and significance of the church and the necessity of believers to meet regularly together for fellowship, prayer and the ‘breaking of bread’.",
+    "+ We believe that God has individually equipped us so that we can successfully achieve His purpose for our lives, which is to worship God, fulfil our role in the church and serve the community in which we live.",
+    "+ We believe that God wants to heal and transform us so that we can live healthy and blessed lives in order to help others more effectively.",
+    "+ We believe that our eternal destination of either heaven or hell is determined by our response to the Lord Jesus Christ.",
+    "+ We believe that the Lord Jesus Christ is coming back again as He promised.",
+    "+ The Church We see",
+    "+ The Church We see",
+    "+ The church we see has thousands of adults and children.  The church is bursting with life, with hundreds of initiatives and departments focused on changing lives, changing communities and changing the perception of church.",
+    "+ The church we see has a strong sense of family. Family is engendered through a network of small groups, online, in each of our physical locations and regions beyond.",
+    "+ The church we see is passionate. Services are hallmarked with passionate praise, intimate worship and inspiring preaching.",
+    "+ The church we see has a world-class music band, with its members writing songs that flow around the nation and the world. People come to encounter the presence of God in worship.",
+    "+ The church we see is a haven of hope, where the hurting and disenfranchised find purpose, acceptance and help.",
+    "+ The church we see is concerned for the poor and known for its generous giving and help towards those in need.",
+    "+ The church we see gives beyond the call of duty in time, energy, commitment and money.",
+    "+ The church we see has multiple departments committed to reaching out to our community.",
+    "+ The church we see is known for excellence in all it does. It has a reputation for always doing things well.",
+    "+ The church we see is hallmarked by mercy and humility. People of all ages, classes and cultures worship and serve God together.",
+    "+ The church we see equips and mentors. It sends people out to affect our city, our nation and the nations.",
+    "+ The church we see is constantly reaching beyond its borders. Guests are treated with honour and everyone looks out for the interests of others.",
+    "+ The church we see owns a large campus in Cambridge from which it impacts, serves and seeks the welfare the city, region and nation(s).",
+    "+ The church we see has ten physical locations across the UK and world. Each serving and promoting authentic community in the towns and cities they represent.",
+    "+ The church we see is a digital church which serves tens of thousands of people across the world though online content including worship, preaching, teaching and discipleship resources.",
+    "+ The church we see has a music & worship academy and a leadership training school.",
+    "+ The church we see partners with and influences government, education, business and commerce. Its size, excellence, integrity and actions demonstrate credibility and a willingness to make a difference.",
+    "+ The church we see has a leadership team pulling in the same direction. It’s an empowering leadership, hallmarked by serving and self-sacrifice and committed to seeing people live great lives.",
+    "+ Racial Unity",
+    "+ Racial Unity",
+    "+ Our heart at The C3 Church is for everyone to know that they are loved, they belong, and to feel that they’re included.",
+    "+ Our heart at The C3 Church is for everyone to know that they are loved, they belong, and to feel that they’re included.",
+    "+ We’re always seeking to educate ourselves in the Cross of Jesus Christ: the statements it makes and the answers it gives, of one human race, all equally guilty of sin, equally loved by God, and equally made righteous by faith in Him. The Gospel must inform everything we do; it must critique every decision we make and challenge every action we take.",
+    "+ There is only one race that has within it many ethnicities – the human race. There is only one ultimate answer to eradicate racism and that is the transformation of the human heart through the Gospel.",
+    "+ This same Gospel forms us into one new man. The Church of Jesus Christ really is the hope of the world.",
+    "+ But you are a chosen people, a royal priesthood, a holy nation, God's special possession, that you may declare the praises of him who called you out of darkness into his wonderful light. - 1 Peter 2:9 (NIV)",
+    "+ We don’t fight this evil scourge of racism with human weapons:",
+    "+ For our struggle is not against flesh and blood, but against the rulers, against the authorities, against the powers of this dark world and against the spiritual forces of evil in the heavenly realms. - Ephesians 6:12 (NIV)",
+    "+ What more can we do? There are many things we can do and as we listen to God, we know the Holy Spirit will lead us as individuals and as a church family to respond. But the first and best thing we can all do is pray—both individually and together.",
+    "+ Theologically, we are aligned with the Assembly of God’s paper: A Theological Response to Racism and Injustice",
+    "+ From this paper, we are actively working on their suggested Ten-Step Road Map to do the following:",
+    "+ Acknowledgement: To make an acknowledgment of the issue of racial injustice and its systemic and institutional nature.",
+    "+ Audit: To have an honest look at ourselves and our churches and where we are in relation to the issue of racial injustice.",
+    "+ Conversation: To facilitate a series of conversations – creating the spaces for open, honest and frank conversation. Listening to the voice of the black community, starting with those in our sphere.",
+    "+ Education: Bridging the knowledge gap. What is it like to be a black person in the UK today? Understanding the historical context. The damage to the psyche of black people by sustained and systemic racism.",
+    "+ Speaking Up: Using our platforms to speak out against the evil of racism. This would be speaking out into the larger society but also speaking out into our own churches and organisations.",
+    "+ Advocacy: Using our influence and reach to be advocates for racial equality. It is the changes in structures that can deal a death blow to racism.",
+    "+ Representative Leadership: Creating systems, structures and processes that encourage representative leadership in our churches and organisations.",
+    "+ Practical action: Developing short, medium and long term plans for action.",
+    "+ Prayer: Encouraging prayer as a group and within our churches over the issue of racial injustice.",
+    "+ Prophetic: Discerning God’s mind clearly and ensuring that our actions and narratives are driven by this and centred very clearly on Jesus and rooted firmly in the Word of God.",
+    "+ There’s one thing that’s certain: this Gospel of the Kingdom always produces a community of people who demonstrate, for all to see, what unity and love are meant to look like under God’s control. This gospel community is powerful; it makes a statement to our world and the evil forces that look on.",
+    "+ All one in Christ Jesus,",
+    "+ Steve and Angie",
+    "+ Template slice, update me!",
+    "+ start by editing this slice from inside Slice Machine!"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "status live [500], local [200]",
+    "1440: height differs by 6728px",
+    "390: height differs by 7964px",
+    "390: 7.59% of pixels differ",
+    "2 lines of text only on live",
+    "1440: 3.17% of pixels differ"
+   ]
+  },
+  "yth": {
+   "path": "/yth/",
+   "shots_1440": {
+    "live_height": 1024,
+    "local_height": 1024,
+    "ratio": 0.0007,
+    "bands": [
+     [
+      155,
+      155
+     ],
+     [
+      985,
+      998
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 873,
+    "local_height": 873,
+    "ratio": 0.0,
+    "bands": []
+   },
+   "status": {
+    "live": [
+     200
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "",
+    "local": ""
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": [
+     "https://myc3.life/yth/"
+    ]
+   },
+   "final_url": {
+    "live": "https://myc3.life/yth",
+    "local": "/yth/"
+   },
+   "links": {
+    "count": {
+     "live": 8,
+     "local": 8
+    },
+    "only_live": [],
+    "only_local": [],
+    "missing": []
+   },
+   "text_diff": [],
+   "classification": "match",
+   "reasons": []
+  },
+  "404.html": {
+   "path": "/404.html",
+   "shots_1440": {
+    "live_height": 900,
+    "local_height": 900,
+    "ratio": 0.002,
+    "bands": [
+     [
+      6,
+      40
+     ],
+     [
+      442,
+      458
+     ]
+    ]
+   },
+   "shots_390": {
+    "live_height": 844,
+    "local_height": 844,
+    "ratio": 0.0079,
+    "bands": [
+     [
+      4,
+      43
+     ],
+     [
+      413,
+      430
+     ]
+    ]
+   },
+   "status": {
+    "live": [
+     404
+    ],
+    "local": [
+     200
+    ]
+   },
+   "title": {
+    "live": "404: This page could not be found",
+    "local": "Page not found"
+   },
+   "description": {
+    "live": [],
+    "local": []
+   },
+   "canonical": {
+    "live": [],
+    "local": []
+   },
+   "final_url": {
+    "live": "https://myc3.life/parity-check-missing-page",
+    "local": "/404.html"
+   },
+   "links": {
+    "count": {
+     "live": 0,
+     "local": 1
+    },
+    "only_live": [],
+    "only_local": [
+     "/"
+    ],
+    "missing": []
+   },
+   "text_diff": [
+    "- 404",
+    "- This page could not be found.",
+    "+ Page not found",
+    "+ Go to the home page"
+   ],
+   "classification": "differs",
+   "reasons": [
+    "2 lines of text only on live",
+    "390: 0.79% of pixels differ"
+   ]
+  }
+ },
+ "extras": {
+  "live_sitemap": "/sitemap.xml",
+  "live_sitemap_status": 404,
+  "live_sitemap_not_built": [],
+  "built_not_in_live_sitemap": [],
+  "static_files": {
+   "__forms.html": {
+    "live": 200,
+    "dist": false
+   },
+   "favicon.ico": {
+    "live": 200,
+    "dist": true
+   }
+  }
+ },
+ "redirects": [
+  {
+   "source": "/debrief",
+   "target": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=3W6n-46yPkqAhAf3hHjUYP8vYQJxLIxGiXPE2vNQI79UMTRLVEVHU1YxR0tHMFVRMDUzRkE2SzlOVS4u",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=3W6n-46yPkqAhAf3hHjUYP8vYQJxLIxGiXPE2vNQI79UMTRLVEVHU1YxR0tHMFVRMDUzRkE2SzlOVS4u",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/bible",
+   "target": "https://bible.com/events/49682212",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://bible.com/events/49682212",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/headcount",
+   "target": "https://forms.cloud.microsoft/e/8Hu7xckJ6s",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://forms.cloud.microsoft/e/8Hu7xckJ6s",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/group-leaders",
+   "target": "https://thec3.notion.site/Group-Leader-s-Page-cd34acdbf5a148ba93b0c289feb24e72?pvs=74",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.notion.site/Group-Leader-s-Page-cd34acdbf5a148ba93b0c289feb24e72?pvs=74",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/giftaid",
+   "target": "https://thec3.churchsuite.com/-/forms/h8po0xdj",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/h8po0xdj",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prophetic-teaching-day",
+   "target": "https://thec3.churchsuite.com/events/oeigcfbm",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/oeigcfbm",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/gls",
+   "target": "https://thec3.churchsuite.com/events/7jkscdle",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/7jkscdle",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/4thservice",
+   "target": "https://thec3.churchsuite.com/-/forms/vcmr5v4n",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/vcmr5v4n",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/lightnight",
+   "target": "https://thec3.churchsuite.com/-/calendar/ce91e008-808b-4683-a898-cda981e810b6",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/ce91e008-808b-4683-a898-cda981e810b6",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/academyopenevening",
+   "target": "https://thec3.churchsuite.com/events/tvxvflie",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/tvxvflie",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/propheticmorning",
+   "target": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/eexvqq5p",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/alpha",
+   "target": "https://thec3.churchsuite.com/events/wswkhomf",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/wswkhomf",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": true
+  },
+  {
+   "source": "/messyplay",
+   "target": "https://thec3.churchsuite.com/events/yzrfqwmd",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/yzrfqwmd",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/calendar-bury",
+   "target": "https://thec3.churchsuite.com/-/calendar/410a57b3-3344-4660-968e-54a27594701f?preview=1",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/410a57b3-3344-4660-968e-54a27594701f?preview=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/christmasinabox",
+   "target": "https://thec3.churchsuite.com/-/calendar/e0e42240-7be0-4ed8-bad0-edbbb044fc1c",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/e0e42240-7be0-4ed8-bad0-edbbb044fc1c",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/wtc",
+   "target": "https://www.eventbrite.co.uk/e/kingdom-theology-event-in-cambridge-with-alister-wallace-tickets-1984457635207?aff=oddtdtcreator",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.eventbrite.co.uk/e/kingdom-theology-event-in-cambridge-with-alister-wallace-tickets-1984457635207?aff=oddtdtcreator",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/baptismclasses",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_bgcolor=ffffff&event_border_color=228ae6&heading_color=228ae6&text_color=000000&icon_color=000000",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_bgcolor=ffffff&event_border_color=228ae6&heading_color=228ae6&text_color=000000&icon_color=000000",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/gls-c3family",
+   "target": "https://thec3.churchsuite.com/events/7jkscdle?tickets=xV8K",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/7jkscdle?tickets=xV8K",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kintsugi",
+   "target": "https://thec3.churchsuite.com/events/gpcmzx8m",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/gpcmzx8m",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teardrop",
+   "target": "https://www.teardropgrief.co.uk/shop/p/griefandloss-webinar",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.teardropgrief.co.uk/shop/p/griefandloss-webinar",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/gameplan",
+   "target": "https://thec3.churchsuite.com/-/calendar/43ce142b-6e7f-4991-9fb7-2a228ff1502a?preview=1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/43ce142b-6e7f-4991-9fb7-2a228ff1502a?preview=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/btg",
+   "target": "https://btgfootballbookings.com/bookings/Cambridge?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnJSA_IFRLeSMrwqbJLxgEceCI_y0SIXZ4BZfnyD6eEHkpx2dtjr07AXLvDwM_aem_f_T8DYWGMPxJlyl4iBudMg",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://btgfootballbookings.com/bookings/Cambridge?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnJSA_IFRLeSMrwqbJLxgEceCI_y0SIXZ4BZfnyD6eEHkpx2dtjr07AXLvDwM_aem_f_T8DYWGMPxJlyl4iBudMg",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prayersubscribe",
+   "target": "https://thec3.churchsuite.com/-/forms/ytxl0non",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ytxl0non",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/athome",
+   "target": "https://youtube.com/live/SAkB48Oyrdg?feature=share",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtube.com/live/SAkB48Oyrdg?feature=share",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/revelation",
+   "target": "https://thec3.churchsuite.com/events/edpl6ody",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/edpl6ody",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/worldchangers",
+   "target": "https://thec3.churchsuite.com/events/ynjs8lm1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/ynjs8lm1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ascend-reflection",
+   "target": "https://thec3.churchsuite.com/events/9cm6cdri",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/9cm6cdri",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prayerfasting",
+   "target": "https://www.youtube.com/watch?v=jHSrczIYDTA&t=11s",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.youtube.com/watch?v=jHSrczIYDTA&t=11s",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/test-page-here",
+   "target": "https://www.google.com",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://www.google.com/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/coach",
+   "target": "https://thec3.churchsuite.com/events/mbqq46rc",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/mbqq46rc",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/visionoffering2026",
+   "target": "https://thec3.churchsuite.com/donate/fund/ukevxdcx",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/donate/fund/ukevxdcx",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/watoto",
+   "target": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ztashznr",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/overwhelmtour",
+   "target": "https://thec3.churchsuite.com/events/uy2uahd4",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/uy2uahd4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/stw",
+   "target": "https://www.stewardship.org.uk/pages/stw2025",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.stewardship.org.uk/pages/stw2025",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/yasouls",
+   "target": "https://brushfire.com/thec3uk/yasouls/615662",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://brushfire.com/thec3uk/yasouls/615662",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/help",
+   "target": "https://www.samaritans.org/how-we-can-help/contact-samaritan/?utm_source=google&utm_medium=organic&utm_campaign=onebox",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.samaritans.org/how-we-can-help/contact-samaritan/?utm_source=google&utm_medium=organic&utm_campaign=onebox",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/reflection",
+   "target": "https://www.teardropgrief.co.uk/shop/p/teardrop-online-christmas-reflection",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.teardropgrief.co.uk/shop/p/teardrop-online-christmas-reflection",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/restoration",
+   "target": "https://thec3.churchsuite.com/events/bjh1cia4",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/bjh1cia4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/yachristmasparty",
+   "target": "https://thec3.churchsuite.com/events/d8ezbeuv",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/d8ezbeuv",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/divorcerecovery",
+   "target": "https://thec3.churchsuite.com/events/j46sqy7f",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/j46sqy7f",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/openevening",
+   "target": "https://thec3.churchsuite.com/events/tvxvflie",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/tvxvflie",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cared",
+   "target": "https://thec3.churchsuite.com/events/mfnk3fij",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/mfnk3fij",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/academy-open",
+   "target": "https://thec3.churchsuite.com/events/l1cbespe",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/l1cbespe",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/wellbeing-workshop",
+   "target": "https://thec3.churchsuite.com/events/zqvcwdbo",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/zqvcwdbo",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/youversion",
+   "target": "https://www.youversion.com/the-bible-app/",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.youversion.com/the-bible-app/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prophetic",
+   "target": "https://thec3.churchsuite.com/events/emgrows6",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/emgrows6",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/greatiam",
+   "target": "https://wingsmusic.lnk.to/GreatIAMYahwehLive",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://wingsmusic.lnk.to/GreatIAMYahwehLive",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/nationalprayer",
+   "target": "https://www.youtube.com/watch?v=tPUpTvvLoRY",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://www.youtube.com/watch?v=tPUpTvvLoRY",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/55",
+   "target": "https://thec3.churchsuite.com/events/lquf4igc",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/lquf4igc",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/stayingsafeonline",
+   "target": "https://thec3.churchsuite.com/events/7ncpz09i",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/7ncpz09i",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/table",
+   "target": "https://thec3.churchsuite.com/events/61zzb8mw",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/61zzb8mw",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ascendmen",
+   "target": "https://www.facebook.com/groups/527708931330993",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.facebook.com/groups/527708931330993",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/backtoschool",
+   "target": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/guestspeaker",
+   "target": "https://thec3church.typeform.com/to/DHC1Uv4G",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3church.typeform.com/to/DHC1Uv4G",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/churchsuite",
+   "target": "https://churchsuite.com/apps/",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://churchsuite.com/apps/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/laura",
+   "target": "https://youtu.be/T0ST70FiR8w",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/T0ST70FiR8w",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/autumn",
+   "target": "https://youtu.be/BqOk7IyolKc",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/BqOk7IyolKc",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ubuntu",
+   "target": "https://open.substack.com/pub/thec3church/p/ubuntu?r=5dfdqj&utm_campaign=post&utm_medium=web",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://open.substack.com/pub/thec3church/p/ubuntu?r=5dfdqj&utm_campaign=post&utm_medium=web",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/all-kids-team",
+   "target": "https://thec3.notion.site/ALL-KIDS-TEAM-1cba6815f917802081eff157cdefb670",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.notion.site/ALL-KIDS-TEAM-1cba6815f917802081eff157cdefb670",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/bigchurch",
+   "target": "https://bigchurchtickets.com/events/tim-the-glory-boys-philippa-hanna?fbclid=PAZXh0bgNhZW0CMTEAAafyumyud8jcfvvNy-C1NbjSX1mR_ycG3tnpNE7G67N4JREjOBv1j3M0N9vbfQ_aem_-jnikfOSUB2-1KdZ_9y82Q",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://bigchurchtickets.com/events/tim-the-glory-boys-philippa-hanna?fbclid=PAZXh0bgNhZW0CMTEAAafyumyud8jcfvvNy-C1NbjSX1mR_ycG3tnpNE7G67N4JREjOBv1j3M0N9vbfQ_aem_-jnikfOSUB2-1KdZ_9y82Q",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamcol",
+   "target": "https://thec3.churchsuite.com/forms/tzissv55",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/forms/tzissv55",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/pilates",
+   "target": "https://thec3.churchsuite.com/events/uujt8mvp",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/uujt8mvp",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kidsmail",
+   "target": "https://mailchi.mp/dabde5024bdb/kids-mailout-sign-up",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://mailchi.mp/dabde5024bdb/kids-mailout-sign-up",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prophetictraining",
+   "target": "https://thec3.churchsuite.com/events/y8int78b",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/y8int78b",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kidsgroup",
+   "target": "https://thec3.churchsuite.com/events/jrvqmijr",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/jrvqmijr",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/yourkingdomcome",
+   "target": "https://wingsmusic.lnk.to/YourKingdomCome",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://wingsmusic.lnk.to/YourKingdomCome",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/baptisms",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20&body_b[…]0000&icon_color=000000&mc_cid=b9f72f2951&mc_eid=2db005e1de",
+   "status": 302,
+   "live_status": 500,
+   "live_location": "",
+   "same_class": false,
+   "same_target": false,
+   "build_serves_page": false
+  },
+  {
+   "source": "/wellbeingcol",
+   "target": "https://thec3.churchsuite.com/events/rlpysgrs",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/rlpysgrs",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/open",
+   "target": "https://www.eventbrite.co.uk/e/monday-hub-open-eve-for-bris-camb-emid-manc-scot-sotn-wmid-tickets-816680221527",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://www.eventbrite.co.uk/e/monday-hub-open-eve-for-bris-camb-emid-manc-scot-sotn-wmid-tickets-816680221527",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/atwork",
+   "target": "https://brushfire.com/thec3uk/c3atwork/577791",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://brushfire.com/thec3uk/c3atwork/577791",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/burykidsfest",
+   "target": "https://thec3.churchsuite.com/events/0ahemc4v",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/0ahemc4v",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/step1",
+   "target": "https://thec3.churchsuite.com/-/calendar/7071888a-8b5e-4655-8b10-4c511479efb8",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/7071888a-8b5e-4655-8b10-4c511479efb8",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/dti",
+   "target": "https://brushfire.com/thec3uk/dreamingtheimpossible/582890",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://brushfire.com/thec3uk/dreamingtheimpossible/582890",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cambkidsfest",
+   "target": "https://thec3.churchsuite.com/events/kt7xjuvw",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/kt7xjuvw",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/followthatverse",
+   "target": "https://us02web.zoom.us/j/83856907739?pwd=iObDaXB1J804jtr3gBX6oqD6Wsffwa.1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://us02web.zoom.us/j/83856907739?pwd=iObDaXB1J804jtr3gBX6oqD6Wsffwa.1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/party",
+   "target": "https://thec3.churchsuite.com/events/h2zlwnhr",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/h2zlwnhr",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/sound",
+   "target": "https://youtu.be/HDA0Hk93CsQ",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/HDA0Hk93CsQ",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/pctraining",
+   "target": "https://thec3.churchsuite.com/events/kwmf9w1z",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/kwmf9w1z",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/propheticpod",
+   "target": "https://youtu.be/0N_Y7Bs7xiE",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/0N_Y7Bs7xiE",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/wellbeing",
+   "target": "https://thec3.churchsuite.com/-/calendar/843a3727-0e54-4538-9baf-b74006ef1a80",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/843a3727-0e54-4538-9baf-b74006ef1a80",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamb2sbbq",
+   "target": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/cb41ebe8-4807-4f8c-ad41-3a550bbe4b0c",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/colkidsfest",
+   "target": "https://thec3.churchsuite.com/events/v4ddyfhi",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/v4ddyfhi",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/hello",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/burybbq",
+   "target": "https://thec3.churchsuite.com/events/93p5ehhj",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/93p5ehhj",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/marriage",
+   "target": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-england-tickets-872798061497",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-england-tickets-872798061497",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/colgroups",
+   "target": "https://thec3.churchsuite.com/embed/v2/smallgroups/35b73a5a-f3b2-4584-90bb-6bb437e14466",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/v2/smallgroups/35b73a5a-f3b2-4584-90bb-6bb437e14466",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teambbq",
+   "target": "https://thec3.churchsuite.com/events/pixsgomx",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/pixsgomx",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kidsfest",
+   "target": "https://thec3.churchsuite.com/-/calendar/11c78875-d64c-4c01-a5c4-5a7c700819b4",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/11c78875-d64c-4c01-a5c4-5a7c700819b4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/onlinebible",
+   "target": "https://bible.com/events/49299352",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://bible.com/events/49299352",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/lightnightcam",
+   "target": "https://thec3.churchsuite.com/events/tdmifgli",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/tdmifgli",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/recording",
+   "target": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ascendcamp",
+   "target": "https://brushfire.com/thec3uk/ascend/585411",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://brushfire.com/thec3uk/ascend/585411",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/lightnightbury",
+   "target": "https://thec3.churchsuite.com/events/6gzhj93y",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/6gzhj93y",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/baptism",
+   "target": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/featured?category=28&num_results=20",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/training",
+   "target": "https://thec3.churchsuite.com/events/amhhr4f5",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/amhhr4f5",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cause",
+   "target": "https://thec3.churchsuite.com/events/zp7oe7d2",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/zp7oe7d2",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/christmascast",
+   "target": "https://thec3.churchsuite.com/-/calendar/a6ad8ad4-54b4-4a45-bb1f-7e3d29a53132",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/a6ad8ad4-54b4-4a45-bb1f-7e3d29a53132",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/coab",
+   "target": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/worshiprecording",
+   "target": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/gbyjigo0",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/fordhamfb",
+   "target": "https://www.facebook.com/groups/thec3fordham",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://www.facebook.com/groups/thec3fordham",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/lightnightcol",
+   "target": "https://thec3.churchsuite.com/events/j5cpqhy7",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/j5cpqhy7",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/step2",
+   "target": "https://thec3.churchsuite.com/-/calendar/88c4f896-0205-4502-b90d-fc3e406757a9?preview=1",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/88c4f896-0205-4502-b90d-fc3e406757a9?preview=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/homelessness",
+   "target": "https://thec3.churchsuite.com/events/rbkimwmh",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/rbkimwmh",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cookingonabudget",
+   "target": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/65d35796-f7c5-4c38-88a6-28df26aed03a",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/marathon",
+   "target": "https://www.stewardship.org.uk/pages/CHM2025?fbclid=IwY2xjawIwUpxleHRuA2FlbQIxMAABHcOHkJ[…]ptu3X2fRIdavYcEEWLTw0-eBLNI3JQ_aem_-URsxqPPK4bBy48HoJ_dgw",
+   "status": 302,
+   "live_status": 500,
+   "live_location": "",
+   "same_class": false,
+   "same_target": false,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamfordham",
+   "target": "https://thec3.churchsuite.com/-/forms/xnh7hyde",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/forms/xnh7hyde",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teambury",
+   "target": "https://thec3.churchsuite.com/-/forms/jbi3orhk",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/forms/jbi3orhk",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamwest",
+   "target": "https://thec3.churchsuite.com/-/forms/3x0e0y2t",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/forms/3x0e0y2t",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cooking",
+   "target": "https://thec3.churchsuite.com/events/pzgehiog",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/pzgehiog",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/tour",
+   "target": "https://youtu.be/Y4XU08z6JN0",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/Y4XU08z6JN0",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamcam",
+   "target": "https://thec3.churchsuite.com/-/forms/6bz8hlfi",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/6bz8hlfi",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/socialmedia",
+   "target": "https://thec3.churchsuite.com/events/igzucy2p",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/igzucy2p",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/activityday",
+   "target": "https://thec3.churchsuite.com/events/zs5uglxp",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/zs5uglxp",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/fordhamreview",
+   "target": "https://g.page/r/CdXUoF0ARd-6EB0/review",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://g.page/r/CdXUoF0ARd-6EB0/review",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/photography",
+   "target": "https://us02web.zoom.us/j/9909172921?pwd=U0N4aFF2T3NQSlpHS2hBQXd6M3BUdz09",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://us02web.zoom.us/j/9909172921?pwd=U0N4aFF2T3NQSlpHS2hBQXd6M3BUdz09",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/gifts",
+   "target": "https://assessments.lifethrive.com/SpiritualGifts.php",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://assessments.lifethrive.com/SpiritualGifts.php",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/burygroup",
+   "target": "https://thec3.churchsuite.com/embed/v2/smallgroups/bdc24f05-ebda-402f-aabe-26bf0649437c",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/v2/smallgroups/bdc24f05-ebda-402f-aabe-26bf0649437c",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/marketlaunch",
+   "target": "https://thec3.churchsuite.com/events/lk8vkaji",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/lk8vkaji",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/vote",
+   "target": "https://thec3church.typeform.com/to/RWsj7vNq?mc_cid=f0d85b4082&mc_eid=6923d6d819&typeform-source=breathe.thec3.uk&mc_cid=173028fd91&mc_eid=6923d6d819",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3church.typeform.com/to/RWsj7vNq?mc_cid=f0d85b4082&mc_eid=6923d6d819&typeform-source=breathe.thec3.uk&mc_cid=173028fd91&mc_eid=6923d6d819",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/sundaysetlist",
+   "target": "https://open.spotify.com/playlist/4PHcojwPvGZhnAgz110fv2?si=ecd60aa506cd473a",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://open.spotify.com/playlist/4PHcojwPvGZhnAgz110fv2?si=ecd60aa506cd473a",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/westsignup",
+   "target": "https://thec3.churchsuite.com/-/forms/ugaclyfc",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/-/forms/ugaclyfc",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/funday",
+   "target": "http://tinyurl.com/c3funday",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "http://tinyurl.com/c3funday",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/eggs",
+   "target": "https://thec3.churchsuite.com/donate/fund/baysvabt",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/donate/fund/baysvabt",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/sciencefaith",
+   "target": "https://thec3.churchsuite.com/events/zqagqdbq",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/zqagqdbq",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/adura",
+   "target": "https://youtu.be/y7E_WQq4v1Q",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/y7E_WQq4v1Q",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/auditions",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&months=&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=&months=&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/burybuilding",
+   "target": "https://thec3.churchsuite.com/events/7lbh1irh",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/7lbh1irh",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/impactnight",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=63&e[…]ries=0&show_search=0&show_sites=1&sites=&text_color=666666",
+   "status": 301,
+   "live_status": 500,
+   "live_location": "",
+   "same_class": false,
+   "same_target": false,
+   "build_serves_page": false
+  },
+  {
+   "source": "/c3atwork",
+   "target": "https://thec3.churchsuite.com/events/xirfkth3?fbclid=IwAR2_bWGCRs3INUPjOzF8wCzRTaAkXwNdMsn2_pZ2RNYU2-aasp2Zc6CLRF8",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/xirfkth3?fbclid=IwAR2_bWGCRs3INUPjOzF8wCzRTaAkXwNdMsn2_pZ2RNYU2-aasp2Zc6CLRF8",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/creativeteamnight",
+   "target": "https://thec3.churchsuite.com/events/iohxixlh",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/iohxixlh",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamchristmas",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=signup_to_sequence&num_results=&months=6&show_categories=0&show_search=1&show_sites=0&sites=1,4,7&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=68&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=signup_to_sequence&num_results=&months=6&show_categories=0&show_search=1&show_sites=0&sites=1,4,7&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/survey",
+   "target": "https://youtu.be/6eqvtt-kiFg",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://youtu.be/6eqvtt-kiFg",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/christmas",
+   "target": "https://christmas.thec3.uk",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://christmas.thec3.uk/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kids-church",
+   "target": "https://thec3.notion.site/Kids-Church-This-Sunday-226d5cedcf0f45a483cb8d276abce64b",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.notion.site/Kids-Church-This-Sunday-226d5cedcf0f45a483cb8d276abce64b",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kidschurch",
+   "target": "/kids-church/",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "/kids-church",
+   "same_class": true,
+   "same_target": false,
+   "build_serves_page": false
+  },
+  {
+   "source": "/creativebbq",
+   "target": "https://thec3.churchsuite.com/events/sueg3px9",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/sueg3px9",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/lifeguitar",
+   "target": "https://thec3.churchsuite.com/events/iclkzswa",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/iclkzswa",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/next-steps-calendar",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid-2019&merge=signup_to_sequence&num_results=&months=&show_categories=1&show_search=1&show_sites=1&sites=&text_color=666666",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=F5F6F7&categories=&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid-2019&merge=signup_to_sequence&num_results=&months=&show_categories=1&show_search=1&show_sites=1&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/honoursbbq",
+   "target": "https://thec3.churchsuite.com/events/u9sbiab6",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/events/u9sbiab6",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/music",
+   "target": "https://open.spotify.com/playlist/4S6fEWlrNtbjWu6Bx6qHgh?si=577cc523446f4bb1&pt=e9b902d05b169549e3955fbfb8b454b5",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://open.spotify.com/playlist/4S6fEWlrNtbjWu6Bx6qHgh?si=577cc523446f4bb1&pt=e9b902d05b169549e3955fbfb8b454b5",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/downloads",
+   "target": "https://we.tl/t-1Y5hKqECwK",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://we.tl/t-1Y5hKqECwK",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/funnyhowmarriage",
+   "target": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-uk-tickets-872798061497",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://www.eventbrite.com/e/michael-jrs-funny-how-marriage-works-tour-cambridge-uk-tickets-872798061497",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teameaster",
+   "target": "https://thec3.churchsuite.com/-/calendar/200e53c7-ea91-4631-ade9-4c90db6527ec",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/-/calendar/200e53c7-ea91-4631-ade9-4c90db6527ec",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/groupleaders",
+   "target": "https://thec3.churchsuite.com/forms/gc7qfw97",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/forms/gc7qfw97",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/store",
+   "target": "https://store.thec3.uk",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://store.thec3.uk/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ascendpod",
+   "target": "https://feeds.transistor.fm/ascend",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://feeds.transistor.fm/ascend",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kintsugihope",
+   "target": "https://https:/https://thec3.churchsuite.com/events/ihiqkzpx",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://https:/https://thec3.churchsuite.com/events/ihiqkzpx",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/discord",
+   "target": "https://discord.gg/z6GTSTWsXn",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://discord.gg/z6GTSTWsXn",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cambridge-connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/online-connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/hamper",
+   "target": "/shop/",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "/shop",
+   "same_class": true,
+   "same_target": false,
+   "build_serves_page": false
+  },
+  {
+   "source": "/griefshare",
+   "target": "https://thec3.churchsuite.com/groups/vibunzhp",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/groups/vibunzhp",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teambreathe",
+   "target": "https://thec3.notion.site/EVERYTHING-YOU-NEED-TO-KNOW-3540955f33b643f6bbbf10cf11bd68c5",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.notion.site/EVERYTHING-YOU-NEED-TO-KNOW-3540955f33b643f6bbbf10cf11bd68c5",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/connect",
+   "target": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/embed/addressbook/form?site=1",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/sunday-briefing",
+   "target": "https://thec3.notion.site/Sunday-Update-f52fd5b76b1d41beb18a4f756950a2c0",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.notion.site/Sunday-Update-f52fd5b76b1d41beb18a4f756950a2c0",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/c3-marriage-courses",
+   "target": "https://thec3.churchsuite.com/groups/xjkqfivh",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/groups/xjkqfivh",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/bury-connect",
+   "target": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=4",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/team-c3-signup",
+   "target": "https://thec3.churchsuite.com/forms/wxu56079",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/forms/wxu56079",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/colchester-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=35&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=35&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/shop",
+   "target": "https://store.thec3.uk",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://store.thec3.uk/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/buryc3groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=33&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=33&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/onlinefb",
+   "target": "https://facebook.com/groups/thec3online",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://facebook.com/groups/thec3online",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ohwhatwonder",
+   "target": "https://thec3uk.brushfire.com/christmas/",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3uk.brushfire.com/christmas/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/fbonline",
+   "target": "https://facebook.com/groups/thec3online",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://facebook.com/groups/thec3online",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/teamnight",
+   "target": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=18&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=4&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.com/embed/calendar/events?body_bgcolor=ffffff&categories=18&event_bgcolor=FFFFFF&event_border=&featured=NULL&filters_bgcolor=FFFFFF&heading_color=444444&icon_color=BBBBBB&layout=grid&merge=show_all&num_results=4&show_categories=0&show_search=0&show_sites=0&sites=&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/allnations",
+   "target": "https://thec3.churchsuite.com/events/jourkgga",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.com/events/jourkgga",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/tithetrial",
+   "target": "https://thec3.churchsuite.co.uk/donate/fund/e2pp8en9",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/fund/e2pp8en9",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/kidsevents",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=12&num_results=20&body_bgcolor=ffffff",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?category=12&num_results=20&body_bgcolor=ffffff",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/myrotas",
+   "target": "https://thec3.churchsuite.co.uk/my",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/my",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/give",
+   "target": "https://thec3.churchsuite.co.uk/donate/",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/online-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=32&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=32&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/prayer",
+   "target": "https://prayer.thec3.uk",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://prayer.thec3.uk/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/donate",
+   "target": "https://thec3.churchsuite.co.uk/donate/",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/donate/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/yaquestions",
+   "target": "https://docs.google.com/forms/d/e/1FAIpQLSfVNzKcZLStFmdO8OcK6mRr4ZcoBiT5Jfca1xfabx0P1qq3BQ/viewform",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://docs.google.com/forms/d/e/1FAIpQLSfVNzKcZLStFmdO8OcK6mRr4ZcoBiT5Jfca1xfabx0P1qq3BQ/viewform",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/calendar",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/mychurchsuite",
+   "target": "https://thec3.churchsuite.co.uk/my",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/my",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/cambridge-c3-groups",
+   "target": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=31&text_color=666666",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/smallgroups/list?preview=true&body_bgcolor=ffffff&filters_bgcolor=FFFFFF&group_bgcolor=FFFFFF&group_border=CCCCCC&heading_color=444444&icon_color=BBBBBB&show_dow=1&show_tags=0&site=&tag=31&text_color=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/connectform",
+   "target": "https://thec3.churchsuite.co.uk/connect/mydetails/submit",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/connect/mydetails/submit",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/brushfire",
+   "target": "https://thec3uk.brushfire.com/",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3uk.brushfire.com/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/colchester-connect",
+   "target": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=7",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/addressbook/form?site=7",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/chapel",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=50&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading=444444&icon=BBBBBB&num_results=6&show_categories=0&site=&text=666666",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?preview=true&body_bgcolor=ffffff&categories=50&event_bgcolor=FFFFFF&event_border=CCCCCC&filters_bgcolor=FFFFFF&heading=444444&icon=BBBBBB&num_results=6&show_categories=0&site=&text=666666",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/slack",
+   "target": "https://join.slack.com/t/thec3uk/shared_invite/zt-8i989kv6-QVF_M7WoZo877ikJNfiPRA",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://join.slack.com/t/thec3uk/shared_invite/zt-8i989kv6-QVF_M7WoZo877ikJNfiPRA",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/ascendsummit",
+   "target": "https://thec3uk.brushfire.com/ascend/",
+   "status": 302,
+   "live_status": 307,
+   "live_location": "https://thec3uk.brushfire.com/ascend/",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/buryevents",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  },
+  {
+   "source": "/bury-events",
+   "target": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "status": 301,
+   "live_status": 308,
+   "live_location": "https://thec3.churchsuite.co.uk/embed/calendar/featured?site=4",
+   "same_class": true,
+   "same_target": true,
+   "build_serves_page": false
+  }
+ ]
+}
