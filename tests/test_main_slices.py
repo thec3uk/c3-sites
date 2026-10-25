@@ -145,6 +145,17 @@ def test_contained_hero_with_image_and_links():
     assert ">We can&#x27;t wait to meet you soon!</h2>" in html
 
 
+def test_hero_link_with_no_title_renders_empty_not_none():
+    # /racial-unity/ has one hero link item with neither title nor link.
+    sample = raw("header", "heroWithImage")
+    sample["items"] = [{"linkTitle": None, "linkUrl": {"link_type": "Any"}}]
+
+    html = render(sample)
+
+    assert "None" not in html
+    assert re.search(r'<a class="bg-linear-to-r[^"]*"></a>', html)
+
+
 def test_full_bleed_hero_spans_the_page():
     html = render(raw("header", "heroWithImage", isFullBleed=True))
 
