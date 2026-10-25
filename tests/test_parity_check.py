@@ -14,6 +14,7 @@ from scripts.parity_check import (
     normalise_link,
     same_target,
     site_hosts,
+    unreachable_facts,
 )
 
 HOSTS = {"thec3.uk", "127.0.0.1:8000"}
@@ -215,3 +216,12 @@ def test_check_extras_follows_a_sitemap_index_and_tolerates_none(tmp_path):
 def test_check_extras_with_a_non_xml_sitemap_finds_no_urls(tmp_path, text):
     client = mock_client(lambda r: httpx.Response(200, text=text))
     assert check_extras(["/"], "https://x", client=client, gap=0, dist=tmp_path)["live_sitemap_not_built"] == []
+
+
+def test_unreachable_live_page_records_its_unfollowed_status_and_location():
+    client = mock_client(lambda r: httpx.Response(307, headers={"location": "https://events.example/x"}))
+    facts = unreachable_facts("https://myc3.life/alpha", Exception("net::ERR_FAILED at x\nCall log"), client=client)
+    assert facts["status"] == [307]
+    assert facts["final_url"] == "https://events.example/x"
+    assert facts["error"] == "net::ERR_FAILED at x"
+    assert facts["links"] == [] and facts["text"] == ""

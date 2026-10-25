@@ -190,7 +190,17 @@ def compare_images(tool_page, live_png, local_png, stem, out):
     return result
 
 
+def unreachable_facts(url, error, client=None):
+    """Facts for a live page the browser couldn't load, e.g. a redirect to a site that refuses bots."""
+    with client or http_client() as client:
+        response = client.get(url, follow_redirects=False)
+    return {"title": "", "description": [], "canonical": [], "links": [], "text": "",
+            "status": [response.status_code], "final_url": response.headers.get("location", url),
+            "error": str(error).splitlines()[0]}
+
+
 def check_pages(paths, local, live, site, out):
+    from playwright.sync_api import Error as PlaywrightError
     from playwright.sync_api import sync_playwright
 
     hosts = site_hosts(site, local)
@@ -208,12 +218,20 @@ def check_pages(paths, local, live, site, out):
                 row = results.setdefault(name, {"path": path})
                 shots = {}
                 for side, url in (("live", live + live_path), ("local", local + path)):
-                    response = load(page, url)
+                    try:
+                        response, facts = load(page, url), None
+                    except PlaywrightError as error:
+                        if side == "local":
+                            raise
+                        # Compared with a blank page; the redirect check covers where it goes.
+                        facts = unreachable_facts(url, error)
+                        page.set_content("<!doctype html><title></title>")
                     if width == 1440:
-                        facts = page.evaluate(FACTS_JS)
-                        facts["links"] = [normalise_link(h, hosts) for h in facts["links"]]
-                        facts["status"] = statuses(response) if response else [None]
-                        facts["final_url"] = page.url.replace(local, "")
+                        if facts is None:
+                            facts = page.evaluate(FACTS_JS)
+                            facts["links"] = [normalise_link(h, hosts) for h in facts["links"]]
+                            facts["status"] = statuses(response) if response else [None]
+                            facts["final_url"] = page.url.replace(local, "")
                         row[side] = facts
                     shots[side] = page.screenshot(full_page=True)
                 row[f"shots_{width}"] = compare_images(tool, shots["live"], shots["local"], f"{name}-{width}", out)
@@ -221,16 +239,18 @@ def check_pages(paths, local, live, site, out):
             context.close()
         browser.close()
     for row in results.values():
-        live, local_facts = row.pop("live"), row.pop("local")
-        row["status"] = {"live": live["status"], "local": local_facts["status"]}
+        live_facts, local_facts = row.pop("live"), row.pop("local")
+        row["status"] = {"live": live_facts["status"], "local": local_facts["status"]}
         for key in ("title", "description", "canonical", "final_url"):
-            row[key] = {"live": live[key], "local": local_facts[key]}
-        lc, kc = Counter(live["links"]), Counter(local_facts["links"])
-        row["links"] = {"count": {"live": len(live["links"]), "local": len(local_facts["links"])},
+            row[key] = {"live": live_facts[key], "local": local_facts[key]}
+        if "error" in live_facts:
+            row["live_error"] = live_facts["error"]
+        lc, kc = Counter(live_facts["links"]), Counter(local_facts["links"])
+        row["links"] = {"count": {"live": len(live_facts["links"]), "local": len(local_facts["links"])},
                         "only_live": sorted((lc - kc).elements()), "only_local": sorted((kc - lc).elements()),
                         "missing": sorted(set(lc) - set(kc))}
         split = lambda t: [line.strip() for line in t.splitlines() if line.strip()]  # noqa: E731
-        row["text_diff"] = [d for d in difflib.ndiff(split(live["text"]), split(local_facts["text"]))
+        row["text_diff"] = [d for d in difflib.ndiff(split(live_facts["text"]), split(local_facts["text"]))
                             if d[:1] in "+-"]
     return results
 
