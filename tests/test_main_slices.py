@@ -198,6 +198,13 @@ def test_card_links_its_image_and_button():
     assert re.search(r'<a href="https://thec3.uk/kids/"><img [^>]*alt="Kids"', html)
 
 
+def test_card_without_content_keeps_its_empty_prose_div():
+    # Live keeps it, and space-y-4 gives it a 16px gap before the button (/trustees/).
+    html = render(raw("card", "default", content=[]))
+
+    assert re.search(r'</h2>\s*<div class="font-medium leading-snug tracking-wide prose prose-h4:text-xl"></div>', html)
+
+
 def test_card_without_colour_is_unfilled_but_shadowed():
     html = render(raw("card", "default"))
 

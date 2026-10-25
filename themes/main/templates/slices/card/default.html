@@ -5,7 +5,8 @@
     <div class="flex flex-col justify-between row-span-3 col-span-full sm:col-span-3 md:col-span-7 sm:row-span-full">
       <div class="space-y-4">
         <h2 class="text-4xl font-extrabold capitalize"><span class="md:hidden">{{ p.title|default:"" }}{% if p.title and p.subtitle %}:<br>{% endif %}</span>{{ p.subtitle|default:"" }}</h2>
-        {% if p.content %}<div class="font-medium leading-snug tracking-wide prose prose-h4:text-xl">{{ p.content }}</div>{% endif %}
+        {# Always rendered, as live: even empty it takes a space-y-4 gap. #}
+        <div class="font-medium leading-snug tracking-wide prose prose-h4:text-xl">{% if p.content %}{{ p.content }}{% endif %}</div>
       </div>
       {% if p.ctaLink %}<a href="{{ p.ctaLink }}" class="w-full px-6 py-2 mt-2 text-xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50">{{ p.ctaTitle|default:"" }}</a>{% endif %}
     </div>
