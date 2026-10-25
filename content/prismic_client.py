@@ -72,15 +72,24 @@ def fetch_site_documents(client: PrismicClient, site: SiteConfig) -> list[dict]:
     return list(documents.values())
 
 
-def resolve_link(link: dict) -> str:
-    """URL for a Prismic link field or a whole document; '' if it goes nowhere."""
+def resolve_link(link: dict, domain: str = "") -> str:
+    """URL for a Prismic link field or a whole document; '' if it goes nowhere.
+
+    Pages shared in one repository use the uid '<domain>' for a site's home page
+    and '<domain>_<slug>' for a page served at /<slug>/ on that site.
+    """
     if link.get("link_type") in ("Web", "Media"):
         return safe_url(link.get("url", ""))
     if link.get("type") in HOMEPAGE_TYPES:
         return "/"
-    if link.get("uid"):
-        return f"/{link['uid']}/"
-    return ""
+    uid = link.get("uid")
+    if not uid:
+        return ""
+    if domain and uid == domain:
+        return "/"
+    if domain and uid.startswith(f"{domain}_"):
+        uid = uid.removeprefix(f"{domain}_")
+    return f"/{uid}/"
 
 
 def safe_url(url: str) -> str:

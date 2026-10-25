@@ -157,3 +157,38 @@ def test_embed_blocks_are_not_rendered():
     blocks = ({"type": "embed", "oembed": {"html": "<script>x</script>"}, "text": "", "spans": []},)
 
     assert RichText(blocks).html == ""
+
+
+def test_to_page_resolves_urls_and_links_for_the_site_domain():
+    document = {
+        "id": "h", "type": "page", "uid": "thec3.uk", "tags": [],
+        "data": {
+            "cta": {"link_type": "Document", "type": "page", "uid": "thec3.uk_about"},
+            "body": [{"slice_type": "text", "primary": {"text": [
+                {"type": "paragraph", "text": "about", "spans": [
+                    {"start": 0, "end": 5, "type": "hyperlink",
+                     "data": {"link_type": "Document", "type": "page", "uid": "thec3.uk_about"}},
+                ]},
+            ]}, "items": []}],
+        },
+    }
+
+    page = to_page(document, domain="thec3.uk")
+
+    assert page.url == "/"
+    assert page.fields["cta"] == "/about/"
+    assert 'href="/about/"' in page.slices[0].primary["text"].html
+
+
+def test_site_documents_use_the_site_domain(settings, monkeypatch):
+    from config.settings.sites import SiteConfig
+    from pages import content
+
+    settings.SITE = SiteConfig(name="main", domain="thec3.uk", theme="main", prismic_tags=("domain:thec3.uk",))
+    monkeypatch.setattr(content, "fetch_documents", lambda site: [
+        {"id": "a", "type": "page", "uid": "thec3.uk_about", "tags": [], "data": {}},
+    ])
+    content.site_documents.cache_clear()
+
+    assert [p.url for p in content.site_pages()] == ["/about/"]
+    content.site_documents.cache_clear()

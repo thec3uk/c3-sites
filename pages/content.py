@@ -18,7 +18,8 @@ def fetch_documents(site: SiteConfig) -> list[dict]:
 @lru_cache
 def site_documents() -> tuple[Page, ...]:
     """Every document selected for the site, pages and data alike."""
-    return tuple(to_page(d) for d in fetch_documents(settings.SITE))
+    site = settings.SITE
+    return tuple(to_page(d, site.domain) for d in fetch_documents(site))
 
 
 def site_pages() -> tuple[Page, ...]:

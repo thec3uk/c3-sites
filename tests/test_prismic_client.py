@@ -138,3 +138,17 @@ def test_resolve_link(link, url):
 )
 def test_resolve_link_only_allows_safe_schemes(url, expected):
     assert resolve_link({"link_type": "Web", "url": url}) == expected
+
+
+@pytest.mark.parametrize(
+    "uid, domain, url",
+    [
+        ("thec3.uk", "thec3.uk", "/"),
+        ("thec3.uk_about", "thec3.uk", "/about/"),
+        ("visit", "thec3.uk", "/visit/"),
+        ("thec3.uk_about", "myc3.life", "/thec3.uk_about/"),
+        ("thec3.uk_about", "", "/thec3.uk_about/"),
+    ],
+)
+def test_resolve_link_applies_the_domain_uid_convention(uid, domain, url):
+    assert resolve_link({"link_type": "Document", "type": "page", "uid": uid}, domain) == url
