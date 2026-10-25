@@ -19,7 +19,7 @@ def fetch_documents(site: SiteConfig) -> list[dict]:
 def site_documents() -> tuple[Page, ...]:
     """Every document selected for the site, pages and data alike."""
     site = settings.SITE
-    return tuple(to_page(d, site.domain) for d in fetch_documents(site))
+    return tuple(to_page(d, site.domain, site.link_rule) for d in fetch_documents(site))
 
 
 def site_pages() -> tuple[Page, ...]:

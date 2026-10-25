@@ -198,6 +198,29 @@ def test_site_documents_use_the_site_domain(settings, monkeypatch):
     content.site_documents.cache_clear()
 
 
+def test_site_documents_use_the_site_link_rule(settings, monkeypatch):
+    from config.settings.sites import load_site
+    from pages import content
+
+    settings.SITE = load_site("myc3")
+    link = {"link_type": "Document", "type": "page", "uid": "thec3.uk_about"}
+    monkeypatch.setattr(content, "fetch_documents", lambda site: [
+        {"id": "h", "type": "page", "uid": "myc3", "tags": [], "data": {"cta": link, "body": [
+            {"slice_type": "text", "primary": {"content": [{"type": "paragraph", "text": "about", "spans": [
+                {"start": 0, "end": 5, "type": "hyperlink", "data": link},
+            ]}]}, "items": []},
+        ]}},
+        {"id": "a", "type": "page", "uid": "thec3.uk_about", "tags": [], "data": {}},
+    ])
+    content.site_documents.cache_clear()
+
+    home, about = content.site_pages()
+    assert (home.url, about.url) == ("/", "/thec3.uk_about/")
+    assert home.fields["cta"] == "/thec3.uk_about/"
+    assert 'href="/thec3.uk_about/"' in home.slices[0].primary["content"].html
+    content.site_documents.cache_clear()
+
+
 def test_empty_slice_items_are_dropped():
     from content.sources.prismic import _slice
 

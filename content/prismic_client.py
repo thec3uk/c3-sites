@@ -72,14 +72,20 @@ def fetch_site_documents(client: PrismicClient, site: SiteConfig) -> list[dict]:
     return list(documents.values())
 
 
-def resolve_link(link: dict, domain: str = "") -> str:
+def resolve_link(link: dict, domain: str = "", rule: str = "domain_uid") -> str:
     """URL for a Prismic link field or a whole document; '' if it goes nowhere.
 
-    Pages shared in one repository use the uid '<domain>' for a site's home page
-    and '<domain>_<slug>' for a page served at /<slug>/ on that site.
+    rule is the site's SiteConfig.link_rule, a key of LINK_RULES.
     """
     if link.get("link_type") in ("Web", "Media"):
         return safe_url(link.get("url", ""))
+    return LINK_RULES[rule](link, domain)
+
+
+def _domain_uid_path(link: dict, domain: str) -> str:
+    """Pages shared in one repository use the uid '<domain>' for a site's home page
+    and '<domain>_<slug>' for a page served at /<slug>/ on that site.
+    """
     if link.get("type") in HOMEPAGE_TYPES:
         return "/"
     uid = link.get("uid")
@@ -90,6 +96,23 @@ def resolve_link(link: dict, domain: str = "") -> str:
     if domain and uid.startswith(f"{domain}_"):
         uid = uid.removeprefix(f"{domain}_")
     return f"/{uid}/"
+
+
+# myc3's Next index page is the page with this uid.
+NEXT_HOME_UID = "myc3"
+
+
+def _next_path(link: dict, domain: str) -> str:
+    """As myc3's Next linkResolver: page and redirect uids are paths, other documents go home."""
+    uid, type = link.get("uid"), link.get("type")
+    if uid == NEXT_HOME_UID:
+        return "/"
+    if type in ("page", "redirect"):
+        return f"/{uid}/" if uid else ""
+    return "/" if type else ""
+
+
+LINK_RULES = {"domain_uid": _domain_uid_path, "next": _next_path}
 
 
 def safe_url(url: str) -> str:

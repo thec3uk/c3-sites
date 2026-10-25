@@ -152,3 +152,27 @@ def test_resolve_link_only_allows_safe_schemes(url, expected):
 )
 def test_resolve_link_applies_the_domain_uid_convention(uid, domain, url):
     assert resolve_link({"link_type": "Document", "type": "page", "uid": uid}, domain) == url
+
+
+@pytest.mark.parametrize(
+    "link, url",
+    [
+        ({"link_type": "Document", "type": "page", "uid": "myc3"}, "/"),
+        ({"link_type": "Document", "type": "page", "uid": "growth-path"}, "/growth-path/"),
+        ({"link_type": "Document", "type": "page", "uid": "thec3.uk_about"}, "/thec3.uk_about/"),
+        ({"link_type": "Document", "type": "redirect", "uid": "alpha"}, "/alpha/"),
+        ({"link_type": "Document", "type": "notification_banner", "uid": None}, "/"),
+        ({"link_type": "Document", "type": "homepage", "uid": "home"}, "/"),
+        (doc("x", type="page", uid="trustees"), "/trustees/"),
+        ({"link_type": "Web", "url": "javascript:alert(1)"}, ""),
+        ({"link_type": "Web", "url": "https://thec3.uk/privacy"}, "https://thec3.uk/privacy"),
+        ({"link_type": "Any"}, ""),
+    ],
+)
+def test_resolve_link_next_rule_follows_the_myc3_link_resolver(link, url):
+    assert resolve_link(link, "myc3.life", rule="next") == url
+
+
+def test_resolve_link_rejects_an_unknown_rule():
+    with pytest.raises(KeyError):
+        resolve_link({"link_type": "Document", "type": "page", "uid": "a"}, rule="nope")

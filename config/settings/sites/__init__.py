@@ -16,6 +16,8 @@ class SiteConfig:
     page_types: tuple[str, ...] = ("page",)
     umami_website_id: str = ""
     umami_src: str = ""
+    # How document links become URLs: a key of content.prismic_client.LINK_RULES.
+    link_rule: str = "domain_uid"
 
 
 def load_site(name: str) -> SiteConfig:
