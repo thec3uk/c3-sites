@@ -38,6 +38,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 PRISMIC_REPOSITORY = os.environ.get("PRISMIC_REPOSITORY", "thec3")
 PRISMIC_ACCESS_TOKEN = os.environ.get("PRISMIC_ACCESS_TOKEN", "")
+PRISMIC_CUSTOM_TYPES_API_TOKEN = os.environ.get("PRISMIC_CUSTOM_TYPES_API_TOKEN", "")
 
 USE_TZ = True
 TIME_ZONE = "Europe/London"
