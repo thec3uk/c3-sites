@@ -14,3 +14,16 @@ def test_404_page_renders_with_404_status(documents, client):
 
     assert response.status_code == 404
     assert "Page not found" in response.content.decode()
+
+
+def test_academy_404_title_uses_the_plain_text_of_a_rich_text_site_title():
+    from django.template.loader import render_to_string
+
+    from content.models import Page, RichText
+
+    title = RichText(({"type": "paragraph", "text": "The Academy", "spans": []},))
+    config = Page(id="c", type="site_config", uid=None, url="/", fields={"title": title})
+
+    html = render_to_string("404.html", {"site_config": config, "site": None})
+
+    assert "<title>Page not found | The Academy</title>" in html
