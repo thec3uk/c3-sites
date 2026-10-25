@@ -60,3 +60,36 @@ def test_generated_redirects_stand_alone_without_theme_rules(tmp_path):
     subprocess.run(["bash", "-c", "SITE=x\n" + script[start:]], cwd=tmp_path, check=True)
 
     assert (tmp_path / "dist/_redirects").read_text() == "/give https://pay.example 301\n"
+
+
+def run_merge(tmp_path, site):
+    script = (ROOT / "scripts/build.sh").read_text()
+    start = script.index('generated_redirects="$(mktemp)"')
+    subprocess.run(["bash", "-c", f"SITE={site}\n" + script[start:]], cwd=tmp_path, check=True)
+
+
+def test_theme_redirects_without_a_trailing_newline_do_not_fuse_with_generated_ones(tmp_path):
+    (tmp_path / "dist").mkdir()
+    (tmp_path / "dist/_redirects").write_text("/give https://pay.example 301\n")
+    public = tmp_path / "themes/x/public"
+    public.mkdir(parents=True)
+    (public / "_redirects").write_text("/a /b 301")
+
+    run_merge(tmp_path, "x")
+
+    assert (tmp_path / "dist/_redirects").read_text().splitlines() == ["/a /b 301", "/give https://pay.example 301"]
+
+
+def test_main_theme_serves_gatsbys_root_files_and_the_sitemap_index_redirect(tmp_path):
+    (tmp_path / "dist").mkdir()
+    (tmp_path / "dist/_redirects").write_text("/give https://pay.example 301\n")
+    (tmp_path / "themes").mkdir()
+    (tmp_path / "themes/main").symlink_to(ROOT / "themes/main")
+
+    run_merge(tmp_path, "main")
+
+    lines = (tmp_path / "dist/_redirects").read_text().splitlines()
+    assert "/sitemap-index.xml /sitemap.xml 301" in lines
+    assert "/give https://pay.example 301" in lines
+    assert (tmp_path / "dist/card.jpg").is_file()
+    assert (tmp_path / "dist/fonts/Gotcha-Regular.otf").is_file()

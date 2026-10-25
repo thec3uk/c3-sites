@@ -28,7 +28,8 @@ generated_redirects="$(mktemp)"
 cp dist/_redirects "$generated_redirects"
 if [ -d "themes/$SITE/public" ]; then cp -R "themes/$SITE/public/." dist/; fi
 if [ -f "themes/$SITE/public/_redirects" ]; then
-  cat "themes/$SITE/public/_redirects" "$generated_redirects" > dist/_redirects
+  # awk 1 re-terminates a last line that lacks a newline, so rules don't fuse.
+  { awk 1 "themes/$SITE/public/_redirects"; cat "$generated_redirects"; } > dist/_redirects
 else
   cp "$generated_redirects" dist/_redirects
 fi
