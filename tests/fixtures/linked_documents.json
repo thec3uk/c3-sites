@@ -1,0 +1,474 @@
+[
+ {
+  "id": "YngkHBAAACAAq_kB",
+  "uid": null,
+  "type": "contact_form",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "form_name": "Contact Us",
+   "name_label": "Full Name",
+   "email_label": "Email",
+   "category_label": "Category",
+   "subject_label": "Your Subject",
+   "message_label": "Your Message",
+   "submit_button_label": "Send",
+   "category": [
+    {
+     "category_name": "General Enquiry",
+     "email_recipient": "hello@thec3.uk"
+    },
+    {
+     "category_name": "Cambridge West",
+     "email_recipient": "cambridgewest@thec3.uk"
+    },
+    {
+     "category_name": "Breathe",
+     "email_recipient": "breathe@thec3.uk"
+    },
+    {
+     "category_name": "Kids Church",
+     "email_recipient": "kids@thec3.uk"
+    },
+    {
+     "category_name": "Champions Club",
+     "email_recipient": "kids@thec3.uk"
+    },
+    {
+     "category_name": "Connect with us",
+     "email_recipient": "hello@thec3.uk"
+    },
+    {
+     "category_name": "Alpha",
+     "email_recipient": "rosemarie.wiener@thec3.uk"
+    },
+    {
+     "category_name": "Baptism",
+     "email_recipient": "Baptism@thec3.uk"
+    },
+    {
+     "category_name": "Impact",
+     "email_recipient": "hello@c3impact.uk"
+    },
+    {
+     "category_name": "Team C3",
+     "email_recipient": "dylan.bennette@thec3.uk"
+    },
+    {
+     "category_name": "Safeguarding",
+     "email_recipient": "safeguarding@thec3.uk"
+    },
+    {
+     "category_name": "Youth",
+     "email_recipient": "youth@thec3.uk"
+    },
+    {
+     "category_name": "Room Hire",
+     "email_recipient": "bookings@thec3.uk"
+    },
+    {
+     "category_name": "Kids Life Group Sign up",
+     "email_recipient": "kids@thec3.uk"
+    },
+    {
+     "category_name": "WTC Hub Director",
+     "email_recipient": "cambridge@wtctheology.org.uk"
+    },
+    {
+     "category_name": "Ascend Men",
+     "email_recipient": "ascend@thec3.uk"
+    }
+   ],
+   "thank_you_message": [
+    {
+     "type": "heading2",
+     "text": "Thanks for your message!",
+     "spans": []
+    },
+    {
+     "type": "paragraph",
+     "text": "Someone will be in touch in the next couple of days",
+     "spans": []
+    }
+   ],
+   "slices": []
+  }
+ },
+ {
+  "id": "Yk2CThAAACMAWbs2",
+  "uid": null,
+  "type": "quick-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "title": "quick links",
+   "slices": [
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [
+      {}
+     ],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "Connect",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "Ypde3hEAACIAeElv",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "going-deeper-in-your-faith",
+       "first_publication_date": "2022-11-11T10:48:31+0000",
+       "last_publication_date": "2026-07-13T18:40:10+0000",
+       "uid": "shaping",
+       "link_type": "Document",
+       "key": "419a7838-0996-4df7-b22e-8f90ec6fb600",
+       "isBroken": false
+      }
+     },
+     "id": "link$333c2f13-2c9e-4eca-a7ad-abb98fd73cdb",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [
+      {}
+     ],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "Give",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "YswPDBEAACIAOfVT",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "giving",
+       "first_publication_date": "2022-11-11T10:48:31+0000",
+       "last_publication_date": "2026-07-15T15:52:45+0000",
+       "uid": "giving",
+       "link_type": "Document",
+       "key": "db8167a5-131a-4488-b027-21e3b8c6b5a2",
+       "isBroken": false
+      }
+     },
+     "id": "link$002c563d-3d6e-4ac5-943d-35a992d7d03b",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [
+      {}
+     ],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "Groups",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "YpeEuhEAACMAeQqN",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "c3-groups",
+       "first_publication_date": "2022-11-11T10:48:31+0000",
+       "last_publication_date": "2025-11-05T11:46:39+0000",
+       "uid": "c3-groups",
+       "link_type": "Document",
+       "key": "3c2ff946-9df4-4270-97e4-39056ec45214",
+       "isBroken": false
+      }
+     },
+     "id": "link$d88aa2fb-ee16-4144-ad84-1c88f5408548",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "Teaching",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "Y3jKPBEAACEA0CTw",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "teaching-series",
+       "first_publication_date": "2022-11-19T12:21:19+0000",
+       "last_publication_date": "2022-11-19T12:21:19+0000",
+       "uid": "teaching-series",
+       "link_type": "Document",
+       "key": "58e9898d-de81-4cf2-b7ad-cf7cfbd304b0",
+       "isBroken": false
+      }
+     },
+     "id": "link$012962e6-8413-4a24-9b80-0069b6dc9700",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [
+      {}
+     ],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "Serve",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "Ypde3hEAACIAeElv",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "going-deeper-in-your-faith",
+       "first_publication_date": "2022-11-11T10:48:31+0000",
+       "last_publication_date": "2026-07-13T18:40:10+0000",
+       "uid": "shaping",
+       "link_type": "Document",
+       "key": "7bfeef41-7d3e-4069-b549-a5893f8543ef",
+       "isBroken": false
+      }
+     },
+     "id": "link$dfa64e15-ad1c-4ae3-adb4-d853b881e2bb",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [
+      {}
+     ],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "C3 Impact",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "id": "Yn-D-RAAACAAza0C",
+       "type": "page",
+       "tags": [
+        "domain:thec3.uk"
+       ],
+       "lang": "en-gb",
+       "slug": "c3-impact",
+       "first_publication_date": "2022-11-11T10:48:31+0000",
+       "last_publication_date": "2022-11-11T16:27:53+0000",
+       "uid": "impact",
+       "link_type": "Document",
+       "key": "9151bcf3-05b7-45cd-9d05-21f7316b1e4b",
+       "isBroken": false
+      }
+     },
+     "id": "link$de8f6dab-9db8-4aa9-b047-e2732a662c0f",
+     "slice_type": "link",
+     "slice_label": null
+    },
+    {
+     "variation": "default",
+     "version": "sktwi1xtmkfgx8626",
+     "items": [],
+     "primary": {
+      "title": [
+       {
+        "type": "heading1",
+        "text": "C3 Kids ",
+        "spans": [],
+        "direction": "ltr"
+       }
+      ],
+      "url": {
+       "link_type": "Web",
+       "key": "52ffae0d-4aec-43a6-b6d0-0d0133d46565",
+       "url": "https://thec3.uk/kids/",
+       "target": ""
+      }
+     },
+     "id": "link$21cfc6af-9b9c-4c13-9d4d-01e48707ee39",
+     "slice_type": "link",
+     "slice_label": null
+    }
+   ]
+  }
+ },
+ {
+  "id": "Y2GAtxAAALJqGVrr",
+  "uid": null,
+  "type": "social-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "instagramUrl": {
+    "link_type": "Web",
+    "key": "dc0aae02-39c9-4b1d-90f9-51fa575991a2",
+    "url": "https://www.instagram.com/thec3_impact/"
+   },
+   "facebookUrl": {
+    "link_type": "Web",
+    "key": "d50108dd-f790-4030-8508-d2ea408c2457",
+    "url": "https://www.facebook.com/thec3.impact"
+   },
+   "youtubeUrl": {
+    "link_type": "Any"
+   },
+   "title": "Impact",
+   "slices": []
+  }
+ },
+ {
+  "id": "Y2LeZxAAACIAH4X_",
+  "uid": null,
+  "type": "social-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "instagramUrl": {
+    "link_type": "Web",
+    "key": "39ea9f11-5507-422d-be4f-88cd5d48103b",
+    "url": "https://www.instagram.com/thec3_youth/"
+   },
+   "facebookUrl": {
+    "link_type": "Web",
+    "key": "7cbb6f5f-d441-40b6-99a8-1ab7688ea173",
+    "url": "https://www.facebook.com/thec3youth"
+   },
+   "youtubeUrl": {
+    "link_type": "Web",
+    "key": "d5095ceb-3d63-4ad0-8f46-eb0a22c2c7e6",
+    "url": "https://www.youtube.com/channel/UCprJZ1B75nKCE7cp_cueGZQ"
+   },
+   "title": "Youth",
+   "slices": []
+  }
+ },
+ {
+  "id": "Y2LeFBAAACIAH4SI",
+  "uid": null,
+  "type": "social-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "instagramUrl": {
+    "link_type": "Web",
+    "key": "3f7d6d6a-83fd-4715-8e7c-57b110aee3b0",
+    "url": "https://www.instagram.com/thec3_kids/"
+   },
+   "facebookUrl": {
+    "link_type": "Web",
+    "key": "a04b26b4-1a31-4134-9521-5e28c25075cc",
+    "url": "https://www.facebook.com/c3kidschurch"
+   },
+   "youtubeUrl": {
+    "link_type": "Web",
+    "key": "c955ac33-ea23-492f-b595-e310b45d97f3",
+    "url": "https://www.youtube.com/channel/UCTNKJwfrWInSgjvrK6bV7_A"
+   },
+   "title": "Kids",
+   "slices": []
+  }
+ },
+ {
+  "id": "Y2LewhAAACIAH4el",
+  "uid": null,
+  "type": "social-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "instagramUrl": {
+    "link_type": "Web",
+    "key": "1d7c8f8e-880c-4559-a98a-f0e4ee833670",
+    "url": "https://www.instagram.com/thec3_ya/"
+   },
+   "facebookUrl": {
+    "link_type": "Any"
+   },
+   "youtubeUrl": {
+    "link_type": "Web",
+    "key": "75b48c8a-3376-4945-8d9a-08c861583695",
+    "url": "https://www.youtube.com/c/TheC3Church"
+   },
+   "title": "YA",
+   "slices": []
+  }
+ },
+ {
+  "id": "Yk2BixAAACMAWbey",
+  "uid": null,
+  "type": "social-links",
+  "tags": [
+   "domain:thec3.uk"
+  ],
+  "data": {
+   "instagramUrl": {
+    "link_type": "Web",
+    "key": "071741a0-c853-43f7-af47-b555b6485e97",
+    "url": "https://www.instagram.com/thec3_church/"
+   },
+   "facebookUrl": {
+    "link_type": "Web",
+    "key": "ee2cd8ed-80ff-490c-8db4-52ef237d07e8",
+    "url": "https://www.facebook.com/thec3uk"
+   },
+   "youtubeUrl": {
+    "link_type": "Web",
+    "key": "5b456921-927d-4ce4-88b5-eee036e09d03",
+    "url": "https://www.youtube.com/channel/UCHXr4-EV0nF5rhlhJmDhIWQ"
+   },
+   "title": null,
+   "slices": []
+  }
+ }
+]

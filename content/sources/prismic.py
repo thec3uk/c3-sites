@@ -2,7 +2,7 @@
 
 from typing import Any
 
-from content.models import Image, Page, RichText, Slice
+from content.models import Image, Link, Page, RichText, Slice
 from content.prismic_client import resolve_link
 
 SLICE_ZONES = ("body", "slices")
@@ -36,7 +36,10 @@ def convert(value: Any, domain: str = "") -> Any:
         return [convert(v, domain) for v in value]
     if isinstance(value, dict):
         if "link_type" in value:
-            return resolve_link(value, domain)
+            url = resolve_link(value, domain)
+            if value["link_type"] == "Document" and value.get("id"):
+                return Link(url, id=value["id"], type=value.get("type", ""))
+            return url
         if "dimensions" in value and "url" in value:
             return Image(
                 url=value["url"],

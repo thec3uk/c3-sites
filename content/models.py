@@ -22,6 +22,15 @@ class Image:
     height: int | None = None
 
 
+class Link(str):
+    """A link to a document: prints as its URL ('' if it has none) and names its target."""
+
+    def __new__(cls, url: str, id: str, type: str):
+        link = super().__new__(cls, url)
+        link.id, link.type = id, type
+        return link
+
+
 @dataclass(frozen=True)
 class Slice:
     type: str
