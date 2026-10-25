@@ -1,3 +1,5 @@
+import re
+
 import pytest
 from django.template import Context, Template
 
@@ -24,8 +26,13 @@ def dirs(tmp_path, settings):
     return write
 
 
-def render(page):
+def render_wrapped(page):
     return Template("{% load slices %}{% render_slices page %}").render(Context({"page": page}))
+
+
+def render(page):
+    """Slice output without the <section> wrapper each slice gets."""
+    return re.sub(r"</?section[^>]*>", "", render_wrapped(page))
 
 
 def page_with(*slices):
@@ -74,3 +81,11 @@ def test_missing_template_shows_placeholder_in_debug(dirs, settings):
 
 def test_page_without_slices_renders_nothing(dirs):
     assert render(page_with()) == ""
+
+
+def test_each_slice_is_wrapped_with_its_type_and_variation(dirs):
+    dirs("shared", "slices/text.html", "hi")
+
+    html = render_wrapped(page_with(Slice("text", variation="wide")))
+
+    assert html == '<section class="slice" data-slice="text" data-variation="wide">hi</section>'

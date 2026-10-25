@@ -1,0 +1,10 @@
+{% load images %}{% with p=slice.primary %}
+{# One template for every variation: each only fills the fields it has. #}
+<header class="hero" data-align="{{ p.alignment|default:'left' }}"{% if p.backgroundImage %} style="background-image: url('{{ p.backgroundImage|imgix:2400 }}')"{% endif %}>
+  {% if p.logo %}<img src="{{ p.logo|imgix:400 }}" alt="{{ p.logo.alt }}">{% endif %}
+  <h1>{{ p.title }}</h1>
+  {% if p.callout %}<p class="callout">{{ p.callout }}</p>{% endif %}
+  {% if p.leadParagraph %}{{ p.leadParagraph }}{% endif %}
+  {% if slice.items %}<p class="hero-links">{% for item in slice.items %}{% if item.linkUrl %}<a class="button" href="{{ item.linkUrl }}">{{ item.linkTitle }}</a>{% endif %}{% endfor %}</p>{% endif %}
+</header>
+{% endwith %}

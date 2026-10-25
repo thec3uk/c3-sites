@@ -41,5 +41,12 @@ def render_slices(page: Page) -> str:
                 )
             )
             continue
-        out.append(tpl.render({"slice": slice, "page": page, "index": index}))
+        out.append(
+            format_html(
+                '<section class="slice" data-slice="{}" data-variation="{}">{}</section>',
+                slice.type,
+                slice.variation,
+                mark_safe(tpl.render({"slice": slice, "page": page, "index": index})),
+            )
+        )
     return mark_safe("".join(out))

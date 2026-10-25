@@ -1,0 +1,1 @@
+{% with p=slice.primary %}{% if p.title %}<div class="text-title" data-align="{{ p.title_alignment|default:'left' }}">{{ p.title }}</div>{% endif %}{{ p.content }}{% endwith %}

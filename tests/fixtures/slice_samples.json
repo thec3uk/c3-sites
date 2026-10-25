@@ -1,0 +1,657 @@
+[
+ {
+  "variation": "default-slice",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "linkTitle": "Light Night!",
+   "linkUrl": {
+    "link_type": "Web",
+    "key": "05bfaa72-bd26-4183-81b6-fb9b61be2956",
+    "url": "https://thec3.churchsuite.com/-/calendar/ce91e008-808b-4683-a898-cda981e810b6?preview=1"
+   },
+   "size": "xs",
+   "alignment": null
+  },
+  "id": "button$52b8c0e0-5459-4de1-a415-94960e25cee7",
+  "slice_type": "button",
+  "slice_label": null
+ },
+ {
+  "variation": "default",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "subtitle": "C3 Trustee Recruitment",
+   "title": null,
+   "content": [],
+   "image": {},
+   "ctaTitle": null,
+   "ctaLink": {
+    "link_type": "Any"
+   },
+   "colour": null
+  },
+  "id": "card$be356fdb-cfca-4890-8580-b75b947b703c",
+  "slice_type": "card",
+  "slice_label": null
+ },
+ {
+  "variation": "imageCard",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [
+   {}
+  ],
+  "primary": {
+   "subtitle": null,
+   "title": "Our Projects",
+   "image": {
+    "dimensions": {
+     "width": 5760,
+     "height": 3840
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/thec3/427093c6-1044-495f-ac73-4474b0a5ac2a_Back+to+School-96.jpeg?auto=compress,format",
+    "id": "Y2pxNBAAACAAQWpq",
+    "edit": {
+     "x": 0,
+     "y": 0,
+     "zoom": 1,
+     "background": "#fff"
+    }
+   },
+   "ctaLink": {
+    "link_type": "Web",
+    "key": "7255e21a-f1d8-4fd5-bdae-630679f3df01",
+    "url": "https://c3impact.uk/#projects"
+   },
+   "colour": "transparent"
+  },
+  "id": "card$3a6e9713-2a9d-4559-aec6-8e3332d5ada2",
+  "slice_type": "card",
+  "slice_label": null
+ },
+ {
+  "variation": "newsletterLocationSlice",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [
+   {}
+  ],
+  "primary": {
+   "subtitle": "Find out more",
+   "title": "Subscribe",
+   "content": [
+    {
+     "type": "paragraph",
+     "text": "Find out more about what's happening in each location",
+     "spans": []
+    }
+   ],
+   "image": {},
+   "ctaTitle": "Sign me up Scotty",
+   "colour": "white"
+  },
+  "id": "card$3448d0eb-c2a6-42a2-a49f-852243046263",
+  "slice_type": "card",
+  "slice_label": null
+ },
+ {
+  "variation": "default-slice",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "form_name": "contact",
+   "name_label": "Name",
+   "email_label": "Email",
+   "category_label": "CATEGORY",
+   "subject_label": "SUBJECT",
+   "message_label": "Your story",
+   "submit_button_label": "SEND",
+   "consent_label": [
+    {
+     "type": "paragraph",
+     "text": "I consent to my story being shared",
+     "spans": [],
+     "direction": "ltr"
+    }
+   ],
+   "thank_you_message": [
+    {
+     "type": "paragraph",
+     "text": "Thanks for sharing with us",
+     "spans": [],
+     "direction": "ltr"
+    }
+   ]
+  },
+  "id": "contact_form$66b9ff9e-b927-43ca-93cf-89867e16ffaa",
+  "slice_type": "contact_form",
+  "slice_label": null
+ },
+ {
+  "primary": {
+   "eyebrow_headline": [],
+   "title": [
+    {
+     "type": "heading2",
+     "text": "Kids Church FAQ's",
+     "spans": []
+    }
+   ],
+   "description": [],
+   "optional_image": {}
+  },
+  "items": [
+   {
+    "question": "What is a Kids Life Group?",
+    "answer": [
+     {
+      "type": "paragraph",
+      "text": "In some locations, we run mid-week life groups for kids and families. Our Life Group leaders gather families together to have fun, go deeper in their faith and to celebrate what it means to live a Christian life.",
+      "spans": [],
+      "direction": "ltr"
+     },
+     {
+      "type": "paragraph",
+      "text": "\nEmail kids@thec3.uk to find a Life Group near you.",
+      "spans": [
+       {
+        "start": 7,
+        "end": 20,
+        "type": "hyperlink",
+        "data": {
+         "link_type": "Web",
+         "url": "mailto:kids@thec3.uk",
+         "target": "_blank"
+        }
+       }
+      ],
+      "direction": "ltr"
+     }
+    ]
+   },
+   {
+    "question": "What is Champions Club?",
+    "answer": [
+     {
+      "type": "paragraph",
+      "text": "Champions Club Leaders exist to serve kids with additional needs during Kids Church. We want to do all we can to partner with you so that your kids can flourish in our church family. Champions Club support can be arranged in advance of Sunday services. To enquire about 1-2-1 support for your child in Kids Church, please get in touch here.",
+      "spans": [
+       {
+        "start": 335,
+        "end": 339,
+        "type": "hyperlink",
+        "data": {
+         "id": "YnWB3xAAACIAoFXW",
+         "type": "page",
+         "tags": [
+          "domain:thec3.uk"
+         ],
+         "lang": "en-gb",
+         "slug": "get-in-touch",
+         "first_publication_date": "2022-05-06T20:19:17+0000",
+         "last_publication_date": "2025-10-24T22:07:02+0000",
+         "uid": "contact",
+         "link_type": "Document",
+         "isBroken": false
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "question": "What do you teach at Kids Church?",
+    "answer": [
+     {
+      "type": "paragraph",
+      "text": "We create the majority of our teaching content for C3 Kids in house. Teaching is always age appropriate and Bible-based. We design our sessions to include worship, an interactive Bible message, with creative prayer and activities. We aim to help your child grow in their spiritual, emotional and social development. Our aim is for your child to leave a Kids Church service having had fun with friends and with their hearts full of faith.",
+      "spans": [],
+      "direction": "ltr"
+     }
+    ]
+   },
+   {
+    "question": "How do I check-in my child to Kids Church?",
+    "answer": [
+     {
+      "type": "paragraph",
+      "text": "When you arrive at church for the first time, our team will direct you to the relevant Kids Church settings. We use a database called ChurchSuite to register all of our C3 Kids.",
+      "spans": [],
+      "direction": "ltr"
+     },
+     {
+      "type": "paragraph",
+      "text": " You will be asked to provide emergency contact details and details for the kids you are registering (including full name, date of birth and relevant medical/dietary information). ",
+      "spans": [],
+      "direction": "ltr"
+     },
+     {
+      "type": "paragraph",
+      "text": "After registering, you will be given a name label for your child to wear during Kids Church and a guardian pick-up label for you to collect your child at the end of the session. ",
+      "spans": [],
+      "direction": "ltr"
+     }
+    ]
+   },
+   {
+    "question": "How do the C3 Kids Team ensure my child is safe at Kids Church?",
+    "answer": [
+     {
+      "type": "paragraph",
+      "text": "Our C3 Kids Leaders are DBS checked and go through an onboarding process including safer recruitment practices such as character reference checks to serve in Kids Church. We ensure our safeguarding policies are regularly reviewed and that our team are trained and reminded to serve within the guidelines of our safeguarding policy.",
+      "spans": [],
+      "direction": "ltr"
+     },
+     {
+      "type": "paragraph",
+      "text": "\nIf we need to contact you during the service, our team will text or phone the emergency contact number you provided during registration. A team member may also come into the auditorium to reach you if needed. If an evacuation was needed our team would respond calmly and quickly, taking the children to the Kids Evacuation Point. They will then take a register before releasing the children back to their guardian to ensure all children are accounted for.",
+      "spans": [],
+      "direction": "ltr"
+     }
+    ]
+   }
+  ],
+  "id": "faq_section$85e7e722-ca89-468b-ba73-cef87282daaf",
+  "slice_type": "faq_section",
+  "slice_label": null
+ },
+ {
+  "variation": "default-slice",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [
+   {
+    "linkTitle": "Privacy",
+    "linkUrl": {
+     "link_type": "Web",
+     "key": "c77919bf-5537-45a7-8e9e-7188b3aed6cc",
+     "url": "https://thec3.uk/privacy"
+    }
+   },
+   {
+    "linkTitle": "Raise a concern",
+    "linkUrl": {
+     "link_type": "Web",
+     "key": "c6bfb8db-e4a9-4f50-b35d-9575930e69d1",
+     "url": "https://thec3.uk/raise-a-concern"
+    }
+   },
+   {
+    "linkTitle": "My ChurchSuite",
+    "linkUrl": {
+     "link_type": "Web",
+     "key": "679387c2-968a-4b30-bb37-ca6986f822f3",
+     "url": "https://login.churchsuite.com/"
+    }
+   }
+  ],
+  "primary": {},
+  "id": "footer$3c246505-8070-485e-9399-fcb94aa69d74",
+  "slice_type": "footer",
+  "slice_label": null
+ },
+ {
+  "variation": "default-slice",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [
+   {}
+  ],
+  "primary": {
+   "title": "life @ the c3 church",
+   "logo": {
+    "dimensions": {
+     "width": 6190,
+     "height": 5361
+    },
+    "alt": "The C3 Church Logo",
+    "copyright": null,
+    "url": "https://images.prismic.io/thec3/Z5uh9pbqstJ9-DVg_C3Logo_noc3_RGB_black90.png?auto=format,compress",
+    "id": "Z5uh9pbqstJ9-DVg",
+    "edit": {
+     "x": 0,
+     "y": 0,
+     "zoom": 1,
+     "background": "transparent"
+    }
+   }
+  },
+  "id": "header$bdd889f1-5316-4656-a4ec-4c665dc0163a",
+  "slice_type": "header",
+  "slice_label": null
+ },
+ {
+  "variation": "heroWithCustomComponent",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [
+   {
+    "linkTitle": "New to C3?",
+    "linkUrl": {
+     "id": "YpdCQREAACAAd7-O",
+     "type": "page",
+     "tags": [
+      "domain:thec3.uk"
+     ],
+     "lang": "en-gb",
+     "slug": "the-c3-church-is-led-by-senior-pastors-steve-and-angie-campbell.-we-are-one-church-with-locations-in-bury-st-edmunds-cambridge-cambridge-west-church-online--colchester",
+     "first_publication_date": "2022-11-11T10:48:31+0000",
+     "last_publication_date": "2026-07-15T15:56:50+0000",
+     "uid": "reaching",
+     "link_type": "Document",
+     "key": "8ec7179c-1885-4210-9f61-9f2ad7dc16e4",
+     "isBroken": false
+    }
+   },
+   {
+    "linkTitle": "What's your next step?",
+    "linkUrl": {
+     "id": "Ypde3hEAACIAeElv",
+     "type": "page",
+     "tags": [
+      "domain:thec3.uk"
+     ],
+     "lang": "en-gb",
+     "slug": "going-deeper-in-your-faith",
+     "first_publication_date": "2022-11-11T10:48:31+0000",
+     "last_publication_date": "2026-07-13T18:40:10+0000",
+     "uid": "shaping",
+     "link_type": "Document",
+     "key": "520ae601-53a3-444a-9394-9dda26cc1901",
+     "isBroken": false
+    }
+   },
+   {
+    "linkTitle": "Cambridge Room Hire",
+    "linkUrl": {
+     "id": "Ypd7HBEAACAAeNiM",
+     "type": "page",
+     "tags": [
+      "domain:thec3.uk"
+     ],
+     "lang": "en-gb",
+     "slug": "auditorium",
+     "first_publication_date": "2022-11-11T10:48:31+0000",
+     "last_publication_date": "2025-12-09T10:30:10+0000",
+     "uid": "room-hire",
+     "link_type": "Document",
+     "key": "365820d4-c959-4953-86cd-eeabd794957f",
+     "isBroken": false
+    }
+   }
+  ],
+  "primary": {
+   "title": "get in touch",
+   "leadParagraph": [
+    {
+     "type": "paragraph",
+     "text": "Drop us a line using the form or visit one of our locations on a Sunday",
+     "spans": []
+    }
+   ],
+   "callout": "Send us a message",
+   "componentName": "contact_form"
+  },
+  "id": "header$f94728d6-af53-4afe-8ae5-440dd345dfbc",
+  "slice_type": "header",
+  "slice_label": null
+ },
+ {
+  "variation": "heroWithImage",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "title": "The C3 Church, Cambridge West",
+   "leadParagraph": [
+    {
+     "type": "paragraph",
+     "text": "The Cambridge West location Launched in 2025 with a heart to share Christ's love with our community. We are passionate about this city and our local area. By establishing ourselves in Cambourne, we embrace the opportunity for growth and greater accessibility to communities west of Cambridge.",
+     "spans": [],
+     "direction": "ltr"
+    }
+   ],
+   "callout": "We can't wait to meet you soon!",
+   "backgroundImage": {
+    "dimensions": {
+     "width": 5757,
+     "height": 3840
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/thec3/aNKiZp5xUNkB1BR5_IMG_8403.jpg?auto=format,compress",
+    "id": "aNKiZp5xUNkB1BR5",
+    "edit": {
+     "x": 0,
+     "y": 0,
+     "zoom": 1,
+     "background": "transparent"
+    }
+   },
+   "isFullBleed": false
+  },
+  "id": "header$34b60f4e-455b-4512-9261-f3ebeae15c84",
+  "slice_type": "header",
+  "slice_label": null
+ },
+ {
+  "variation": "textOnlyHero",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "title": "Reaching and shaping a generation with the message and cause of Christ",
+   "leadParagraph": [],
+   "callout": null,
+   "alignment": null
+  },
+  "id": "header$ecbf2dde-7836-4d03-a8fd-49ca0574c68b",
+  "slice_type": "header",
+  "slice_label": null
+ },
+ {
+  "variation": "blockImage",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "image": {
+    "dimensions": {
+     "width": 512,
+     "height": 314
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/thec3/Zkcl-yol0Zci9PFE_GP_001.png?auto=format,compress",
+    "id": "Zkcl-yol0Zci9PFE",
+    "edit": {
+     "x": 0,
+     "y": 0,
+     "zoom": 1,
+     "background": "transparent"
+    }
+   }
+  },
+  "id": "media$c20b7a7b-f612-4e94-b844-5fcf726eedcd",
+  "slice_type": "media",
+  "slice_label": null
+ },
+ {
+  "variation": "default",
+  "version": "sktwi1xtmkfgx8626",
+  "items": [],
+  "primary": {
+   "image": {
+    "dimensions": {
+     "width": 5757,
+     "height": 3840
+    },
+    "alt": null,
+    "copyright": null,
+    "url": "https://images.prismic.io/thec3/aNKi_p5xUNkB1BTU_IMG_8387.jpg?auto=format,compress",
+    "id": "aNKi_p5xUNkB1BTU",
+    "edit": {
+     "x": 0,
+     "y": 0,
+     "zoom": 1,
+     "background": "transparent"
+    }
+   },
+   "fullheight": false
+  },
+  "id": "media$1f255639-974f-4ef0-8f93-e5d8f34c0bcd",
+  "slice_type": "media",
+  "slice_label": null
+ },
+ {
+  "primary": {
+   "link": {
+    "id": "Yk2CThAAACMAWbs2",
+    "type": "quick-links",
+    "tags": [
+     "domain:thec3.uk"
+    ],
+    "lang": "en-gb",
+    "slug": "connect",
+    "first_publication_date": "2022-04-06T12:06:42+0000",
+    "last_publication_date": "2025-09-26T11:24:31+0000",
+    "link_type": "Document",
+    "key": "7547a026-fa2d-4580-93e8-60344f4ab9da",
+    "isBroken": false
+   }
+  },
+  "items": [
+   {}
+  ],
+  "id": "quick_links_block$2c75ccdb-0f35-4d50-9f4f-597c66eae237",
+  "slice_type": "quick_links_block",
+  "slice_label": null
+ },
+ {
+  "primary": {
+   "link": {
+    "id": "Yk2BixAAACMAWbey",
+    "type": "social-links",
+    "tags": [
+     "domain:thec3.uk"
+    ],
+    "lang": "en-gb",
+    "slug": "untitled-document",
+    "first_publication_date": "2022-04-06T12:03:28+0000",
+    "last_publication_date": "2022-04-06T12:03:37+0000",
+    "link_type": "Document",
+    "key": "e22a2073-7f78-4b09-b324-4f99e4d11a5b",
+    "isBroken": false
+   }
+  },
+  "items": [
+   {}
+  ],
+  "id": "social_links_block$8101be2d-bed8-41a9-b9d3-85b2a9ad75f1",
+  "slice_type": "social_links_block",
+  "slice_label": null
+ },
+ {
+  "primary": {
+   "title": [
+    {
+     "type": "heading2",
+     "text": "How to apply for roles",
+     "spans": [],
+     "direction": "ltr"
+    }
+   ],
+   "title_alignment": "left",
+   "content": [
+    {
+     "type": "paragraph",
+     "text": "To apply for any advertised roles, please download our application pack and the relevant job description for the role. The application pack will instruct what to send to recruitment@thec3uk to apply for the role. The application pack also details our commitment to safer recruitment, and we will take all necessary steps to ensure the safeguarding and well-being of children and vulnerable adults throughout our selection process.",
+     "spans": [
+      {
+       "start": 12,
+       "end": 16,
+       "type": "strong"
+      },
+      {
+       "start": 123,
+       "end": 139,
+       "type": "hyperlink",
+       "data": {
+        "link_type": "Media",
+        "kind": "file",
+        "id": "aGP-A3fc4bHWi7NS",
+        "url": "https://thec3.cdn.prismic.io/thec3/aGP-A3fc4bHWi7NS_ApplicationPack-pdfs.zip",
+        "name": "Application Pack - pdfs.zip",
+        "size": "2085965"
+       }
+      },
+      {
+       "start": 356,
+       "end": 357,
+       "type": "strong"
+      }
+     ],
+     "direction": "ltr"
+    },
+    {
+     "type": "paragraph",
+     "text": "",
+     "spans": [],
+     "direction": "ltr"
+    },
+    {
+     "type": "heading4",
+     "text": "Join Our Weekday Team and Make a Difference",
+     "spans": [],
+     "direction": "ltr"
+    },
+    {
+     "type": "paragraph",
+     "text": "There\u2019s a place for everyone!",
+     "spans": [
+      {
+       "start": 0,
+       "end": 29,
+       "type": "strong"
+      }
+     ],
+     "direction": "ltr"
+    },
+    {
+     "type": "paragraph",
+     "text": "We have so many ways you can serve during the week. If you have time and a heart to bless others, let\u2019s chat.",
+     "spans": [],
+     "direction": "ltr"
+    },
+    {
+     "type": "paragraph",
+     "text": "",
+     "spans": [],
+     "direction": "ltr"
+    },
+    {
+     "type": "paragraph",
+     "text": "Contact us at hello@thec3.uk to get started!",
+     "spans": [
+      {
+       "start": 0,
+       "end": 44,
+       "type": "strong"
+      },
+      {
+       "start": 14,
+       "end": 28,
+       "type": "hyperlink",
+       "data": {
+        "link_type": "Web",
+        "url": "mailto:hello@thec3.uk",
+        "target": "_blank"
+       }
+      }
+     ],
+     "direction": "ltr"
+    }
+   ]
+  },
+  "items": [],
+  "id": "text$6b54f2b8-8f7e-4a0a-bbcd-aab47c4c9e68",
+  "slice_type": "text",
+  "slice_label": null
+ }
+]

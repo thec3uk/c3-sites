@@ -1,0 +1,12 @@
+{% with p=slice.primary %}
+{# Where this posts is decided per site in Phase 3. #}
+<form class="contact-form" name="{{ p.form_name }}" method="post">
+  <label>{{ p.name_label }} <input name="name" required></label>
+  <label>{{ p.email_label }} <input name="email" type="email" required></label>
+  {% if p.category_label %}<label>{{ p.category_label }} <input name="category"></label>{% endif %}
+  {% if p.subject_label %}<label>{{ p.subject_label }} <input name="subject"></label>{% endif %}
+  <label>{{ p.message_label }} <textarea name="message" required></textarea></label>
+  {% if p.consent_label %}<label><input name="consent" type="checkbox" required> {{ p.consent_label }}</label>{% endif %}
+  <button type="submit">{{ p.submit_button_label|default:"Send" }}</button>
+</form>
+{% endwith %}

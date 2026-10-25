@@ -55,7 +55,7 @@ def _slice(raw: dict, domain: str) -> Slice:
         type=raw["slice_type"],
         variation=raw.get("variation") or "default",
         primary=convert(raw.get("primary") or {}, domain) or {},
-        items=convert(raw.get("items") or [], domain),
+        items=[item for item in convert(raw.get("items") or [], domain) if item],
     )
 
 

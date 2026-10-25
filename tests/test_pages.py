@@ -71,7 +71,11 @@ def test_home_renders_its_type_template(site, client):
 def test_page_renders_with_slices(site, client):
     response = client.get("/room-hire/")
 
-    assert response.content.decode().startswith("page:room-hire|[s][s]")
+    assert response.content.decode().count("[s]") == len(fixture_slices())
+
+
+def fixture_slices():
+    return json.loads((FIXTURES / "page_with_slices.json").read_text())["data"]["body"]
 
 
 def test_unknown_path_is_404(site, client):

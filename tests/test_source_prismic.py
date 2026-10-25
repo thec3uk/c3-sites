@@ -192,3 +192,11 @@ def test_site_documents_use_the_site_domain(settings, monkeypatch):
 
     assert [p.url for p in content.site_pages()] == ["/about/"]
     content.site_documents.cache_clear()
+
+
+def test_empty_slice_items_are_dropped():
+    from content.sources.prismic import _slice
+
+    slice = _slice({"slice_type": "text", "primary": {}, "items": [{}]}, "")
+
+    assert slice.items == []

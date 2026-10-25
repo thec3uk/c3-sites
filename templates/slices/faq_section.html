@@ -1,0 +1,7 @@
+{% load images %}{% with p=slice.primary %}
+{% if p.eyebrow_headline %}<p class="eyebrow">{{ p.eyebrow_headline }}</p>{% endif %}
+{% if p.title %}<div class="faq-title">{{ p.title }}</div>{% endif %}
+{% if p.description %}{{ p.description }}{% endif %}
+{% if p.optional_image %}<img src="{{ p.optional_image|imgix:800 }}" alt="{{ p.optional_image.alt }}" loading="lazy">{% endif %}
+{% for item in slice.items %}<details><summary>{{ item.question }}</summary>{{ item.answer }}</details>{% endfor %}
+{% endwith %}

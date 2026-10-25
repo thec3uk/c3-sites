@@ -1,0 +1,1 @@
+{% load images %}{% with image=slice.primary.image %}{% if image %}<figure{% if slice.primary.fullheight %} data-full-height{% endif %}><img src="{{ image|imgix:1600 }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}" loading="lazy"></figure>{% endif %}{% endwith %}

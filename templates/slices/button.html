@@ -1,0 +1,1 @@
+{% with p=slice.primary %}{% if p.linkUrl %}<p data-align="{{ p.alignment|default:'left' }}"><a class="button" data-size="{{ p.size|default:'md' }}" href="{{ p.linkUrl }}">{{ p.linkTitle }}</a></p>{% endif %}{% endwith %}
