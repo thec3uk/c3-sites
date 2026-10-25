@@ -1,5 +1,5 @@
-{% extends "slices/card/_title_card.html" %}
-{# Gatsby components/card/newsletterWithLocations.tsx; Mailchimp submission is M3's. #}
+{% extends "slices/card/_title_card.html" %}{% load mailchimp %}
+{# Gatsby components/card/newsletterWithLocations.tsx; Plain POST without JS; Alpine uses Mailchimp's JSONP endpoint. #}
 {# Inputs carry mt-1 in place of space-y-1, which v4 puts on the inline label as a no-op margin-bottom. #}
 {# The button drops mt-2: v3's space-y-3 overrode it, v4's would add to it. #}
 {# Live wraps this card in layout.Main twice, doubling its margins on desktop. #}
@@ -7,16 +7,19 @@
 {% block after %}</div>{% endblock %}
 {% block body %}<div class="flex flex-col justify-between h-full -mt-4 prose prose-p:lg:text-xl">
   {% if slice.primary.content %}{{ slice.primary.content }}{% else %}<p>No content</p>{% endif %}
-  <form class="h-full">
-    <div class="h-full">
+  <form class="h-full" method="post" action="{% mailchimp_endpoint %}" x-data="newsletter" @submit.prevent="send">
+    <div x-show="status === 'success'" x-cloak x-text="message"></div>
+    <div class="h-full" x-show="status !== 'success'">
+      <input type="hidden" name="SOURCE" value="website signup">
+      <input type="hidden" name="SIGNUPURL" value="">
       <div class="flex flex-col justify-between h-full space-y-3">
         <div>
           <label for="name" class="text-2xl font-bold grow">Name</label>
-          <input id="name" type="text" placeholder="Josh" class="w-full p-3 mt-1 text-2xl rounded-sm lg:text-xl grow">
+          <input id="name" name="FNAME" type="text" placeholder="Josh" class="w-full p-3 mt-1 text-2xl rounded-sm lg:text-xl grow">
         </div>
         <div>
           <label for="email" class="text-2xl font-bold grow">Email</label>
-          <input id="email" type="email" placeholder="hello@thec3.uk" class="w-full p-3 mt-1 text-2xl rounded-sm grow lg:text-xl">
+          <input id="email" name="EMAIL" type="email" placeholder="hello@thec3.uk" class="w-full p-3 mt-1 text-2xl rounded-sm grow lg:text-xl">
         </div>
         <div>
           <fieldset>
@@ -24,25 +27,26 @@
             <div class="mt-4 border-gray-200 divide-y divide-gray-200">
               <label for="location-BURY" class="relative flex items-start py-1">
                 <div class="flex-1 min-w-0 text-sm leading-6"><span class="font-medium text-gray-900 select-none">Bury St Edmunds</span></div>
-                <div class="flex items-center h-6 ml-3"><input id="location-BURY" name="locations" value="BURY" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
+                <div class="flex items-center h-6 ml-3"><input id="location-BURY" name="LOCATION" value="BURY" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
               </label>
               <label for="location-CAMBRIDGE" class="relative flex items-start py-1">
                 <div class="flex-1 min-w-0 text-sm leading-6"><span class="font-medium text-gray-900 select-none">Cambridge</span></div>
-                <div class="flex items-center h-6 ml-3"><input id="location-CAMBRIDGE" name="locations" value="CAMBRIDGE" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
+                <div class="flex items-center h-6 ml-3"><input id="location-CAMBRIDGE" name="LOCATION" value="CAMBRIDGE" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
               </label>
               <label for="location-ONLINE" class="relative flex items-start py-1">
                 <div class="flex-1 min-w-0 text-sm leading-6"><span class="font-medium text-gray-900 select-none">Online</span></div>
-                <div class="flex items-center h-6 ml-3"><input id="location-ONLINE" name="locations" value="ONLINE" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
+                <div class="flex items-center h-6 ml-3"><input id="location-ONLINE" name="LOCATION" value="ONLINE" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
               </label>
               <label for="location-COLCHESTER" class="relative flex items-start py-1">
                 <div class="flex-1 min-w-0 text-sm leading-6"><span class="font-medium text-gray-900 select-none">Colchester</span></div>
-                <div class="flex items-center h-6 ml-3"><input id="location-COLCHESTER" name="locations" value="COLCHESTER" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
+                <div class="flex items-center h-6 ml-3"><input id="location-COLCHESTER" name="LOCATION" value="COLCHESTER" type="checkbox" class="w-4 h-4 text-red-600 border-gray-300 rounded-sm focus:ring-red-600"></div>
               </label>
             </div>
           </fieldset>
         </div>
-        <button class="w-full px-6 py-3 text-3xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50 hover:text-red-500">Subscribe</button>
+        <button :disabled="status === 'sending'" class="w-full px-6 py-3 text-3xl font-bold text-center capitalize transition-colors duration-300 bg-black rounded-sm shadow-sm lg:py-3 lg:text-3xl text-gray-50 hover:text-red-500">Subscribe</button>
       </div>
+      <div x-show="status === 'error'" x-cloak x-html="message"></div>
     </div>
   </form>
 </div>{% endblock %}

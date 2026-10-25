@@ -163,10 +163,9 @@ def test_contact_hero_renders_the_contact_form_document():
     html = render(raw("header", "heroWithCustomComponent"))
 
     assert ">get in touch</h1>" in html
-    assert '<form name="Contact Us"' in html
+    assert '<form x-show="!submitted" name="Contact Us"' in html
     for label in ("Full Name", "Email", "Category", "Your Subject", "Your Message"):
         assert f">{label}</label>" in html
-    assert "<option>Safeguarding</option>" in html
     assert ">Send</button>" in html
 
 
@@ -248,7 +247,7 @@ def test_newsletter_button_gap_is_space_y_alone_as_in_tailwind_3():
     # v3's space-y-3 margin-top overrode the button's mt-2; v4's margin-bottom on the sibling adds to it.
     html = render(raw("card", "newsletterLocationSlice"))
 
-    assert '<button class="w-full px-6 py-3 text-3xl' in html
+    assert '<button :disabled="status === \'sending\'" class="w-full px-6 py-3 text-3xl' in html
 
 
 def test_newsletter_card_is_wrapped_in_main_twice_as_live():
@@ -264,3 +263,58 @@ def test_social_icon_gap_sits_on_the_label_as_in_tailwind_3():
 
     assert '<a href="https://www.facebook.com/thec3uk" class="flex items-center group">' in html
     assert '<span class="hidden ml-2 transition-colors' in html
+
+
+def contact_form_html():
+    return render(raw("header", "heroWithCustomComponent"))
+
+
+def test_contact_form_passes_netlify_detection_rules():
+    html = contact_form_html()
+
+    form = re.search(r"<form[^>]*>", html).group(0)
+    assert 'name="Contact Us"' in form and 'method="post"' in form
+    assert 'data-netlify="true"' in form and 'data-netlify-honeypot="bot-field"' in form
+    assert '<input type="hidden" name="form-name" value="Contact Us">' in html
+    assert 'name="bot-field"' in html
+    # Netlify only collects fields present in the static HTML.
+    for field in ("name", "email", "category_name", "email_recipient", "subject", "message"):
+        assert f'name="{field}"' in html
+
+
+def test_contact_form_categories_carry_their_recipient():
+    html = contact_form_html()
+
+    assert '<option value="Safeguarding" data-recipient="safeguarding@thec3.uk">Safeguarding</option>' in html
+    assert html.count("data-recipient=") == 16
+
+
+def test_contact_form_submits_without_js():
+    button = re.search(r"<button[^>]*type=\"submit\"[^>]*>", contact_form_html()).group(0)
+
+    assert not re.search(r"\sdisabled[\s>=]", button)
+
+
+def test_contact_form_thank_you_comes_from_the_document():
+    html = contact_form_html()
+
+    assert "Thanks for your message!" in html and "Someone will be in touch" in html
+    assert 'x-if="submitted"' in html
+
+
+def test_newsletter_posts_to_the_production_list_without_js(settings):
+    settings.DEBUG = False
+    html = render(raw("card", "newsletterLocationSlice"))
+
+    action = "https://thec3.us19.list-manage.com/subscribe/post?u=baac982817e7fb161022a1253&amp;id=d62f87b12a"
+    assert f'method="post" action="{action}"' in html
+    for field in ("FNAME", "EMAIL", "LOCATION", "SOURCE", "SIGNUPURL"):
+        assert f'name="{field}"' in html
+    assert 'name="SOURCE" value="website signup"' in html
+
+
+def test_newsletter_uses_the_dev_list_in_debug(settings):
+    settings.DEBUG = True
+    html = render(raw("card", "newsletterLocationSlice"))
+
+    assert "id=7443c2e349" in html and "d62f87b12a" not in html

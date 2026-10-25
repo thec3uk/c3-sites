@@ -9,6 +9,33 @@ function readDismissed() {
   }
 }
 
+// Mailchimp's post-json endpoint only answers JSONP, as in gatsby-plugin-mailchimp.
+function jsonp(url, timeout = 10000) {
+  return new Promise((resolve, reject) => {
+    const name = "__mc" + Math.random().toString(36).slice(2);
+    const script = document.createElement("script");
+    const done = () => {
+      clearTimeout(timer);
+      delete window[name];
+      script.remove();
+    };
+    const timer = setTimeout(() => {
+      done();
+      reject(new Error("timeout"));
+    }, timeout);
+    window[name] = (data) => {
+      done();
+      resolve(data);
+    };
+    script.onerror = () => {
+      done();
+      reject(new Error("network"));
+    };
+    script.src = url + "&c=" + name;
+    document.head.append(script);
+  });
+}
+
 document.addEventListener("alpine:init", () => {
   // Same {message, closed} list as the Gatsby site, so past dismissals carry over.
   Alpine.data("notificationBanner", () => ({
@@ -43,6 +70,75 @@ document.addEventListener("alpine:init", () => {
       this.open = false;
       document.body.style.overflow = "";
       this.$refs.button.focus();
+    },
+  }));
+
+  Alpine.data("contactForm", () => ({
+    submitted: false,
+    sending: false,
+    failed: false,
+    valid: false,
+    // Same rules as Gatsby's contactForm.tsx.
+    check() {
+      const f = this.$root.querySelector("form");
+      const v = (n) => f.elements[n].value;
+      this.valid =
+        v("email_recipient") !== "" &&
+        v("message").length > 10 &&
+        v("name").length > 3 &&
+        v("email").includes("@") &&
+        v("subject").length > 3;
+    },
+    pick(event) {
+      const option = event.target.selectedOptions[0];
+      event.target.form.elements.email_recipient.value = option.dataset.recipient;
+      this.check();
+    },
+    async send(event) {
+      const form = event.target;
+      if (!this.valid) return;
+      this.sending = true;
+      this.failed = false;
+      try {
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(new FormData(form)).toString(),
+        });
+        if (!response.ok) throw new Error(response.status);
+        this.submitted = true;
+      } catch {
+        this.failed = true;
+      }
+      this.sending = false;
+    },
+  }));
+
+  Alpine.data("newsletter", () => ({
+    status: "pending",
+    message: "",
+    async send(event) {
+      const form = event.target;
+      const field = (n) => form.elements[n];
+      const locations = [...form.querySelectorAll("[name=LOCATION]:checked")].map((c) => c.value);
+      const params = new URLSearchParams({
+        EMAIL: field("EMAIL").value,
+        FNAME: field("FNAME").value,
+        LOCATION: '"' + locations.join('", "') + '"',
+        SIGNUPURL: document.location.pathname,
+        SOURCE: field("SOURCE").value,
+      });
+      this.status = "sending";
+      this.message = "";
+      try {
+        const url = form.action.replace("/post?", "/post-json?") + "&" + params;
+        const result = await jsonp(url);
+        this.message = result.msg;
+        this.status = result.result === "success" ? "success" : "error";
+      } catch {
+        this.message = "Sorry, we could not subscribe you. Please try again.";
+        this.status = "error";
+      }
     },
   }));
 });

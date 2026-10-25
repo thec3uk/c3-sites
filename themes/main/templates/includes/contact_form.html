@@ -1,7 +1,10 @@
 {% load documents text %}{% site_document "contact_form" as form %}{% with f=form.fields %}
-{# Gatsby slices/header/components/contactForm.tsx. Submission is M3's; the button stays in its not-yet-valid state. #}
-<div class="max-w-lg px-0 sm:px-6 lg:mx-auto lg:max-w-none">
-  <form name="{{ f.form_name }}" method="post" class="grid grid-cols-1 gap-y-6">
+{# Gatsby contactForm.tsx. Plain POST without JS; Alpine posts via fetch and swaps in the thank-you message. #}
+<div x-data="contactForm" class="max-w-lg px-0 sm:px-6 lg:mx-auto lg:max-w-none">
+  <template x-if="submitted"><div class="grid grid-cols-1 my-auto lg:grid-rows-3"><div class="prose lg:row-start-2 prose-headings:mb-4 prose-h2:text-2xl prose-h3:text-xl">{% if f.thank_you_message %}{{ f.thank_you_message }}{% else %}<h2 class="mb-4 text-2xl">Thanks for your message!</h2><p>Someone will be in touch in the next couple of days</p>{% endif %}</div></div></template>
+  <form x-show="!submitted" name="{{ f.form_name|plain }}" method="post" class="grid grid-cols-1 gap-y-6" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="send" @input="check">
+    <input type="hidden" name="form-name" value="{{ f.form_name|plain }}">
+    <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
     <div>
       <label for="contact-name" class="block text-sm font-medium text-gray-700">{{ f.name_label }}</label>
       <input type="text" name="name" id="contact-name" autocomplete="name" placeholder="{{ f.name_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500">
@@ -12,9 +15,10 @@
     </div>
     <div>
       <label for="contact-category" class="block text-sm font-medium text-gray-700">{{ f.category_label }}</label>
-      <select name="category_name" id="contact-category" class="relative w-full py-2 pl-3 pr-10 mt-1 text-left text-gray-500 bg-white border border-gray-300 rounded-md shadow-xs cursor-default focus:outline-hidden focus:ring-1 focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
+      <input type="hidden" name="email_recipient">
+      <select name="category_name" id="contact-category" @change="pick" class="relative w-full py-2 pl-3 pr-10 mt-1 text-left text-gray-500 bg-white border border-gray-300 rounded-md shadow-xs cursor-default focus:outline-hidden focus:ring-1 focus:ring-purple-500 focus:border-purple-500 sm:text-sm">
         <option value="" selected disabled>Select a Category</option>
-        {% for category in f.category %}<option>{{ category.category_name }}</option>{% endfor %}
+        {% for category in f.category %}<option value="{{ category.category_name|plain }}" data-recipient="{{ category.email_recipient|plain }}">{{ category.category_name }}</option>{% endfor %}
       </select>
     </div>
     <div>
@@ -26,7 +30,8 @@
       <textarea rows="4" name="message" id="contact-message" autocomplete="message" placeholder="{{ f.message_label|plain }}" class="block w-full px-4 py-3 placeholder-gray-500 border border-gray-300 rounded-md shadow-xs focus:ring-purple-500 focus:border-purple-500"></textarea>
     </div>
     <div>
-      <button type="submit" disabled class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-purple-200 cursor-not-allowed border border-transparent rounded-md shadow-xs focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">{{ f.submit_button_label }}</button>
+      <button type="submit" :disabled="!valid || sending" class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-purple-600 enabled:hover:bg-purple-700 disabled:bg-purple-200 disabled:cursor-not-allowed border border-transparent rounded-md shadow-xs focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">{{ f.submit_button_label }}</button>
+      <p x-show="failed" x-cloak role="alert" class="mt-3 text-sm text-red-600">Sorry, your message could not be sent. Please try again.</p>
     </div>
   </form>
 </div>
