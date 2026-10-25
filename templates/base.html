@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% block title %}{% if site_config.fields.title %}{{ site_config.fields.title }} : {% endif %}{{ page.title }}{% endblock %}</title>
+  {% block seo %}<title>{% block title %}{% if site_config.fields.title %}{{ site_config.fields.title }} : {% endif %}{{ page.title }}{% endblock %}</title>
   {% with config=site_config.fields %}{% if config %}
   <meta name="description" content="{{ config.description }}">
   <meta name="application-name" content="{{ config.short_title }}">
@@ -13,7 +13,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="{{ config.twitter_username }}">
   {% endif %}{% endwith %}
-  <link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
+  <link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">{% endblock %}
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="{% static 'css/site.css' %}">
   {% block head %}{% endblock %}

@@ -16,3 +16,7 @@ def page_paths():
     for page in site_pages():
         if page.url != "/":
             yield {"path": page.url.strip("/")}
+
+
+def not_found_view(request):
+    return render(request, "404.html", status=404)

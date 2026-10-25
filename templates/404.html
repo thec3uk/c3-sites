@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block seo %}<title>Page not found{% if site_config.fields.title %} | {{ site_config.fields.title }}{% endif %}</title>
+  <meta name="robots" content="noindex">{% endblock %}
+{% block body %}<main><h1>Page not found</h1><p><a href="/">Go to the home page</a></p></main>{% endblock %}
