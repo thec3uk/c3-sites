@@ -193,7 +193,7 @@ def compare_images(tool_page, live_png, local_png, stem, out):
 
 def unreachable_facts(url, error, client=None):
     """Facts for a live page the browser couldn't load, e.g. a redirect to a site that refuses bots."""
-    with client or http_client() as client:
+    with owned_client(client) as client:
         response = client.get(url, follow_redirects=False)
     return {"title": "", "description": [], "canonical": [], "links": [], "text": "",
             "status": [response.status_code], "final_url": response.headers.get("location", url),
@@ -314,13 +314,23 @@ def http_client():
     return httpx.Client(headers={"User-Agent": USER_AGENT}, timeout=20)
 
 
+@contextmanager
+def owned_client(client=None):
+    """Yield the caller's client untouched, or a new one that is closed afterwards."""
+    if client is not None:
+        yield client
+        return
+    with http_client() as new:
+        yield new
+
+
 def check_redirects(rules, live, client=None, gap=GAP, page_paths=()):
     """Each generated rule's source on live, once, without following."""
     import httpx
 
     built = {p.rstrip("/") or "/" for p in page_paths}
     rows = []
-    with client or http_client() as client:
+    with owned_client(client) as client:
         for rule in rules:
             try:
                 response = client.get(live + rule.source, follow_redirects=False)
@@ -356,7 +366,7 @@ def sitemap_urls(client, url, gap):
 def check_extras(local_paths, live, client=None, gap=GAP, static_dir=None, sitemap="/sitemap.xml", dist=DIST):
     """Live sitemap URLs, and the old site's static files, that the build may lack."""
     extras = {}
-    with client or http_client() as client:
+    with owned_client(client) as client:
         status, live_urls = sitemap_urls(client, live + sitemap, gap)
         live_paths = sorted(urlsplit(u).path.rstrip("/") or "/" for u in live_urls)
         built = {p.rstrip("/") or "/" for p in local_paths}

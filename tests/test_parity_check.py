@@ -156,6 +156,15 @@ def test_check_redirects_compares_class_and_target_without_following():
     assert [str(r.url) for r in seen] == ["https://myc3.life/a", "https://myc3.life/b"]
 
 
+def test_a_passed_in_client_is_left_open_for_the_next_check(tmp_path):
+    client = mock_client(lambda request: httpx.Response(404))
+    rows = check_redirects([Rule("/a", "https://x.example/", 301)], "https://myc3.life", client=client, gap=0)
+    extras = check_extras(["/"], "https://myc3.life", client=client, gap=0, dist=tmp_path)
+    assert rows[0]["live_status"] == 404
+    assert extras["live_sitemap_status"] == 404
+    assert not client.is_closed
+
+
 def test_check_redirects_marks_sources_the_build_serves_as_pages():
     rows = check_redirects([Rule("/alpha", "https://x.example/", 302)], "https://myc3.life",
                            client=mock_client(lambda r: httpx.Response(307, headers={"location": "https://x.example/"})),
