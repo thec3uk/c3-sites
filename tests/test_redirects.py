@@ -1,5 +1,7 @@
 import logging
 
+import pytest
+
 from config.urls import urlpatterns
 from pages import content
 from pages.redirects import redirect_rules, redirects_text, shadowed_sources
@@ -114,8 +116,10 @@ def test_view_serves_text_plain(main, client):
     assert "/give https://pay.example/give 301" in response.content.decode()
 
 
-def test_protocol_relative_targets_are_skipped_and_logged(main, caplog):
-    main.append(redirect_doc("proto", web("//evil.example/x")))
+# Browsers treat "/\host" like "//host".
+@pytest.mark.parametrize("target", ["//evil.example/x", "/\\evil.example/x"])
+def test_protocol_relative_targets_are_skipped_and_logged(main, caplog, target):
+    main.append(redirect_doc("proto", web(target)))
     main.append(redirect_doc("good", web("/about/")))
 
     with caplog.at_level(logging.WARNING):

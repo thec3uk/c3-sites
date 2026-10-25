@@ -34,7 +34,8 @@ def _skip_reason(source: str, target: str, destination) -> str:
         return "redirect from the home page"
     if UNSAFE.search(source) or UNSAFE.search(target):
         return "unsafe source or target (whitespace or control characters)"
-    site_path = target.startswith("/") and not target.startswith("//")
+    # Browsers read "/\host" as "//host", another site.
+    site_path = target.startswith("/") and not target.startswith(("//", "/\\"))
     if not (site_path or urlsplit(target).scheme in ("http", "https")):
         return "unsafe target (not an http(s) URL or site path)"
     return ""
