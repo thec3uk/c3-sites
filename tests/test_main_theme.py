@@ -1,3 +1,4 @@
+import hashlib
 import json
 import re
 from html.parser import HTMLParser
@@ -192,3 +193,15 @@ def test_manifest_is_linked_and_matches_gatsby_config(main, client):
     assert manifest["theme_color"] == "#202945"
     assert manifest["display"] == "standalone"
     assert manifest["icons"][0]["src"] == "/static/images/manifest-logo.png"
+
+
+GATSBY_DEFAULT_FAVICON_MD5 = "3a318e3ceb32f2e06b497c0795ae14cb"
+
+
+def test_favicon_is_the_c3_mark_not_gatsbys_default():
+    # Gatsby's own favicon.ico was its purple "G"; live showed icons made from manifest-logo.png.
+    ico = (ROOT / "themes/main/public/favicon.ico").read_bytes()
+
+    assert hashlib.md5(ico).hexdigest() != GATSBY_DEFAULT_FAVICON_MD5
+    assert ico[:4] == b"\x00\x00\x01\x00"  # ICO header
+    assert int.from_bytes(ico[4:6], "little") >= 2  # several sizes
