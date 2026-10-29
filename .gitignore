@@ -12,3 +12,5 @@ themes/*/static/css/site.css
 docs/plans/*/evidence/**/*.jpg
 docs/plans/*/evidence/**/*.jpeg
 docs/plans/*/evidence/**/*.png
+.dev.pid
+.dev.log
